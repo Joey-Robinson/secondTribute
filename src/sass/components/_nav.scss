@@ -1,0 +1,32 @@
+.nav {
+  grid-row: 1 / -1;
+  grid-column: 1;
+  background: $druidOrange;
+  color: #111;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr); 
+  &-wow {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 3rem;
+    writing-mode: tb-rl;
+    text-orientation: mixed;
+    width: 100%;
+    height: 100%;
+    color: $secondaryColor;
+    &:hover {
+      background: $secondaryColor;
+      color: $druidOrange;
+      & a {
+        color: $druidOrange;
+      }
+    }
+    & a {
+      color: $secondaryColor;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

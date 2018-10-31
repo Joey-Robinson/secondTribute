@@ -19,8 +19,8 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   
 
   const whoAmI = document.createElement('div');
-  whoAmI.classList.add('output-name');
-  whoAmI.innerHTML = `<h1>Name:</h1>`
+  whoAmI.classList.add('output-who');
+  whoAmI.innerHTML = `<h3>Name:</h3>`
   output.appendChild(whoAmI);
 
 
@@ -34,7 +34,9 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
       href="${data.profile_url}" 
       target="_blank"
     >
-      ${name}
+      <hr />
+        ${name}
+      <hr />
     </a>
   `;
   // Appeding nameHeader to nameDiv
@@ -46,8 +48,10 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
 
   const whatAmI = document.createElement('div');
   whatAmI.classList.add('output-what')
-  whatAmI.innerHTML = `<h2>What Am I:</h2>`
+  whatAmI.innerHTML = `<h3>What Am I:</h3>`
   output.appendChild(whatAmI);
+
+
   const activeSpecDiv = document.createElement('div');
   const talents = "https://www.wowhead.com/talent-calc/druid/restoration/cSKz";
   const activeSpecHeader = document.createElement('h2');
@@ -67,20 +71,34 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
     >
       ${druid}
     </a>
+    <hr />
   `;
   activeSpecDiv.classList.add('output-spec');
   activeSpecDiv.appendChild(activeSpecHeader);
   output.appendChild(activeSpecDiv);
+
+
+  const currentRanks = document.createElement('div');
+  currentRanks.classList.add('output-ranks');
+  currentRanks.innerHTML = `<h3>Current Ranks:</h3>`
+  output.appendChild(currentRanks);
 
   const plusScoreDiv = document.createElement('div');
   const plusScoreHeader = document.createElement('h3');
   plusScoreHeader.innerHTML = `
     Region: ${plusRankRegion} <br />
     &nbsp;Realm: &nbsp; ${plusRankRealm}
+    <hr />
   `
   plusScoreDiv.classList.add('output-score');
   plusScoreDiv.appendChild(plusScoreHeader);
   output.appendChild(plusScoreDiv);
+
+
+  const mostRecent = document.createElement('div');
+  mostRecent.classList.add('output-mostRecent');
+  mostRecent.innerHTML = `<h3>Recent Keys:</h3>`;
+  output.appendChild(mostRecent);
 
   const recentPlusRuns = document.createElement('div');
   const recentPlusRunsHeader = document.createElement('h3');
@@ -104,18 +122,24 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
     </a>
     <br />
     <a 
-      href="${recentPlus.url}"
+      href="${recentPlusTwo.url}"
       target="_blank"
       rel="noopener noreferrer"
     >
       ${recentPlusTwo.mythic_level} -
       ${recentPlusTwo.dungeon}
     </a>
+    <hr />
   `
   recentPlusRuns.classList.add('output-recent');
   recentPlusRuns.appendChild(recentPlusRunsHeader);
   output.appendChild(recentPlusRuns);
 
+
+  const interests = document.createElement('div');
+  interests.classList.add('output-interests');
+  interests.innerHTML = `<h3>Likes:</h3>`
+  output.appendChild(interests);
 
   const likesDiv = document.createElement('div');
   const likesList = document.createElement('ul');
@@ -124,18 +148,6 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
     accumulator += `<li>${like}</li>`; 
     return accumulator;
   });
-  // likesList.innerHTML = likes.map((like) => {
-  //   return `<li>${like.join(" ")}</li>`
-  // })
-  // likesList.innerHTML = likes.forEach((like) => {
-  //   return `<li>${like}</li>`
-  // })
-  // likesList.innerHTML = `
-  //   <li>${likes[0]}</li>
-  //   <li>${likes[1]}</li>
-  //   <li>${likes[2]}</li>
-  //   <li>${likes[3]}</li>
-  // `
   likesDiv.classList.add('output-likes');
   likesDiv.appendChild(likesList);
   output.appendChild(likesDiv);
@@ -158,3 +170,17 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   const favImage = data.thumbnail_url;
   changeFavIcon(favImage);
 })
+
+const nav = document.getElementById('nav');
+const wowSpan = document.createElement('span');
+const armoryLink = "https://worldofwarcraft.com/en-us/character/zuljin/Meerkatz";
+wowSpan.classList.add('nav-wow');
+wowSpan.innerHTML = `
+  <a 
+    href="${armoryLink}"
+    rel="noopener noreferrer"
+  >
+    wow
+  </a>`
+nav.appendChild(wowSpan);
+
