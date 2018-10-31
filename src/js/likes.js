@@ -3,5 +3,6 @@ export const likes = [
   'Doing big heals',
   'Doing mythic+',
   'Fluffy Cats',
-  'Griefing'
+  'Griefing',
+  'Test'
 ];

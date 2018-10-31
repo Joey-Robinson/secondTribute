@@ -1,11 +1,11 @@
 import { likes} from './likes';
+
 fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=Meerkatz&fields=gear,mythic_plus_scores,mythic_plus_ranks,mythic_plus_recent_runs")
 .then((response) => {
   return response.json();
 })
 .then((data) => {
   
-  // console.log(data);
   const name = data.name;
   const spec = data.active_spec_name;
   const druid = data.class;
@@ -16,6 +16,13 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   const recentPlusOne = data.mythic_plus_recent_runs[1];
   const recentPlusTwo = data.mythic_plus_recent_runs[2];
   const output = document.getElementById('output');
+  
+
+  const whoAmI = document.createElement('div');
+  whoAmI.classList.add('output-name');
+  whoAmI.innerHTML = `<h1>Name:</h1>`
+  output.appendChild(whoAmI);
+
 
   // Container Div for Name
   const nameDiv = document.createElement('div');
@@ -37,6 +44,10 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   // Appending nameDiv to output
   output.appendChild(nameDiv);
 
+  const whatAmI = document.createElement('div');
+  whatAmI.classList.add('output-what')
+  whatAmI.innerHTML = `<h2>What Am I:</h2>`
+  output.appendChild(whatAmI);
   const activeSpecDiv = document.createElement('div');
   const talents = "https://www.wowhead.com/talent-calc/druid/restoration/cSKz";
   const activeSpecHeader = document.createElement('h2');
