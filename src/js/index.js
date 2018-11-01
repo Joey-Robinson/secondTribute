@@ -15,14 +15,8 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   const recentPlus = data.mythic_plus_recent_runs[0];
   const recentPlusOne = data.mythic_plus_recent_runs[1];
   const recentPlusTwo = data.mythic_plus_recent_runs[2];
-  const output = document.getElementById('output');
+  const output = document.getElementById('wow');
   
-
-  const whoAmI = document.createElement('div');
-  whoAmI.classList.add('output-who');
-  whoAmI.innerHTML = `<h3>Name:</h3>`
-  output.appendChild(whoAmI);
-
 
   // Container Div for Name
   const nameDiv = document.createElement('div');
@@ -34,9 +28,9 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
       href="${data.profile_url}" 
       target="_blank"
     >
-      <hr />
+    
         ${name}
-      <hr />
+    
     </a>
   `;
   // Appeding nameHeader to nameDiv
@@ -45,12 +39,6 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   nameDiv.classList.add('output-name');
   // Appending nameDiv to output
   output.appendChild(nameDiv);
-
-  const whatAmI = document.createElement('div');
-  whatAmI.classList.add('output-what')
-  whatAmI.innerHTML = `<h3>What Am I:</h3>`
-  output.appendChild(whatAmI);
-
 
   const activeSpecDiv = document.createElement('div');
   const talents = "https://www.wowhead.com/talent-calc/druid/restoration/cSKz";
@@ -71,34 +59,22 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
     >
       ${druid}
     </a>
-    <hr />
+  
   `;
   activeSpecDiv.classList.add('output-spec');
   activeSpecDiv.appendChild(activeSpecHeader);
   output.appendChild(activeSpecDiv);
-
-
-  const currentRanks = document.createElement('div');
-  currentRanks.classList.add('output-ranks');
-  currentRanks.innerHTML = `<h3>Current Ranks:</h3>`
-  output.appendChild(currentRanks);
 
   const plusScoreDiv = document.createElement('div');
   const plusScoreHeader = document.createElement('h3');
   plusScoreHeader.innerHTML = `
     Region: ${plusRankRegion} <br />
     &nbsp;Realm: &nbsp; ${plusRankRealm}
-    <hr />
+  
   `
   plusScoreDiv.classList.add('output-score');
   plusScoreDiv.appendChild(plusScoreHeader);
   output.appendChild(plusScoreDiv);
-
-
-  const mostRecent = document.createElement('div');
-  mostRecent.classList.add('output-mostRecent');
-  mostRecent.innerHTML = `<h3>Recent Keys:</h3>`;
-  output.appendChild(mostRecent);
 
   const recentPlusRuns = document.createElement('div');
   const recentPlusRunsHeader = document.createElement('h3');
@@ -129,17 +105,11 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
       ${recentPlusTwo.mythic_level} -
       ${recentPlusTwo.dungeon}
     </a>
-    <hr />
+  
   `
   recentPlusRuns.classList.add('output-recent');
   recentPlusRuns.appendChild(recentPlusRunsHeader);
   output.appendChild(recentPlusRuns);
-
-
-  const interests = document.createElement('div');
-  interests.classList.add('output-interests');
-  interests.innerHTML = `<h3>Likes:</h3>`
-  output.appendChild(interests);
 
   const likesDiv = document.createElement('div');
   const likesList = document.createElement('ul');
@@ -170,17 +140,3 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   const favImage = data.thumbnail_url;
   changeFavIcon(favImage);
 })
-
-const nav = document.getElementById('nav');
-const wowSpan = document.createElement('span');
-const armoryLink = "https://worldofwarcraft.com/en-us/character/zuljin/Meerkatz";
-wowSpan.classList.add('nav-wow');
-wowSpan.innerHTML = `
-  <a 
-    href="${armoryLink}"
-    rel="noopener noreferrer"
-  >
-    wow
-  </a>`
-nav.appendChild(wowSpan);
-

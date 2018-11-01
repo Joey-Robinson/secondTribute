@@ -1,32 +1,35 @@
 .nav {
-  grid-row: 1 / -1;
+  height: 100vh;
   grid-column: 1;
   background: $druidOrange;
   color: #111;
-  height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr); 
+  grid-template-rows: repeat(3, 1fr);
+  position: sticky;
+  top: 0;
+  width: 4rem;
+  & img {
+    width: 4rem;
+    height: 4rem;
+  }
   &-wow {
     grid-column: 1;
     grid-row: 1;
-    font-size: 3rem;
-    writing-mode: tb-rl;
-    text-orientation: mixed;
+    & a {
+      justify-items: center;
+      width: 100%;
+      height: 4rem;
+      display: block;
+    }
+  }
+  &-finalfantasy {
+    grid-column: 2;
+    grid-row: 1;
     width: 100%;
     height: 100%;
-    color: $secondaryColor;
-    &:hover {
-      background: $secondaryColor;
-      color: $druidOrange;
-      & a {
-        color: $druidOrange;
-      }
-    }
     & a {
-      color: $secondaryColor;
-      width: 100%;
-      height: 100%;
+      color: $primaryColor;
     }
   }
 }
