@@ -103,12 +103,14 @@ li {
     height: 33.3vh;
     grid-column: 1;
     grid-row: 1;
+    width: 100%;
     background: url("../../../images/wowbg.jpg") no-repeat center center/cover;
     filter: grayscale(100%);
     transition: all .3s ease-out; }
     .nav-wow:hover {
       transition: all .3s ease-in;
-      filter: none; }
+      filter: none;
+      width: 400%; }
     .nav-wow a {
       width: 100%;
       height: 100%;
@@ -123,7 +125,8 @@ li {
     transition: all .3s ease-out; }
     .nav-finalfantasy:hover {
       transition: all .3s ease-in;
-      filter: none; }
+      filter: none;
+      width: 400%; }
     .nav-finalfantasy a {
       width: 100%;
       height: 100%;
