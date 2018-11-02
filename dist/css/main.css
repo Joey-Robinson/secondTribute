@@ -1,10 +1,16 @@
 @keyframes reveal {
   0% {
     opacity: 0;
-    transform: translateY(100%); }
+    transform: translateX(50%); }
   100% {
     opacity: 1;
-    transform: translateY(0); } }
+    transform: translateX(0); } }
+
+@keyframes revealTwo {
+  0% {
+    transform: translateX(-50%); }
+  100% {
+    transform: translateX(400%); } }
 
 @keyframes topFadeOut {
   0% {
@@ -91,25 +97,37 @@ li {
   grid-template-rows: repeat(3, 1fr);
   position: sticky;
   top: 0;
-  width: 4rem; }
-  .nav img {
-    width: 4rem;
-    height: 4rem; }
+  padding: 0;
+  margin: 0; }
   .nav-wow {
+    height: 33.3vh;
     grid-column: 1;
-    grid-row: 1; }
+    grid-row: 1;
+    background: url("../../../images/wowbg.jpg") no-repeat center center/cover;
+    filter: grayscale(100%);
+    transition: all .3s ease-out; }
+    .nav-wow:hover {
+      transition: all .3s ease-in;
+      filter: none; }
     .nav-wow a {
-      justify-items: center;
       width: 100%;
-      height: 4rem;
+      height: 100%;
       display: block; }
   .nav-finalfantasy {
-    grid-column: 2;
-    grid-row: 1;
+    grid-column: 1;
+    grid-row: 2;
     width: 100%;
-    height: 100%; }
+    height: 33.3vh;
+    background: url("../../../images/ff14bg.jpg") no-repeat center center/cover;
+    filter: grayscale(100%);
+    transition: all .3s ease-out; }
+    .nav-finalfantasy:hover {
+      transition: all .3s ease-in;
+      filter: none; }
     .nav-finalfantasy a {
-      color: #222; }
+      width: 100%;
+      height: 100%;
+      display: block; }
 
 .finalfantasy {
   grid-column: 2;
