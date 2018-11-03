@@ -134,7 +134,9 @@ li {
 
 .finalfantasy {
   grid-column: 2;
-  grid-row: 4; }
+  grid-row: 4;
+  color: #f0f0f0;
+  font-size: 3rem; }
 
 .output {
   display: grid;
