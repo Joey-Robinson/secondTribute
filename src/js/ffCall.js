@@ -16,6 +16,7 @@ export const ffCall = () => {
     
     const nameDiv = document.createElement('div');
     const nameHeading = document.createElement('h1');
+    nameDiv.classList.add('finalfantasy-name');
     nameHeading.innerHTML = `
       <a 
         href="${lodestoneLink}"
@@ -30,6 +31,7 @@ export const ffCall = () => {
 
     const birthdayDiv = document.createElement('div');
     const birthdayHeading = document.createElement('h2');
+    birthdayDiv.classList.add('finalfantasy-birthday');
     birthdayHeading.innerHTML = `${ffBirthday}`;
     birthdayDiv.appendChild(birthdayHeading);
     finalFantasy.appendChild(birthdayDiv);
@@ -37,10 +39,10 @@ export const ffCall = () => {
 
     const serverNameDiv = document.createElement('div');
     const serverNameHeading = document.createElement('h2'); 
+    serverNameDiv.classList.add('finalfantasy-server');
     serverNameHeading.innerHTML = `Server: ${ffServer}`;
     serverNameDiv.appendChild(serverNameHeading);
     finalFantasy.appendChild(serverNameDiv)
-    // console.log(JSON.stringify(data, null, 2));
   });
 };
 

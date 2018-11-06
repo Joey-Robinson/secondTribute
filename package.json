@@ -13,7 +13,7 @@
     "prefix:css": "postcss -u autoprefixer -r dist/css/*",
     "build:css": "npm-run-all compile:sass concat:css prefix:css compress:sass",
     "webpackWatch": "webpack --watch",
-    "start": "webpack --webpackWatch & webpack-dev-server --open & webpack --build",
+    "start": "webpack --webpackWatch & webpack-dev-server --open & webpack",
     "build": "webpack --config webpack.config.js"
   },
   "keywords": [],
