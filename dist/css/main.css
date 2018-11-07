@@ -183,42 +183,47 @@ li {
   grid-template-columns: 4rem 1fr 1fr 4rem;
   grid-template-rows: 5rem;
   padding-top: 5rem; }
+  .output > div {
+    justify-self: right; }
   .output-nameLeft {
     grid-column: 2;
     grid-row: 1;
-    justify-self: right;
     align-self: center; }
   .output-specLeft {
     grid-column: 2;
-    grid-row: 2;
-    justify-self: right;
+    grid-row: 2; }
+  .output-ranksLeft {
+    grid-column: 2;
+    grid-row: 3;
     align-self: center; }
+  .output-recentLeft {
+    grid-column: 2;
+    grid-row: 4;
+    align-self: center; }
+  .output-likesLeft {
+    grid-column: 2;
+    grid-row: 5; }
   .output-name {
     grid-column: 3;
     grid-row: 1;
-    justify-self: right;
     align-self: center; }
   .output-spec {
     grid-row: 2;
     grid-column: 3;
-    justify-self: right;
     align-self: center; }
   .output-score {
     grid-row: 3;
     grid-column: 3;
-    justify-self: right;
     align-self: center; }
   .output-recent {
     grid-row: 4;
     grid-column: 3;
     text-align: right;
-    justify-self: right;
     align-self: center; }
   .output-likes {
     grid-row: 5;
     grid-column: 3;
     text-align: right;
-    justify-self: right;
     align-self: center; }
   .output-who {
     grid-column: 2;

@@ -16,8 +16,11 @@ export const wowLeft = () => {
   wow.appendChild(specClass);
 
   const ranks = document.createElement('div');
-  const ranksHeading = document.createAttribute('h3');
-  ranksHeading.innerHTML = 'Ranks:';
+  const ranksHeading = document.createElement('h3');
+  ranksHeading.innerHTML = `
+    Region Rank: <br />
+    Realm Rank:
+  `
   ranks.classList.add('output-ranksLeft');
   ranks.appendChild(ranksHeading);
   wow.appendChild(ranks);
