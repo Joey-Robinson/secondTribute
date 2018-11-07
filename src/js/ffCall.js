@@ -4,9 +4,7 @@ export const ffCall = () => {
     return response.json();
   })
   .then((data) => {
-    console.log(data);
-    console.log(data.Character.Name);
-
+    console.log(data);    
     const lodestoneLink = "https://na.finalfantasyxiv.com/lodestone/character/10803092/";
     const ffName = data.Character.Name;
     const ffBirthday = data.Character.Nameday;
@@ -25,12 +23,14 @@ export const ffCall = () => {
       >
         ${ffName}
       </a>
+      <br />
+
       `
     nameDiv.appendChild(nameHeading);
     finalFantasy.appendChild(nameDiv);
 
     const birthdayDiv = document.createElement('div');
-    const birthdayHeading = document.createElement('h2');
+    const birthdayHeading = document.createElement('h3');
     birthdayDiv.classList.add('finalfantasy-birthday');
     birthdayHeading.innerHTML = `${ffBirthday}`;
     birthdayDiv.appendChild(birthdayHeading);
@@ -38,9 +38,9 @@ export const ffCall = () => {
 
 
     const serverNameDiv = document.createElement('div');
-    const serverNameHeading = document.createElement('h2'); 
+    const serverNameHeading = document.createElement('h3'); 
     serverNameDiv.classList.add('finalfantasy-server');
-    serverNameHeading.innerHTML = `Server: ${ffServer}`;
+    serverNameHeading.innerHTML = `${ffServer}`;
     serverNameDiv.appendChild(serverNameHeading);
     finalFantasy.appendChild(serverNameDiv)
   });
