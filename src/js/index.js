@@ -8,7 +8,7 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   return response.json();
 })
 .then((data) => {
-  
+  console.log(data);
   const name = data.name;
   const spec = data.active_spec_name;
   const druid = data.class;
@@ -16,8 +16,11 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   const plusRankRegion = data.mythic_plus_ranks.class.region;
   const plusRankRealm = data.mythic_plus_ranks.class.realm;
   const recentPlus = data.mythic_plus_recent_runs[0];
+  const recentPlusChest = data.mythic_plus_recent_runs[0].num_keystone_upgrades;
   const recentPlusOne = data.mythic_plus_recent_runs[1];
+  const recentPlusChestOne = data.mythic_plus_recent_runs[1].num_keystone_upgrades;
   const recentPlusTwo = data.mythic_plus_recent_runs[2];
+  const recentPlusChestTwo = data.mythic_plus_recent_runs[2].num_keystone_upgrades;
   const output = document.getElementById('wow');
   
 

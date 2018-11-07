@@ -19,7 +19,7 @@ export const wowLeft = () => {
   const ranksHeading = document.createElement('h3');
   ranksHeading.innerHTML = `
     Region Rank: <br />
-    Realm Rank:
+    &nbsp;Realm Rank:
   `
   ranks.classList.add('output-ranksLeft');
   ranks.appendChild(ranksHeading);
