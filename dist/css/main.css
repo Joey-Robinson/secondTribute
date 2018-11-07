@@ -183,6 +183,16 @@ li {
   grid-template-columns: 4rem 1fr 1fr 4rem;
   grid-template-rows: 5rem;
   padding-top: 5rem; }
+  .output-nameLeft {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: right;
+    align-self: center; }
+  .output-specLeft {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: right;
+    align-self: center; }
   .output-name {
     grid-column: 3;
     grid-row: 1;

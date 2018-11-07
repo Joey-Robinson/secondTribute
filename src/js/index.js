@@ -1,6 +1,7 @@
 import { likes} from './likes';
 import { ffCall } from './ffCall';
 import { ffLeft} from './ffLeft';
+import { wowLeft } from './wowLeft';
 
 fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=Meerkatz&fields=gear,mythic_plus_scores,mythic_plus_ranks,mythic_plus_recent_runs")
 .then((response) => {

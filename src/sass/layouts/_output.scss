@@ -8,6 +8,18 @@
   grid-template-columns: 4rem 1fr 1fr 4rem;
   grid-template-rows: 5rem;
   padding-top: 5rem;
+  &-nameLeft {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: right;
+    align-self: center;
+  }
+  &-specLeft {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: right;
+    align-self: center;
+  }
   &-name {
     grid-column: 3;
     grid-row: 1;
