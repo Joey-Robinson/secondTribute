@@ -38,6 +38,13 @@ export const wowLeft = () => {
   likesLeft.classList.add('output-likesLeft');
   likesLeft.appendChild(likesLeftHeading);
   wow.appendChild(likesLeft);
+
+  const streamersLeft = document.createElement('div');
+  const streamersLeftHeading = document.createElement('h3');
+  streamersLeftHeading.innerHTML = 'Favorite Streamers:';
+  streamersLeft.classList.add('output-streamersLeft');
+  streamersLeft.appendChild(streamersLeftHeading);
+  wow.appendChild(streamersLeft);
 }
 
 wowLeft();
