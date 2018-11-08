@@ -6,6 +6,6 @@ export const likes = [
       target="_blank"
       rel="noopener noreferrer"
     >
-     Checking Dreamgrove
+     Reading Dreamgrove
     </a>`,
 ];

@@ -59,7 +59,7 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
     >
       ${spec}
     </a>
-    |
+    &nbsp;|
     <a 
       href="${druidInformation}"
       target="_blank"

@@ -10,7 +10,7 @@ export const ffCall = () => {
     const ffBirthday = data.Character.Nameday;
     const ffServer = data.Character.Server;
     const finalFantasy = document.getElementById('finalfantasy');
-    
+    const freeCompany = "https://na.finalfantasyxiv.com/lodestone/freecompany/9234490298434948752/";
     
     const nameDiv = document.createElement('div');
     const nameHeading = document.createElement('h1');
@@ -43,6 +43,21 @@ export const ffCall = () => {
     serverNameHeading.innerHTML = `${ffServer}`;
     serverNameDiv.appendChild(serverNameHeading);
     finalFantasy.appendChild(serverNameDiv)
+
+    const freeCompanyDiv = document.createElement('div');
+    const freeCompanyHeading = document.createElement('h3');
+    freeCompanyDiv.classList.add('finalfantasy-freecompany');
+    freeCompanyHeading.innerHTML = `
+      <a 
+        href="${freeCompany}" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        Last Homely House
+      </a>
+    `
+    freeCompanyDiv.appendChild(freeCompanyHeading);
+    finalFantasy.appendChild(freeCompanyDiv);
   });
 };
 

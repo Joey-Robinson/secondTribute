@@ -21,6 +21,13 @@ export const ffLeft = () => {
   serverLeft.classList.add('finalfantasy-serverLeft');
   serverLeft.appendChild(serverLeftHeading);
   finalFantasy.appendChild(serverLeft);
+
+  const freeCompanyLeft = document.createElement('div');
+  const freeCompanyLeftHeading = document.createElement('h3');
+  freeCompanyLeftHeading.innerHTML = 'Free Company:';
+  freeCompanyLeft.classList.add('finalfantasy-freecompanyLeft');
+  freeCompanyLeft.appendChild(freeCompanyLeftHeading);
+  finalFantasy.appendChild(freeCompanyLeft);
 }
 
 ffLeft();

@@ -80,7 +80,7 @@ body {
   line-height: 1.6; }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #FF7D0A; }
 
 ul,
@@ -152,9 +152,14 @@ li {
     grid-row: 2;
     padding: 1rem 0 0 0;
     justify-self: right; }
-  .finalfantasy-serverLeft {
+  .finalfantasy-freecompanyLeft {
     grid-column: 2;
     grid-row: 3;
+    justify-self: right;
+    padding: 1rem 0 0 0; }
+  .finalfantasy-serverLeft {
+    grid-column: 2;
+    grid-row: 4;
     justify-self: right;
     padding: 1rem 0 0 0; }
   .finalfantasy-name {
@@ -168,6 +173,11 @@ li {
     grid-column: 3;
     justify-self: right; }
   .finalfantasy-server {
+    padding: 1rem 0 0 0;
+    grid-row: 4;
+    grid-column: 3;
+    justify-self: right; }
+  .finalfantasy-freecompany {
     padding: 1rem 0 0 0;
     grid-row: 3;
     grid-column: 3;
