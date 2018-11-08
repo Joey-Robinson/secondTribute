@@ -91,7 +91,8 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
       target="_blank"
       rel="noopener noreferrer"
     >
-      ${recentPlus.mythic_level} -
+      ${recentPlusChest} Chest -
+      ${recentPlus.mythic_level}
       ${recentPlus.dungeon}
     </a>
     <br />
@@ -100,6 +101,7 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
       target="_blank"
       rel="noopener noreferrer"
     >
+      ${recentPlusChestOne} Chest -
       ${recentPlusOne.mythic_level} -
       ${recentPlusOne.dungeon}
     </a>
@@ -109,6 +111,7 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
       target="_blank"
       rel="noopener noreferrer"
     >
+      ${recentPlusChestTwo} Chest - 
       ${recentPlusTwo.mythic_level} -
       ${recentPlusTwo.dungeon}
     </a>
