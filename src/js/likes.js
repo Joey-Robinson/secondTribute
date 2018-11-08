@@ -1,8 +1,11 @@
 export const likes = [
+  'Mythic Plus',
   'Catweaving - Meow',
-  'Doing big heals',
-  'Doing mythic+',
-  'Fluffy Cats',
-  'Griefing',
-  'Test'
+  ` <a 
+      href="https://www.dreamgrove.gg/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+     Checking Dreamgrove
+    </a>`,
 ];

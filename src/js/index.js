@@ -2,6 +2,7 @@ import { likes} from './likes';
 import { ffCall } from './ffCall';
 import { ffLeft} from './ffLeft';
 import { wowLeft } from './wowLeft';
+import { streamers } from './streamers';
 
 fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=Meerkatz&fields=gear,mythic_plus_scores,mythic_plus_ranks,mythic_plus_recent_runs")
 .then((response) => {
@@ -123,7 +124,6 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
 
   const likesDiv = document.createElement('div');
   const likesList = document.createElement('ul');
-  // likesList.innerHTML = likes.join(" <br />");
   likesList.innerHTML = likes.reduce((accumulator, like) => {
     accumulator += `<li>${like}</li>`; 
     return accumulator;
@@ -132,7 +132,15 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   likesDiv.appendChild(likesList);
   output.appendChild(likesDiv);
 
-
+  const streamersDiv = document.createElement('div');
+  const streamersList = document.createElement('ul');
+  streamersList.innerHTML = streamers.reduce((accumulator, streamer) => {
+    accumulator += `<li>${streamer}</li>`;
+    return accumulator;
+  });
+  streamersDiv.classList.add('output-streamers');
+  streamersDiv.appendChild(streamersList);
+  output.appendChild(streamersDiv);
 
 
   // FavIcon that has to be scoped
