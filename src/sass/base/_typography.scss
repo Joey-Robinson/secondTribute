@@ -1,13 +1,6 @@
 a {
   text-decoration: underline dotted;
   color: $druidOrange;
-  transition: all .3s ease-out;
-  &:hover {
-    transition: all .3s ease-in;
-    color: $primaryColor;
-    background: $druidOrange;
-    padding: 5px;
-  }
 }
 
 ul,

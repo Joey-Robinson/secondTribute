@@ -4,7 +4,6 @@ export const ffCall = () => {
     return response.json();
   })
   .then((data) => {
-    console.log(data);    
     const lodestoneLink = "https://na.finalfantasyxiv.com/lodestone/character/10803092/";
     const ffName = data.Character.Name;
     const ffBirthday = data.Character.Nameday;

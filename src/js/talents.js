@@ -3,6 +3,7 @@ export const talents = fetch("https://us.api.blizzard.com/wow/character/zul'jin/
   return response.json();
 })
 .then((data) => {
+  console.log(data);
   const output = document.getElementById('wow');
   const talentsSection = document.createElement('section');
   const talentsDiv = document.createElement('section');
@@ -15,11 +16,11 @@ export const talents = fetch("https://us.api.blizzard.com/wow/character/zul'jin/
   const talentTest = data.talents[0].talents.map((talent) => {
     return `
       <li>
-        &nbsp;
         <img
           src="https://render-us.worldofwarcraft.com/icons/56/${talent.spell.icon}.jpg"
           alt="${talent.spell.description}"
         >
+        -
           ${talent.spell.name}
       </li>
       `

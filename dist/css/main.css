@@ -81,13 +81,7 @@ body {
 
 a {
   text-decoration: underline dotted;
-  color: #FF7D0A;
-  transition: all .3s ease-out; }
-  a:hover {
-    transition: all .3s ease-in;
-    color: #222;
-    background: #FF7D0A;
-    padding: 5px; }
+  color: #FF7D0A; }
 
 ul,
 li {
@@ -199,6 +193,13 @@ li {
   grid-template-columns: 4rem repeat(auto-fit, minmax(max-content, 50rem));
   grid-template-rows: max-content;
   padding-top: 2.5rem; }
+  .output a {
+    transition: all .3s ease-out; }
+    .output a:hover {
+      transition: all .3s ease-in;
+      color: #222;
+      background: #FF7D0A;
+      padding: 5px; }
   .output > div {
     justify-self: right; }
   .output-talentHeading {
@@ -212,9 +213,8 @@ li {
     font-size: 3.5rem;
     justify-self: center; }
     .output-talents img {
-      width: 2rem;
-      height: 2rem;
-      margin: 1rem 0 0 0; }
+      width: 2.5rem;
+      height: 2.5rem; }
   .output-nameLeft {
     grid-column: 2;
     grid-row: 1;

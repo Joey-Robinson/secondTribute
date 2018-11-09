@@ -9,6 +9,15 @@
   // grid-template-columns: 4rem 1fr 1fr 4rem;
   grid-template-rows: max-content;
   padding-top: 2.5rem;
+  & a {
+    transition: all .3s ease-out;
+    &:hover {
+      transition: all .3s ease-in;
+      color: $primaryColor;
+      background: $druidOrange;
+      padding: 5px;
+    }
+  }
   > div {
     justify-self: right;
   }
@@ -24,9 +33,8 @@
     font-size: 3.5rem;
     justify-self: center;
     & img {
-      width: 2rem;
-      height: 2rem;
-      margin: 1rem 0 0 0;
+      width: 2.5rem;
+      height: 2.5rem;
     }
   }
   &-nameLeft {
