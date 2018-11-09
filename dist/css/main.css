@@ -81,7 +81,13 @@ body {
 
 a {
   text-decoration: underline dotted;
-  color: #FF7D0A; }
+  color: #FF7D0A;
+  transition: all .3s ease-out; }
+  a:hover {
+    transition: all .3s ease-in;
+    color: #222;
+    background: #FF7D0A;
+    padding: 5px; }
 
 ul,
 li {
