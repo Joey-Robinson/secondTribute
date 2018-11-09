@@ -2,14 +2,32 @@
   display: grid;
   font-size: $base;
   color: $druidOrange;
-  margin-top: 5rem;
+  margin-top: 2.5rem;
   grid-column: 2;
   grid-row: 1;
-  grid-template-columns: 4rem 1fr 1fr 4rem;
-  grid-template-rows: 5rem;
+  grid-template-columns: 4rem repeat(auto-fit, minmax(max-content, 50rem));
+  // grid-template-columns: 4rem 1fr 1fr 4rem;
+  grid-template-rows: max-content;
   padding-top: 2.5rem;
   > div {
     justify-self: right;
+  }
+  &-talentHeading {
+    grid-column: 4;
+    grid-row: 1;
+    text-align: center;
+    align-self: center;
+  }
+  &-talents {
+    grid-column: 4;
+    grid-row: 2 / 6;
+    font-size: 3.5rem;
+    justify-self: center;
+    & img {
+      width: 2rem;
+      height: 2rem;
+      margin: 1rem 0 0 0;
+    }
   }
   &-nameLeft {
     grid-column: 2;

@@ -193,14 +193,28 @@ li {
   display: grid;
   font-size: 3rem;
   color: #FF7D0A;
-  margin-top: 5rem;
+  margin-top: 2.5rem;
   grid-column: 2;
   grid-row: 1;
-  grid-template-columns: 4rem 1fr 1fr 4rem;
-  grid-template-rows: 5rem;
+  grid-template-columns: 4rem repeat(auto-fit, minmax(max-content, 50rem));
+  grid-template-rows: max-content;
   padding-top: 2.5rem; }
   .output > div {
     justify-self: right; }
+  .output-talentHeading {
+    grid-column: 4;
+    grid-row: 1;
+    text-align: center;
+    align-self: center; }
+  .output-talents {
+    grid-column: 4;
+    grid-row: 2 / 6;
+    font-size: 3.5rem;
+    justify-self: center; }
+    .output-talents img {
+      width: 2rem;
+      height: 2rem;
+      margin: 1rem 0 0 0; }
   .output-nameLeft {
     grid-column: 2;
     grid-row: 1;
