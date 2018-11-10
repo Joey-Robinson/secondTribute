@@ -211,7 +211,7 @@ li {
     grid-column: 4;
     grid-row: 2 / 6;
     font-size: 3.5rem;
-    justify-self: center; }
+    text-align: center; }
     .output-talents img {
       width: 2.5rem;
       height: 2.5rem; }

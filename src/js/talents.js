@@ -5,8 +5,8 @@ export const talents = fetch("https://us.api.blizzard.com/wow/character/zul'jin/
 .then((data) => {
   console.log(data);
   const output = document.getElementById('wow');
-  const talentsSection = document.createElement('section');
-  const talentsDiv = document.createElement('section');
+  const talentsSection = document.createElement('div');
+  const talentsDiv = document.createElement('div');
   const talentsHeading = document.createElement('h1');
   talentsHeading.innerHTML = 'Talents:';
   talentsDiv.classList.add('output-talentHeading');
