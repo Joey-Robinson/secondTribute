@@ -30,11 +30,12 @@
   &-talents {
     grid-column: 4;
     grid-row: 2 / 6;
-    font-size: 3.5rem;
-    text-align: center;
+    font-size: 3.75rem;
+    justify-self: center;
     & img {
-      width: 2.5rem;
-      height: 2.5rem;
+      margin: 1rem 0 0 0;
+      width: 3rem;
+      height: 3rem;
     }
   }
   &-nameLeft {
