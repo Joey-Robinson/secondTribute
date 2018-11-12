@@ -4,7 +4,7 @@ import { ffLeft} from './ffLeft';
 import { wowLeft } from './wowLeft';
 import { streamers } from './streamers';
 
-fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=Meerkatz&fields=gear,mythic_plus_scores,mythic_plus_ranks,mythic_plus_recent_runs")
+fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=Meerkatz&fields=gear,mythic_plus_scores,mythic_plus_ranks,mythic_plus_recent_runs,mythic_plus_best_runs")
 .then((response) => {
   return response.json();
 })
@@ -14,6 +14,7 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   const druid = data.class;
   const druidInformation = 'https://wow.gamepedia.com/Druid';
   const plusRankRegion = data.mythic_plus_ranks.class.region;
+  const bestOverall = data.mythic_plus_best_runs;
   const plusRankRealm = data.mythic_plus_ranks.class.realm;
   const recentPlus = data.mythic_plus_recent_runs[0];
   const recentPlusChest = data.mythic_plus_recent_runs[0].num_keystone_upgrades;
@@ -22,7 +23,7 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   const recentPlusTwo = data.mythic_plus_recent_runs[2];
   const recentPlusChestTwo = data.mythic_plus_recent_runs[2].num_keystone_upgrades;
   const output = document.getElementById('wow');
-  
+  console.log(bestOverall);
 
   // Container Div for Name
   const nameDiv = document.createElement('div');
@@ -140,6 +141,27 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   streamersDiv.classList.add('output-streamers');
   streamersDiv.appendChild(streamersList);
   output.appendChild(streamersDiv);
+
+  const bestOverallDiv = document.createElement('div');
+  const bestOverallHeading = document.createElement('h1');
+  const bestOverallList = document.createElement('ul');
+  bestOverallHeading.innerHTML = 'Best Runs:';
+  const bestTest = bestOverall.map((best) => {
+    return `
+      <li>
+        <a href="${best.url}">
+        ${best.dungeon}
+        ${best.mythic_level}
+        </a>
+      </li>
+    `
+  })
+  bestOverallDiv.classList.add('output-bestOverall');
+  bestOverallDiv.appendChild(bestOverallHeading);
+  bestOverallDiv.appendChild(bestOverallList);
+  output.appendChild(bestOverallDiv);
+  bestOverallList.innerHTML = bestTest.join(" ");
+
 
 
   // FavIcon that has to be scoped
