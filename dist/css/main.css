@@ -226,6 +226,12 @@ li {
   .output-bestOverallHeading {
     grid-column: 4;
     grid-row: 1; }
+  .output-weeklyAffixes {
+    grid-column: 4;
+    grid-row: 6;
+    font-size: 2rem;
+    text-align: right;
+    z-index: 2; }
   .output-bestOverall {
     grid-column: 4;
     grid-row: 2 / 6;
@@ -253,6 +259,7 @@ li {
     text-align: right;
     align-self: center; }
   .output-streamers {
+    padding: 5px 0 0 0;
     grid-row: 6;
     grid-column: 3;
     text-align: right; }
