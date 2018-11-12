@@ -223,9 +223,13 @@ li {
   .output-streamersLeft {
     grid-column: 2;
     grid-row: 6; }
+  .output-bestOverallHeading {
+    grid-column: 4;
+    grid-row: 1; }
   .output-bestOverall {
     grid-column: 4;
-    grid-row: 2; }
+    grid-row: 2 / 6;
+    text-align: right; }
   .output-name {
     grid-column: 3;
     grid-row: 1;

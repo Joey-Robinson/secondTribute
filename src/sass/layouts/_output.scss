@@ -48,9 +48,14 @@
     grid-column: 2;
     grid-row: 6;
   }
+  &-bestOverallHeading {
+    grid-column: 4;
+    grid-row: 1;
+  }
   &-bestOverall {
     grid-column: 4;
-    grid-row: 2;
+    grid-row: 2 / 6;
+    text-align: right;
   }
   &-name {
     grid-column: 3;

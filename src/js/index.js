@@ -143,22 +143,29 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   output.appendChild(streamersDiv);
 
   const bestOverallDiv = document.createElement('div');
+  const bestOverallHeadingDiv = document.createElement('div');
   const bestOverallHeading = document.createElement('h1');
   const bestOverallList = document.createElement('ul');
   bestOverallHeading.innerHTML = 'Best Runs:';
   const bestTest = bestOverall.map((best) => {
     return `
       <li>
-        <a href="${best.url}">
-        ${best.dungeon}
-        ${best.mythic_level}
+        <a 
+          href="${best.url}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ${best.mythic_level} &hybull;
+          ${best.dungeon}
         </a>
       </li>
     `
   })
+  bestOverallHeadingDiv.classList.add('output-bestOverallHeading');
   bestOverallDiv.classList.add('output-bestOverall');
-  bestOverallDiv.appendChild(bestOverallHeading);
   bestOverallDiv.appendChild(bestOverallList);
+  bestOverallHeadingDiv.appendChild(bestOverallHeading);
+  output.appendChild(bestOverallHeadingDiv);
   output.appendChild(bestOverallDiv);
   bestOverallList.innerHTML = bestTest.join(" ");
 
