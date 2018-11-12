@@ -21,23 +21,6 @@
   > div {
     justify-self: right;
   }
-  &-talentHeading {
-    grid-column: 4;
-    grid-row: 1;
-    text-align: center;
-    align-self: center;
-  }
-  &-talents {
-    grid-column: 4;
-    grid-row: 2 / 6;
-    font-size: 3.75rem;
-    justify-self: center;
-    & img {
-      margin: 1rem 0 0 0;
-      width: 3rem;
-      height: 3rem;
-    }
-  }
   &-nameLeft {
     grid-column: 2;
     grid-row: 1;

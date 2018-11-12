@@ -202,20 +202,6 @@ li {
       padding: 5px; }
   .output > div {
     justify-self: right; }
-  .output-talentHeading {
-    grid-column: 4;
-    grid-row: 1;
-    text-align: center;
-    align-self: center; }
-  .output-talents {
-    grid-column: 4;
-    grid-row: 2 / 6;
-    font-size: 3.75rem;
-    justify-self: center;
-    padding: 1rem 0 0 0; }
-    .output-talents img {
-      width: 3rem;
-      height: 3rem; }
   .output-nameLeft {
     grid-column: 2;
     grid-row: 1;
