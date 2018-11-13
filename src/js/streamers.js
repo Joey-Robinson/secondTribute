@@ -36,11 +36,11 @@ export const streamers = [`
   `,
   `
   <a 
-    href="https://www.twitch.tv/Zmokamok" 
+    href="https://www.twitch.tv/CallMeKyleep" 
     target="_blank" 
     rel="noopener noreferrer"
   >
-    Zmunk - Mistweaver Monk
+    Kyleep - Restoration Druid
   </a>
   `,
   `

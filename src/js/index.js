@@ -159,11 +159,7 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
           ${best.mythic_level} &hybull;
           ${best.dungeon}
         </a>
-        <br />
-        ${best.affixes.map((affix) => {
-          return `&nbsp;${affix.name}`
-        })}
-      </li>
+     </li>
     `
   })
   bestOverallHeadingDiv.classList.add('output-bestOverallHeading');

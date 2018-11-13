@@ -5,7 +5,7 @@
   margin-top: 2.5rem;
   grid-column: 2;
   grid-row: 1;
-  grid-template-columns: 4rem repeat(auto-fit, minmax(max-content, 50rem));
+  grid-template-columns: 4rem repeat(auto-fit, minmax(max-content, 40rem));
   // grid-template-columns: 4rem 1fr 1fr 4rem;
   grid-template-rows: max-content;
   padding-top: 2.5rem;
@@ -50,18 +50,22 @@
   }
   &-bestOverallHeading {
     grid-column: 4;
-    grid-row: 1;
+    grid-row: 2;
   }
   &-weeklyAffixes {
-    grid-column: 4;
-    grid-row: 6;
-    font-size: 2rem;
+    grid-column: 5;
+    grid-row: 4;
     text-align: right;
+  }
+  &-weeklyAffixesHeading {
+    align-self: center;
+    grid-column: 4;
+    grid-row: 4;
     z-index: 2;
   }
   &-bestOverall {
-    grid-column: 4;
-    grid-row: 2 / 6;
+    grid-column: 5;
+    grid-row: 2;
     text-align: right;
   }
   &-name {

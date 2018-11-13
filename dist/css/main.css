@@ -190,7 +190,7 @@ li {
   margin-top: 2.5rem;
   grid-column: 2;
   grid-row: 1;
-  grid-template-columns: 4rem repeat(auto-fit, minmax(max-content, 50rem));
+  grid-template-columns: 4rem repeat(auto-fit, minmax(max-content, 40rem));
   grid-template-rows: max-content;
   padding-top: 2.5rem; }
   .output a {
@@ -225,16 +225,19 @@ li {
     grid-row: 6; }
   .output-bestOverallHeading {
     grid-column: 4;
-    grid-row: 1; }
+    grid-row: 2; }
   .output-weeklyAffixes {
+    grid-column: 5;
+    grid-row: 4;
+    text-align: right; }
+  .output-weeklyAffixesHeading {
+    align-self: center;
     grid-column: 4;
-    grid-row: 6;
-    font-size: 2rem;
-    text-align: right;
+    grid-row: 4;
     z-index: 2; }
   .output-bestOverall {
-    grid-column: 4;
-    grid-row: 2 / 6;
+    grid-column: 5;
+    grid-row: 2;
     text-align: right; }
   .output-name {
     grid-column: 3;
