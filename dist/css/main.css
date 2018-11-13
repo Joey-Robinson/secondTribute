@@ -187,10 +187,11 @@ li {
   display: grid;
   font-size: 3rem;
   color: #FF7D0A;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   grid-column: 2;
   grid-row: 1;
-  grid-template-columns: 4rem repeat(auto-fit, minmax(max-content, 40rem));
+  grid-template-columns: min-content repeat(auto-fill, minmax(max-content, 50rem));
+  grid-column-gap: 2rem;
   grid-template-rows: max-content;
   padding-top: 2.5rem; }
   .output a {
@@ -198,30 +199,36 @@ li {
     .output a:hover {
       transition: all .3s ease-in;
       color: #222;
-      background: #FF7D0A;
-      padding: 5px; }
-  .output > div {
-    justify-self: right; }
+      background: #FF7D0A; }
   .output-nameLeft {
-    grid-column: 2;
+    text-align: right;
+    grid-column: 1;
     grid-row: 1;
     align-self: center; }
   .output-specLeft {
-    grid-column: 2;
+    text-align: right;
+    align-self: center;
+    grid-column: 1;
     grid-row: 2; }
   .output-ranksLeft {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 3;
-    align-self: center; }
+    align-self: center;
+    text-align: right; }
   .output-recentLeft {
-    grid-column: 2;
+    text-align: right;
+    grid-column: 1;
     grid-row: 4;
     align-self: center; }
   .output-likesLeft {
-    grid-column: 2;
+    text-align: right;
+    align-self: center;
+    grid-column: 1;
     grid-row: 5; }
   .output-streamersLeft {
-    grid-column: 2;
+    text-align: right;
+    align-self: center;
+    grid-column: 1;
     grid-row: 6; }
   .output-bestOverallHeading {
     grid-column: 4;
@@ -231,41 +238,43 @@ li {
     grid-row: 4;
     text-align: right; }
   .output-weeklyAffixesHeading {
+    display: none;
     align-self: center;
     grid-column: 4;
     grid-row: 4;
     z-index: 2; }
   .output-bestOverall {
+    display: none;
     grid-column: 5;
     grid-row: 2;
     text-align: right; }
   .output-name {
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 1;
     align-self: center; }
   .output-spec {
+    text-align: left;
     grid-row: 2;
-    grid-column: 3;
+    grid-column: 2;
     align-self: center; }
   .output-score {
     grid-row: 3;
-    grid-column: 3;
+    grid-column: 2;
     align-self: center; }
   .output-recent {
     grid-row: 4;
-    grid-column: 3;
-    text-align: right;
+    grid-column: 2;
+    text-align: left;
     align-self: center; }
   .output-likes {
     grid-row: 5;
-    grid-column: 3;
-    text-align: right;
+    grid-column: 2;
+    text-align: left;
     align-self: center; }
   .output-streamers {
-    padding: 5px 0 0 0;
     grid-row: 6;
-    grid-column: 3;
-    text-align: right; }
+    grid-column: 2;
+    text-align: left; }
   .output-who {
     grid-column: 2;
     grid-row: 1;
@@ -275,6 +284,7 @@ li {
     grid-row: 2;
     align-self: center; }
   .output-ranks {
+    text-align: left;
     grid-column: 2;
     grid-row: 3;
     align-self: center; }

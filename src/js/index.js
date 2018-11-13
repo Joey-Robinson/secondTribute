@@ -78,7 +78,7 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   const plusScoreHeader = document.createElement('h3');
   plusScoreHeader.innerHTML = `
     ${plusRankRegion}<br />
-    &nbsp;&nbsp;${plusRankRealm}
+    ${plusRankRealm}
   
   `
   plusScoreDiv.classList.add('output-score');
