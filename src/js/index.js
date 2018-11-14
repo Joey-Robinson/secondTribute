@@ -124,14 +124,67 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   output.appendChild(recentPlusRuns);
 
   const likesDiv = document.createElement('div');
-  const likesList = document.createElement('ul');
-  likesList.innerHTML = likes.reduce((accumulator, like) => {
-    accumulator += `<li>${like}</li>`; 
-    return accumulator;
+  const openButton = document.createElement('button');
+  const closeButton = document.createElement('button');
+  const modalBackdrop = document.createElement('div');
+  const modal = document.createElement('div');
+
+  modal.classList.add('modal');
+  modal.innerHTML = `
+    <div class="modal-one">
+      <p>Mythic Plus</p>
+      <p>Researching Mythic Plus</p>
+    </div>
+    <div class="modal-two">
+      <p>Catweaving</p>
+      <p>Tinkering With My UI</p>
+    </div>
+    <div class="modal-three">
+      <p>
+        <a
+          href="https://dreamgrove.gg/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Reading Dreamgrove
+        </a>
+      </p>
+    </div>
+  `
+  modalBackdrop.classList.add('backdrop');
+
+  const closeModal = () => {
+    modal.style.display = 'none';
+    modalBackdrop.style.display = 'none';
+  }
+  openButton.classList.add('openButton');
+  openButton.innerText = 'Hello';
+  openButton.addEventListener('click', () => {
+    modal.style.display = 'grid';
+    modalBackdrop.style.display = 'block';
   });
+
+  closeButton.classList.add('close');
+  closeButton.innerText = 'Close';
+  closeButton.addEventListener('click', () => {
+    closeModal();
+  });
+  modalBackdrop.addEventListener('click', closeModal);
+
   likesDiv.classList.add('output-likes');
-  likesDiv.appendChild(likesList);
+  modal.appendChild(closeButton);
+  likesDiv.appendChild(modal);
+  likesDiv.appendChild(openButton);
   output.appendChild(likesDiv);
+  likesDiv.appendChild(modalBackdrop);
+  // const likesList = document.createElement('ul');
+  // likesList.innerHTML = likes.reduce((accumulator, like) => {
+  //   accumulator += `<li>${like}</li>`; 
+  //   return accumulator;
+  // });
+  // likesDiv.classList.add('output-likes');
+  // likesDiv.appendChild(likesList);
+  // output.appendChild(likesDiv);
 
   const streamersDiv = document.createElement('div');
   const streamersList = document.createElement('ul');
