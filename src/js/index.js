@@ -24,7 +24,6 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   const recentPlusTwo = data.mythic_plus_recent_runs[2];
   const recentPlusChestTwo = data.mythic_plus_recent_runs[2].num_keystone_upgrades;
   const output = document.getElementById('wow');
-  console.log(bestOverall);
 
   // Container Div for Name
   const nameDiv = document.createElement('div');
@@ -136,7 +135,15 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
       <p>Researching Mythic Plus</p>
     </div>
     <div class="modal-two">
-      <p>Catweaving</p>
+      <p>
+        <a
+          href="https://questionablyepic.com/restodruid-catweaving/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Catweaving
+        </a>
+      </p>
       <p>Tinkering With My UI</p>
     </div>
     <div class="modal-three">
@@ -158,7 +165,7 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
     modalBackdrop.style.display = 'none';
   }
   openButton.classList.add('openButton');
-  openButton.innerText = 'Hello';
+  openButton.innerText = 'My Likes';
   openButton.addEventListener('click', () => {
     modal.style.display = 'grid';
     modalBackdrop.style.display = 'block';
@@ -197,10 +204,8 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   output.appendChild(streamersDiv);
 
   const bestOverallDiv = document.createElement('div');
-  const bestOverallHeadingDiv = document.createElement('div');
-  const bestOverallHeading = document.createElement('h1');
+  bestOverallDiv.innerHTML = "<h1>Best Runs</h1>";
   const bestOverallList = document.createElement('ul');
-  bestOverallHeading.innerHTML = 'Best Runs:';
   const bestTest = bestOverall.map((best) => {
     return `
       <li>
@@ -215,11 +220,8 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
      </li>
     `
   })
-  bestOverallHeadingDiv.classList.add('output-bestOverallHeading');
   bestOverallDiv.classList.add('output-bestOverall');
   bestOverallDiv.appendChild(bestOverallList);
-  bestOverallHeadingDiv.appendChild(bestOverallHeading);
-  output.appendChild(bestOverallHeadingDiv);
   output.appendChild(bestOverallDiv);
   bestOverallList.innerHTML = bestTest.join(" ");
 

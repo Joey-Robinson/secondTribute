@@ -144,7 +144,7 @@ li {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.85);
   z-index: 100; }
 
 .openButton {
@@ -156,6 +156,7 @@ li {
   border: #50131c;
   color: #50131c;
   outline: #50131c;
+  box-shadow: 3px 3px #50131c;
   font-size: 2rem;
   cursor: pointer;
   transition: all .35s ease-in-out; }
@@ -305,24 +306,25 @@ li {
     align-self: center;
     grid-column: 1;
     grid-row: 6; }
-  .output-bestOverallHeading {
-    grid-column: 4;
-    grid-row: 2; }
   .output-weeklyAffixes {
-    grid-column: 5;
-    grid-row: 4;
-    text-align: right; }
-  .output-weeklyAffixesHeading {
-    display: none;
-    align-self: center;
+    font-size: 3rem;
     grid-column: 4;
-    grid-row: 4;
-    z-index: 2; }
+    grid-row: 1 / 4;
+    text-align: center;
+    border: 1px solid #FF7D0A;
+    box-shadow: 0 0 10px #000;
+    padding: 0 0 1rem 0; }
   .output-bestOverall {
-    display: none;
-    grid-column: 5;
-    grid-row: 2;
-    text-align: right; }
+    height: 80%;
+    grid-column: 4;
+    grid-row: 6 / 7;
+    text-align: center;
+    align-self: flex-end;
+    border: 1px solid #FF7D0A;
+    box-shadow: 0 0 10px #000;
+    padding: 0 0 1rem 0; }
+    .output-bestOverall ul {
+      align-self: center; }
   .output-name {
     grid-column: 2;
     grid-row: 1;

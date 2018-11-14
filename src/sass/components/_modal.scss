@@ -62,7 +62,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.85);
   z-index: 100;
 }
 
@@ -75,6 +75,7 @@
   border: $specialRed;
   color: $specialRed;
   outline: $specialRed;
+  box-shadow: 3px 3px $specialRed;
   font-size: 2rem;
   cursor: pointer;
   transition: all .35s ease-in-out;
