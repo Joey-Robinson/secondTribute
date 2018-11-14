@@ -314,12 +314,17 @@ li {
     border: 1px solid #FF7D0A;
     box-shadow: 0 0 10px #000;
     padding: 0 0 1rem 0; }
-  .output-bestOverall {
-    height: 80%;
+  .output-favorites {
     grid-column: 4;
-    grid-row: 6 / 7;
+    grid-row: 6 / 9;
     text-align: center;
-    align-self: flex-end;
+    border: 1px solid #FF7D0A;
+    box-shadow: 0 0 10px #000; }
+  .output-bestOverall {
+    grid-column: 4;
+    grid-row: 4 / 6;
+    text-align: center;
+    align-self: center;
     border: 1px solid #FF7D0A;
     box-shadow: 0 0 10px #000;
     padding: 0 0 1rem 0; }

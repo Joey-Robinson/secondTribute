@@ -21,7 +21,8 @@ export const weeklyAffixes = fetch("https://raider.io/api/v1/mythic-plus/affixes
       >
         ${affix.name}
       </a> 
-    </li>`
+    </li>
+    `
   })
   affixList.innerHTML = affixListNew.join(" ");
   // weeklyAffixHeading.classList.add('output-weeklyAffixesHeading');

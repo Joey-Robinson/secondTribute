@@ -1,4 +1,4 @@
-// import { likes} from './likes';
+import { favoriteAffixes } from './favoriteAffixes';
 import { ffCall } from './ffCall';
 import { ffLeft} from './ffLeft';
 import { wowLeft } from './wowLeft';
@@ -184,14 +184,6 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   likesDiv.appendChild(openButton);
   output.appendChild(likesDiv);
   likesDiv.appendChild(modalBackdrop);
-  // const likesList = document.createElement('ul');
-  // likesList.innerHTML = likes.reduce((accumulator, like) => {
-  //   accumulator += `<li>${like}</li>`; 
-  //   return accumulator;
-  // });
-  // likesDiv.classList.add('output-likes');
-  // likesDiv.appendChild(likesList);
-  // output.appendChild(likesDiv);
 
   const streamersDiv = document.createElement('div');
   const streamersList = document.createElement('ul');
@@ -225,6 +217,18 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
   output.appendChild(bestOverallDiv);
   bestOverallList.innerHTML = bestTest.join(" ");
 
+  const favorite = document.createElement('div');
+  const favoriteHeading = document.createElement('h3');
+  const favoriteList = document.createElement('ul');
+  favoriteHeading.innerHTML = "<h1>Favorite Affixes</h1>";
+  favoriteList.innerHTML = favoriteAffixes.reduce((accumulator, favs) => {
+    accumulator += `<li>${favs}</li>`;
+    return accumulator;
+  });
+  favorite.classList.add('output-favorites');
+  favorite.appendChild(favoriteHeading);
+  favorite.appendChild(favoriteList);
+  output.appendChild(favorite);
 
 
   // FavIcon that has to be scoped
