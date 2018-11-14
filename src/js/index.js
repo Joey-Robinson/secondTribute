@@ -1,4 +1,4 @@
-import { likes} from './likes';
+// import { likes} from './likes';
 import { ffCall } from './ffCall';
 import { ffLeft} from './ffLeft';
 import { wowLeft } from './wowLeft';
