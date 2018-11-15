@@ -328,6 +328,7 @@ li {
     border: 1px solid #FF7D0A;
     box-shadow: 0 0 10px #000; }
   .output-bestOverall {
+    margin: 1rem 0 1rem 0;
     grid-column: 4;
     grid-row: 4 / 6;
     text-align: center;
