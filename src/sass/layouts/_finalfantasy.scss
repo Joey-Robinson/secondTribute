@@ -4,24 +4,25 @@
   color: $druidOrange;
   font-size: $base;
   display: grid;
-  grid-template-columns: min-content 1fr repeat(auto-fill, minmax(max-content, 50rem));
+  grid-template-columns: min-content 1fr repeat(auto-fit, minmax(max-content, 1fr));
   grid-column-gap: 2rem;
   grid-template-rows: repeat(4, min-content);
   padding-top: 2.5rem;
+  div {
+    padding: 0 0 0 2rem;
+  }
   &-name {
     grid-column: 1;
     grid-row: 1;
-    border: 1px solid $druidOrange;
-    box-shadow: 0 0 10px #000;
-    padding: 0 0 1rem 0;
-    margin-bottom: 1rem;
+    // border: 1px solid $druidOrange;
+    // box-shadow: 0 0 10px #000;
+    // margin-bottom: 1rem;
   }
   &-birthday {
     grid-row: 2;
     grid-column: 1;
-    border: 1px solid $druidOrange;
-    box-shadow: 0 0 10px #000;
-    padding: 0 0 1rem 0;
+    // border: 1px solid $druidOrange;
+    // box-shadow: 0 0 10px #000;
   }
   &-server {
     grid-row: 4;
@@ -30,5 +31,10 @@
   &-freecompany {
     grid-row: 3;
     grid-column: 1;
+  }
+  &-hohrank {
+    align-self: center;
+    grid-row: 1 / 4;
+    grid-column: 3;
   }
 }

@@ -221,29 +221,28 @@ li {
   color: #FF7D0A;
   font-size: 3rem;
   display: grid;
-  grid-template-columns: min-content 1fr repeat(auto-fill, minmax(max-content, 50rem));
+  grid-template-columns: min-content 1fr repeat(auto-fit, minmax(max-content, 1fr));
   grid-column-gap: 2rem;
   grid-template-rows: repeat(4, min-content);
   padding-top: 2.5rem; }
+  .finalfantasy div {
+    padding: 0 0 0 2rem; }
   .finalfantasy-name {
     grid-column: 1;
-    grid-row: 1;
-    border: 1px solid #FF7D0A;
-    box-shadow: 0 0 10px #000;
-    padding: 0 0 1rem 0;
-    margin-bottom: 1rem; }
+    grid-row: 1; }
   .finalfantasy-birthday {
     grid-row: 2;
-    grid-column: 1;
-    border: 1px solid #FF7D0A;
-    box-shadow: 0 0 10px #000;
-    padding: 0 0 1rem 0; }
+    grid-column: 1; }
   .finalfantasy-server {
     grid-row: 4;
     grid-column: 1; }
   .finalfantasy-freecompany {
     grid-row: 3;
     grid-column: 1; }
+  .finalfantasy-hohrank {
+    align-self: center;
+    grid-row: 1 / 4;
+    grid-column: 3; }
 
 .output {
   display: grid;

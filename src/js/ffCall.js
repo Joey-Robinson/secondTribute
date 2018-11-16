@@ -8,7 +8,9 @@ export const ffCall = () => {
     const ffName = data.Character.Name;
     const ffBirthday = data.Character.Nameday;
     const ffServer = data.Character.Server;
+    const hoh = "https://na.finalfantasyxiv.com/lodestone/ranking/deepdungeon2/";
     const finalFantasy = document.getElementById('finalfantasy');
+    const hohRank = "../../images/hohff14.jpg";
     const freeCompany = "https://na.finalfantasyxiv.com/lodestone/freecompany/9234490298434948752/";
     
     const nameDiv = document.createElement('div');
@@ -55,6 +57,22 @@ export const ffCall = () => {
     </h3>
     `
     finalFantasy.appendChild(freeCompanyDiv);
+
+
+    const hohDiv = document.createElement('div');
+    hohDiv.innerHTML = `
+    <a
+      href="${hoh}"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="${hohRank}"
+      >
+    </a>
+    `
+    hohDiv.classList.add('finalfantasy-hohrank');
+    finalFantasy.appendChild(hohDiv);
   });
 };
 
