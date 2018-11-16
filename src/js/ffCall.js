@@ -1,4 +1,5 @@
 import { ffLikes } from './ffLikes';
+import { ffResources } from './ffResources';
 
 export const ffCall = () => {
   fetch("https://xivapi.com/character/10803092")
@@ -88,6 +89,20 @@ export const ffCall = () => {
     ffActivities.classList.add('finalfantasy-activities');
     ffActivities.appendChild(ffActivitiesList);
     finalFantasy.appendChild(ffActivities);
+
+    const ffInformation = document.createElement('div');
+    const ffInformationList = document.createElement('ul');
+    const ffInformationHeading = document.createElement('h3');
+    ffInformation.appendChild(ffInformationHeading);
+    ffInformationHeading.innerHTML = 'Favorite Resources';
+    ffInformationList.innerHTML = ffResources.reduce((accumulator, resource) => {
+      accumulator += `<li>${resource}<li>`;
+      return accumulator;
+    });
+    ffInformation.classList.add('finalfantasy-resources');
+    ffInformation.appendChild(ffInformationList);
+    finalFantasy.appendChild(ffInformation);
+
   });
 };
 

@@ -3,7 +3,6 @@ export const weeklyAffixes = fetch("https://raider.io/api/v1/mythic-plus/affixes
   return response.json();
 })
 .then((data) => {
-  console.log(data);
   const weeklyAffixes = data.affix_details;
   const output = document.getElementById('wow');
   const weeklyAffixDiv = document.createElement('div');

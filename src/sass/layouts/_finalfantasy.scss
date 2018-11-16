@@ -1,5 +1,5 @@
 .finalfantasy {
-  grid-column: 2;
+  grid-column: 2 / 4;
   grid-row: 4;
   color: $druidOrange;
   font-size: $base;
@@ -8,6 +8,7 @@
   grid-column-gap: 2rem;
   grid-template-rows: repeat(4, min-content);
   padding-top: 2.5rem;
+  background: url('../../../images/ff14house.jpg') no-repeat center center / cover;
   & a {
     transition: all .3s ease-out;
     &:hover {
@@ -36,20 +37,34 @@
     grid-column: 1;
   }
   &-hohrank {
-    justify-self: right;
+    justify-self: center;
     align-self: center;
     grid-row: 1 / 4;
     grid-column: 3;
   }
-  &-activities {
+  &-resources {
+    grid-column: 3;
+    grid-row: 4;
+    border: 1px solid $druidOrange;
+    box-shadow: 0 0 10px #000;
     width: 50%;
+    text-align: right;
+    h3 {
+      padding: 1rem 2rem 0 0;
+    }
+    ul {
+      padding: 1rem 2rem 1rem 0;
+    }
+  }
+  &-activities {
     font-size: 3rem;
     grid-column: 3;
     grid-row: 4;
     justify-self: right;
-    text-align: right;
+    align-self: center;
     border: 1px solid $druidOrange;
     box-shadow: 0 0 10px #000;
+    margin: 0 2rem 0 0;
     h3 {
       padding: 1rem 2rem 0 0;
     }
