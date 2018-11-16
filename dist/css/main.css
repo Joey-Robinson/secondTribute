@@ -225,6 +225,12 @@ li {
   grid-column-gap: 2rem;
   grid-template-rows: repeat(4, min-content);
   padding-top: 2.5rem; }
+  .finalfantasy a {
+    transition: all .3s ease-out; }
+    .finalfantasy a:hover {
+      transition: all .3s ease-in;
+      color: #222;
+      background: #FF7D0A; }
   .finalfantasy div {
     padding: 0 0 0 2rem; }
   .finalfantasy-name {
@@ -240,9 +246,23 @@ li {
     grid-row: 3;
     grid-column: 1; }
   .finalfantasy-hohrank {
+    justify-self: right;
     align-self: center;
     grid-row: 1 / 4;
     grid-column: 3; }
+  .finalfantasy-activities {
+    width: 50%;
+    font-size: 3rem;
+    grid-column: 3;
+    grid-row: 4;
+    justify-self: right;
+    text-align: right;
+    border: 1px solid #FF7D0A;
+    box-shadow: 0 0 10px #000; }
+    .finalfantasy-activities h3 {
+      padding: 1rem 2rem 0 0; }
+    .finalfantasy-activities ul {
+      padding: 1rem 2rem 1rem 0; }
 
 .output {
   display: grid;

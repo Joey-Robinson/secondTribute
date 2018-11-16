@@ -1,3 +1,5 @@
+import { ffLikes } from './ffLikes';
+
 export const ffCall = () => {
   fetch("https://xivapi.com/character/10803092")
   .then((response) => {
@@ -73,6 +75,19 @@ export const ffCall = () => {
     `
     hohDiv.classList.add('finalfantasy-hohrank');
     finalFantasy.appendChild(hohDiv);
+
+    const ffActivities = document.createElement('div');
+    const ffActivitiesList = document.createElement('ul');
+    const ffActivitiesHeading = document.createElement('h3');
+    ffActivitiesHeading.innerHTML = 'Activities & Interests';
+    ffActivities.appendChild(ffActivitiesHeading);
+    ffActivitiesList.innerHTML = ffLikes.reduce((accumulator, like) => {
+      accumulator += `<li>${like}</li>`;
+      return accumulator;
+    });
+    ffActivities.classList.add('finalfantasy-activities');
+    ffActivities.appendChild(ffActivitiesList);
+    finalFantasy.appendChild(ffActivities);
   });
 };
 
