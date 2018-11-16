@@ -1,6 +1,6 @@
 import { favoriteAffixes } from './favoriteAffixes';
 import { ffCall } from './ffCall';
-import { ffLeft} from './ffLeft';
+// import { ffLeft} from './ffLeft';
 import { wowLeft } from './wowLeft';
 import { streamers } from './streamers';
 import { weeklyAffixes } from './weeklyAffixes';

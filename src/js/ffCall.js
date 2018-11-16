@@ -12,41 +12,39 @@ export const ffCall = () => {
     const freeCompany = "https://na.finalfantasyxiv.com/lodestone/freecompany/9234490298434948752/";
     
     const nameDiv = document.createElement('div');
-    const nameHeading = document.createElement('h1');
+    nameDiv.innerHTML =`
+      <h1>
+        Name:
+          <a 
+            href="${lodestoneLink}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ${ffName}
+          </a>
+      </h1>
+    `
     nameDiv.classList.add('finalfantasy-name');
-    nameHeading.innerHTML = `
-      <a 
-        href="${lodestoneLink}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        ${ffName}
-      </a>
-      <br />
-
-      `
-    nameDiv.appendChild(nameHeading);
     finalFantasy.appendChild(nameDiv);
 
     const birthdayDiv = document.createElement('div');
-    const birthdayHeading = document.createElement('h3');
     birthdayDiv.classList.add('finalfantasy-birthday');
-    birthdayHeading.innerHTML = `${ffBirthday}`;
-    birthdayDiv.appendChild(birthdayHeading);
+    birthdayDiv.innerHTML = `
+      <h3>Birthday: ${ffBirthday}</h3>
+    `
     finalFantasy.appendChild(birthdayDiv);
 
 
     const serverNameDiv = document.createElement('div');
-    const serverNameHeading = document.createElement('h3'); 
+    serverNameDiv.innerHTML = `<h3>Server: ${ffServer}</h3>`;
     serverNameDiv.classList.add('finalfantasy-server');
-    serverNameHeading.innerHTML = `${ffServer}`;
-    serverNameDiv.appendChild(serverNameHeading);
     finalFantasy.appendChild(serverNameDiv)
 
     const freeCompanyDiv = document.createElement('div');
-    const freeCompanyHeading = document.createElement('h3');
     freeCompanyDiv.classList.add('finalfantasy-freecompany');
-    freeCompanyHeading.innerHTML = `
+    freeCompanyDiv.innerHTML = `
+    <h3>
+    Free Company: 
       <a 
         href="${freeCompany}" 
         target="_blank" 
@@ -54,8 +52,8 @@ export const ffCall = () => {
       >
         Last Homely House
       </a>
+    </h3>
     `
-    freeCompanyDiv.appendChild(freeCompanyHeading);
     finalFantasy.appendChild(freeCompanyDiv);
   });
 };
