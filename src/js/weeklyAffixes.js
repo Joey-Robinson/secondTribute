@@ -7,8 +7,6 @@ export const weeklyAffixes = fetch("https://raider.io/api/v1/mythic-plus/affixes
   const output = document.getElementById('wow');
   const weeklyAffixDiv = document.createElement('div');
   weeklyAffixDiv.innerHTML = "<h1>This Week's Affixes</h1>";
-  // const weeklyAffixHeading = document.createElement('div');
-  // weeklyAffixHeading.innerHTML = "<h3>This Week's Affixes:</h3>";
   const affixList = document.createElement('ul');
   const affixListNew =  weeklyAffixes.map((affix) => {
     return `
@@ -24,9 +22,7 @@ export const weeklyAffixes = fetch("https://raider.io/api/v1/mythic-plus/affixes
     `
   })
   affixList.innerHTML = affixListNew.join(" ");
-  // weeklyAffixHeading.classList.add('output-weeklyAffixesHeading');
   weeklyAffixDiv.classList.add('output-weeklyAffixes');
   weeklyAffixDiv.appendChild(affixList);
-  // output.appendChild(weeklyAffixHeading);
   output.appendChild(weeklyAffixDiv);
 })

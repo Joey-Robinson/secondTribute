@@ -1,5 +1,6 @@
 import { ffLikes } from './ffLikes';
 import { ffResources } from './ffResources';
+import { ffSprites } from './ffSprites';
 
 export const ffCall = () => {
   fetch("https://xivapi.com/character/10803092")
@@ -103,6 +104,15 @@ export const ffCall = () => {
     ffInformation.appendChild(ffInformationList);
     finalFantasy.appendChild(ffInformation);
 
+    const ffSprite = document.createElement('div');
+    const ffSpriteList = document.createElement('ul');
+    const somethingstupid = ffSprites.map((sprite) => {
+      return `<li><img src=${sprite}></li>`
+    });
+    ffSpriteList.innerHTML = somethingstupid.join(" ");
+    ffSprite.classList.add('finalfantasy-sprites');
+    ffSprite.appendChild(ffSpriteList);
+    finalFantasy.appendChild(ffSprite);
   });
 };
 
