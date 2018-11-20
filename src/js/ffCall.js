@@ -113,6 +113,20 @@ export const ffCall = () => {
     ffSprite.classList.add('finalfantasy-sprites');
     ffSprite.appendChild(ffSpriteList);
     finalFantasy.appendChild(ffSprite);
+
+    const catVideo = '../../images/fatcat.mp4';
+    const fatCatDiv = document.createElement('div');
+    fatCatDiv.classList.add('finalfantasy-fatCat');
+    fatCatDiv.innerHTML = `
+      <video 
+        autoplay 
+        loop 
+        controls
+      >
+        <source src="${catVideo}" type="video/mp4">
+      </video>
+    `
+    finalFantasy.appendChild(fatCatDiv);
   });
 };
 
