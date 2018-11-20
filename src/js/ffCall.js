@@ -125,8 +125,24 @@ export const ffCall = () => {
       >
         <source src="${catVideo}" type="video/mp4">
       </video>
-    `
+    `;
     finalFantasy.appendChild(fatCatDiv);
+
+    const fatChoco = '../../images/fatchoco.gif';
+    const fatChocoDiv = document.createElement('div');
+    fatChocoDiv.classList.add('finalfantasy-fatChoco');
+    fatChocoDiv.innerHTML = `
+      <img src="${fatChoco}" />
+    `;
+    finalFantasy.appendChild(fatChocoDiv);
+
+    const fatChocoTwo = '../../images/fatchocotwo.gif';
+    const fatChocoTwoDiv = document.createElement('div');
+    fatChocoTwoDiv.classList.add('finalfantasy-fatChocoTwo');
+    fatChocoTwoDiv.innerHTML = `
+      <img src="${fatChocoTwo}" />
+    `;
+    finalFantasy.appendChild(fatChocoTwoDiv);
   });
 };
 
