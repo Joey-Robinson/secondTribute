@@ -106,8 +106,8 @@ export const ffCall = () => {
 
     const ffSprite = document.createElement('div');
     const ffSpriteList = document.createElement('ul');
-    const somethingstupid = ffSprites.map((sprite) => {
-      return `<li><img src=${sprite}></li>`
+    const somethingstupid = ffSprites.map((sprite, index) => {
+      return `<li><img src=${sprite} alt="Sprite Image Number ${index+1}"></li>`
     });
     ffSpriteList.innerHTML = somethingstupid.join(" ");
     ffSprite.classList.add('finalfantasy-sprites');
