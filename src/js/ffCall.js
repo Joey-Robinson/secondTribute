@@ -132,7 +132,7 @@ export const ffCall = () => {
     const fatChocoDiv = document.createElement('div');
     fatChocoDiv.classList.add('finalfantasy-fatChoco');
     fatChocoDiv.innerHTML = `
-      <img src="${fatChoco}" />
+      <img src="${fatChoco}" alt="Fat Chocobo Gif Number One" />
     `;
     finalFantasy.appendChild(fatChocoDiv);
 
@@ -140,7 +140,7 @@ export const ffCall = () => {
     const fatChocoTwoDiv = document.createElement('div');
     fatChocoTwoDiv.classList.add('finalfantasy-fatChocoTwo');
     fatChocoTwoDiv.innerHTML = `
-      <img src="${fatChocoTwo}" />
+      <img src="${fatChocoTwo}" alt="Fat Chocobo Gif Number Two" />
     `;
     finalFantasy.appendChild(fatChocoTwoDiv);
   });
