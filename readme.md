@@ -1,7 +1,7 @@
-#Tribute Page
+# Tribute Page
 
 
-##Instructions:
+## Instructions:
 
 ```
 npm install
