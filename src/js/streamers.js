@@ -55,7 +55,8 @@ export const streamers = [`
   `
   <a 
     href="https://www.twitch.tv/trellsky" 
-    target="_blank" rel="noopener noreferrer"
+    target="_blank" 
+    rel="noopener noreferrer"
   >
     Trell - Brewmaster Monk
   </a>

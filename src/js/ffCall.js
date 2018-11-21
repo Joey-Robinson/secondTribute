@@ -59,7 +59,7 @@ export const ffCall = () => {
         Last Homely House
       </a>
     </h3>
-    `
+    `;
     finalFantasy.appendChild(freeCompanyDiv);
 
 
