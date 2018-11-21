@@ -1,4 +1,16 @@
 .cats {
   grid-column: 2 / 4;
   grid-row: 6;
+  font-size: $base;
+  color: $druidOrange;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max-content, 1fr));
+  &-factsDiv {
+    grid-column: 1;
+    font-size: 2rem;
+  }
+  & ul {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+    display: grid;
+  }
 }

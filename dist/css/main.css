@@ -233,7 +233,17 @@ li {
 
 .cats {
   grid-column: 2 / 4;
-  grid-row: 6; }
+  grid-row: 6;
+  font-size: 3rem;
+  color: #FF7D0A;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max-content, 1fr)); }
+  .cats-factsDiv {
+    grid-column: 1;
+    font-size: 2rem; }
+  .cats ul {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+    display: grid; }
 
 .finalfantasy {
   grid-column: 2 / 4;

@@ -1,5 +1,5 @@
 export const catFactCall = () => {
-  fetch("https://catfact.ninja/facts?limit=250")
+  fetch("https://catfact.ninja/facts?limit=50")
   .then((response) => {
     return response.json();
   })
@@ -10,7 +10,10 @@ export const catFactCall = () => {
     });
     const cats = document.getElementById('cats');
     const catFactDiv = document.createElement('div');
-    catFactDiv.innerHTML = catData.join(" ");
+    const catFactList = document.createElement('ul');
+    catFactList.innerHTML = catData.join(" ");
+    catFactDiv.classList.add('cats-factsDiv');
+    catFactDiv.appendChild(catFactList);
     cats.appendChild(catFactDiv);
   });
 };

@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar catFactCall = exports.catFactCall = function catFactCall() {\n  fetch(\"https://catfact.ninja/facts?limit=250\").then(function (response) {\n    return response.json();\n  }).then(function (data) {\n    console.log(data.data);\n    var catData = data.data.map(function (text) {\n      return '<li>' + text.fact + '</li>';\n    });\n    var cats = document.getElementById('cats');\n    var catFactDiv = document.createElement('div');\n    catFactDiv.innerHTML = catData.join(\" \");\n    cats.appendChild(catFactDiv);\n  });\n};\n\ncatFactCall();\n\n//# sourceURL=webpack:///./src/js/catFacts.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar catFactCall = exports.catFactCall = function catFactCall() {\n  fetch(\"https://catfact.ninja/facts?limit=50\").then(function (response) {\n    return response.json();\n  }).then(function (data) {\n    console.log(data.data);\n    var catData = data.data.map(function (text) {\n      return '<li>' + text.fact + '</li>';\n    });\n    var cats = document.getElementById('cats');\n    var catFactDiv = document.createElement('div');\n    var catFactList = document.createElement('ul');\n    catFactList.innerHTML = catData.join(\" \");\n    catFactDiv.classList.add('cats-factsDiv');\n    catFactDiv.appendChild(catFactList);\n    cats.appendChild(catFactDiv);\n  });\n};\n\ncatFactCall();\n\n//# sourceURL=webpack:///./src/js/catFacts.js?");
 
 /***/ }),
 
