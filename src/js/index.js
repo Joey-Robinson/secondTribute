@@ -3,6 +3,7 @@ import { ffCall } from './ffCall';
 import { wowLeft } from './wowLeft';
 import { streamers } from './streamers';
 import { weeklyAffixes } from './weeklyAffixes';
+import { catFactCall } from './catFacts';
 
 fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=Meerkatz&fields=gear,mythic_plus_scores,mythic_plus_ranks,mythic_plus_recent_runs,mythic_plus_best_runs")
 .then((response) => {
