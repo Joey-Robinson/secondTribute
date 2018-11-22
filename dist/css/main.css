@@ -218,7 +218,7 @@ li {
     grid-column: 1;
     grid-row: 3;
     width: 100%;
-    height: 33.3vh;
+    height: 33.4vh;
     background: url("../../../images/meowmeow.jpg") no-repeat center center/cover;
     filter: grayscale(100%);
     transition: all .3s ease-out; }
@@ -236,13 +236,14 @@ li {
   grid-row: 6;
   font-size: 3rem;
   color: #FF7D0A;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(max-content, 1fr)); }
+  display: grid; }
   .cats-factsDiv {
+    align-self: center;
     grid-column: 1;
-    font-size: 2rem; }
+    margin-left: 2rem; }
   .cats ul {
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+    font-size: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr));
     display: grid; }
 
 .finalfantasy {

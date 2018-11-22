@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar catFactCall = exports.catFactCall = function catFactCall() {\n  fetch(\"https://catfact.ninja/facts?limit=50\").then(function (response) {\n    return response.json();\n  }).then(function (data) {\n    console.log(data.data);\n    var catData = data.data.map(function (text) {\n      return '<li>' + text.fact + '</li>';\n    });\n    var cats = document.getElementById('cats');\n    var catFactDiv = document.createElement('div');\n    var catFactList = document.createElement('ul');\n    catFactList.innerHTML = catData.join(\" \");\n    catFactDiv.classList.add('cats-factsDiv');\n    catFactDiv.appendChild(catFactList);\n    cats.appendChild(catFactDiv);\n  });\n};\n\ncatFactCall();\n\n//# sourceURL=webpack:///./src/js/catFacts.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.catFactCall = undefined;\n\nvar _favoriteCat = __webpack_require__(/*! ./favoriteCat */ \"./src/js/favoriteCat.js\");\n\nvar catFactCall = exports.catFactCall = function catFactCall() {\n  fetch(\"https://catfact.ninja/facts?limit=10\").then(function (response) {\n    return response.json();\n  }).then(function (data) {\n    var catData = data.data.map(function (text) {\n      return '<li>' + text.fact + '</li>';\n    });\n    catData.sort(function () {\n      return 0.25 - Math.random();\n    });\n    var cats = document.getElementById('cats');\n    var catFactDiv = document.createElement('div');\n    var catFactList = document.createElement('ul');\n    var fav = document.createElement('ul');\n    var numberOne = _favoriteCat.favoriteCat.map(function (info) {\n      return '<li>' + info.name + ' ' + info.description + '</li>';\n    });\n    fav.innerHTML = numberOne;\n    // fav.appendChild(numberOne);\n    catFactDiv.appendChild(fav);\n    catFactList.innerHTML = catData.join(\" \");\n    catFactDiv.classList.add('cats-factsDiv');\n    catFactDiv.appendChild(catFactList);\n    cats.appendChild(catFactDiv);\n  });\n};\n\ncatFactCall();\n\n//# sourceURL=webpack:///./src/js/catFacts.js?");
 
 /***/ }),
 
@@ -107,6 +107,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 
 "use strict";
 eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar favoriteAffixes = exports.favoriteAffixes = ['Grievous', 'Bursting', 'Quaking', 'Teeming'];\n\n//# sourceURL=webpack:///./src/js/favoriteAffixes.js?");
+
+/***/ }),
+
+/***/ "./src/js/favoriteCat.js":
+/*!*******************************!*\
+  !*** ./src/js/favoriteCat.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar favoriteCat = exports.favoriteCat = [{\n  name: \"Maine Coon\",\n  description: \"Purple\"\n}];\n\n//# sourceURL=webpack:///./src/js/favoriteCat.js?");
 
 /***/ }),
 
