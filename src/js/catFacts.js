@@ -1,7 +1,7 @@
 import { favoriteCat } from './favoriteCat';
 
 export const catFactCall = () => {
-  fetch("https://catfact.ninja/facts?limit=10")
+  fetch("https://catfact.ninja/facts?limit=5")
   .then((response) => {
     return response.json();
   })
@@ -13,6 +13,8 @@ export const catFactCall = () => {
     const cats = document.getElementById('cats');
     const catFactDiv = document.createElement('div');
     const catFactList = document.createElement('ul');
+    const favDiv = document.createElement('div');
+    favDiv.classList.add('cats-favDiv');
     const fav = document.createElement('ul');
     const numberOne = favoriteCat.map((info) => {
       return `
@@ -25,18 +27,17 @@ export const catFactCall = () => {
           Life Span: ${info.description.lifeSpan} <br ?>
           Social & Attention Needs: ${info.description.socialNeeds} <br />
           Living With: ${info.livingWith} <br />
-          <br />
           History: ${info.history}
         </li>
       `
     });
     fav.innerHTML = numberOne;
-    // fav.appendChild(numberOne);
-    catFactDiv.appendChild(fav);
+    favDiv.appendChild(fav);
     catFactList.innerHTML = catData.join(" ");
     catFactDiv.classList.add('cats-factsDiv');
     catFactDiv.appendChild(catFactList);
     cats.appendChild(catFactDiv);
+    cats.appendChild(favDiv);
   });
 };
 

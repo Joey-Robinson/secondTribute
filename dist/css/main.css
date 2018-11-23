@@ -236,15 +236,21 @@ li {
   grid-row: 6;
   font-size: 3rem;
   color: #FF7D0A;
-  display: grid; }
-  .cats-factsDiv {
-    align-self: center;
-    grid-column: 1;
-    margin-left: 2rem; }
+  display: grid;
+  grid-template-rows: max-content max-content; }
   .cats ul {
     font-size: 2rem;
     grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr));
     display: grid; }
+  .cats-favDiv {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center; }
+  .cats-factsDiv {
+    align-self: center;
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 2rem; }
 
 .finalfantasy {
   grid-column: 2 / 4;

@@ -4,14 +4,21 @@
   font-size: $base;
   color: $druidOrange;
   display: grid;
-  &-factsDiv {
-    align-self: center;
-    grid-column: 1;
-    margin-left: 2rem;
-  }
+  grid-template-rows: max-content max-content;
   & ul {
     font-size: 2rem;
     grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr));
     display: grid;
+  }
+  &-favDiv {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+  }
+  &-factsDiv {
+    align-self: center;
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 2rem;
   }
 }
