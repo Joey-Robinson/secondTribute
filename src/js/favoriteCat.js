@@ -6,7 +6,7 @@ export const favoriteCat = [
       weight: "8-10lbs for females. More than 12lbs for males.",
       eyeColor: "Copper, Green, Gold, Odd-Eyed",
       lifeSpan: "9-13 Years",
-      socialNeeds: "Moderate, High"
+      socialNeeds: "Moderate to High"
     },
     coat: {
       length: "Long",

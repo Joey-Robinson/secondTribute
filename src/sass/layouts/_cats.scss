@@ -10,15 +10,21 @@
     grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr));
     display: grid;
   }
+  & h3,
+    h4,
+    p, {
+    display: inline-block;
+  }
   &-favDiv {
+    align-self: center;
+    margin-left: 2rem;
     grid-column: 1;
     grid-row: 1;
-    align-self: center;
   }
   &-factsDiv {
     align-self: center;
+    margin-left: 2rem;
     grid-column: 1;
     grid-row: 2;
-    margin-left: 2rem;
   }
 }

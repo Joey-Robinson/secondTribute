@@ -1,7 +1,7 @@
 import { favoriteCat } from './favoriteCat';
 
 export const catFactCall = () => {
-  fetch("https://catfact.ninja/facts?limit=5")
+  fetch("https://catfact.ninja/facts?limit=10")
   .then((response) => {
     return response.json();
   })
@@ -19,13 +19,21 @@ export const catFactCall = () => {
     const numberOne = favoriteCat.map((info) => {
       return `
         <li>
-          <h1>test</h1>
-          Favorite Cat: ${info.name} <br />
-          Favorite Cat Color: ${info.favoriteColor} <br />
-          Weight: ${info.description.weight} <br />
-          Eye Color: ${info.description.eyeColor} <br />
-          Life Span: ${info.description.lifeSpan} <br ?>
-          Social & Attention Needs: ${info.description.socialNeeds} <br />
+          <h1>Information About My Favorite Cat:</h1>
+          <h4>Favorite Cat</h4>: ${info.name} <br />
+          <h4>Favorite Cat Color</h4>: ${info.favoriteColor} <br />
+          <h4>Weight</h4>: ${info.description.weight} <br />
+          <h4>Eye Color</h4>: ${info.description.eyeColor} <br />
+          <h4>Life Span</h4>: ${info.description.lifeSpan} <br ?>
+          <h4>Social & Attention Needs</h4>: ${info.description.socialNeeds} <br />
+
+          <h1>Information About Their Fur:</h1>
+          Type of fur: ${info.coat.length} & ${info.coat.type} <br />
+          Color of fur: ${info.coat.colors} <br />
+          Possible patterns: ${info.coat.pattern} <br />
+          Grooming Needs: ${info.coat.groomingNeeds} <br />
+
+          <h1>Living With A Maine Coon:</h1>
           Living With: ${info.livingWith} <br />
           History: ${info.history}
         </li>
@@ -33,7 +41,7 @@ export const catFactCall = () => {
     });
     fav.innerHTML = numberOne;
     favDiv.appendChild(fav);
-    catFactList.innerHTML = catData.join(" ");
+    catFactList.innerHTML = `<h1>Cat Facts:</h1> ${catData.join(" ")}`;
     catFactDiv.classList.add('cats-factsDiv');
     catFactDiv.appendChild(catFactList);
     cats.appendChild(catFactDiv);
