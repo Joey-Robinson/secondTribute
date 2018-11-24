@@ -251,8 +251,9 @@ li {
     margin-left: 2rem;
     grid-column: 1;
     grid-row: 1; }
+    .cats-favDiv section {
+      font-size: 2.6rem; }
   .cats-factsDiv {
-    align-self: center;
     margin-left: 2rem;
     grid-column: 1;
     grid-row: 2; }

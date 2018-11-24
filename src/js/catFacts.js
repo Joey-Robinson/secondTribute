@@ -14,11 +14,10 @@ export const catFactCall = () => {
     const catFactDiv = document.createElement('div');
     const catFactList = document.createElement('ul');
     const favDiv = document.createElement('div');
-    favDiv.classList.add('cats-favDiv');
-    const fav = document.createElement('ul');
+    // const fav = document.createElement('ul');
     const numberOne = favoriteCat.map((info) => {
       return `
-        <li>
+        <section>
           <h1>Information About My Favorite Cat:</h1>
           <h4>Favorite Cat:</h4> ${info.name} <br />
           <h4>Favorite Cat Color:</h4> ${info.favoriteColor} <br />
@@ -36,13 +35,14 @@ export const catFactCall = () => {
           <h1>Living With A Maine Coon:</h1>
           <h4>Living With:</h4> ${info.livingWith} <br />
           <h4>History:</h4> ${info.history}
-        </li>
+        </section>
       `
     });
-    fav.innerHTML = numberOne;
-    favDiv.appendChild(fav);
+    favDiv.innerHTML = numberOne;
+    // favDiv.appendChild(numberOne);
     catFactList.innerHTML = `<h1>Cat Facts:</h1> ${catData.join(" ")}`;
     catFactDiv.classList.add('cats-factsDiv');
+    favDiv.classList.add('cats-favDiv');
     catFactDiv.appendChild(catFactList);
     cats.appendChild(catFactDiv);
     cats.appendChild(favDiv);
