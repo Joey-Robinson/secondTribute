@@ -249,7 +249,12 @@ li {
 
 .catfacts {
   grid-column: 2 / 4;
-  grid-row: 8; }
+  grid-row: 8;
+  align-self: center;
+  margin-left: 2rem;
+  color: #FF7D0A; }
+  .catfacts section {
+    font-size: 2.6rem; }
 
 .favoritecat {
   grid-column: 2 / 4;
