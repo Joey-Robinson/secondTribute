@@ -1,7 +1,7 @@
 .primary {
   display: grid;
-  grid-template-columns: 4rem 1fr 4rem;
-  grid-template-rows: 5rem 100vh 5rem 100vh 5rem 100vh;
+  grid-template-columns: 4rem 1fr 50rem;
+  grid-template-rows: 5rem 100vh 5rem 100vh 5rem 100vh 5vh 100vh;
   &-empty {
     grid-row: 3;
     grid-column: 2;

@@ -219,7 +219,7 @@ li {
     grid-row: 3;
     width: 100%;
     height: 33.4vh;
-    background: url("../../../images/meowmeow.jpg") no-repeat center center/cover;
+    background: url("../../../images/mainecoontabby.jpg") no-repeat center center/cover;
     filter: grayscale(100%);
     transition: all .3s ease-out; }
     .nav-cats:hover {
@@ -406,7 +406,7 @@ li {
     text-align: center;
     border: 1px solid #FF7D0A;
     box-shadow: 0 0 10px #000;
-    padding: 0 0 1rem 0; }
+    padding: 2rem; }
   .output-favorites {
     grid-column: 4;
     grid-row: 6 / 9;
@@ -462,6 +462,7 @@ li {
     grid-row: 2;
     align-self: center; }
   .output-ranks {
+    padding: 1rem;
     text-align: left;
     grid-column: 2;
     grid-row: 3;
@@ -476,8 +477,8 @@ li {
 
 .primary {
   display: grid;
-  grid-template-columns: 4rem 1fr 4rem;
-  grid-template-rows: 5rem 100vh 5rem 100vh 5rem 100vh; }
+  grid-template-columns: 4rem 1fr 50rem;
+  grid-template-rows: 5rem 100vh 5rem 100vh 5rem 100vh 5vh 100vh; }
   .primary-empty {
     grid-row: 3;
     grid-column: 2; }
