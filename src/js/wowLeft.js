@@ -27,7 +27,7 @@ export const wowLeft = () => {
 
   const recent = document.createElement('div');
   const recentHeading = document.createElement('h3');
-  recentHeading.innerHTML = 'Recent Dungeons:';
+  recentHeading.innerHTML = 'Recent:';
   recent.classList.add('output-recentLeft');
   recent.appendChild(recentHeading);
   wow.appendChild(recent);
@@ -41,7 +41,7 @@ export const wowLeft = () => {
 
   const streamersLeft = document.createElement('div');
   const streamersLeftHeading = document.createElement('h3');
-  streamersLeftHeading.innerHTML = 'Favorite Streamers:';
+  streamersLeftHeading.innerHTML = 'Streamers:';
   streamersLeft.classList.add('output-streamersLeft');
   streamersLeft.appendChild(streamersLeftHeading);
   wow.appendChild(streamersLeft);

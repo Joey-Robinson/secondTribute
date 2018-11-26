@@ -444,7 +444,7 @@ li {
     align-self: center; }
   .output-likes {
     padding: 0;
-    margin: 0;
+    margin: 5px 0 0 0;
     font-weight: bold;
     grid-row: 5;
     grid-column: 2;
