@@ -1,33 +1,16 @@
-.cats {
+.favoritecat {
   grid-column: 2 / 4;
   grid-row: 6;
   font-size: $base;
   color: $druidOrange;
   display: grid;
   grid-template-rows: max-content max-content;
-  & ul {
-    font-size: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr));
-    display: grid;
+  & section {
+    font-size: 2.6rem;
   }
   & h3,
     h4,
     p, {
     display: inline-block;
-  }
-  &-favDiv {
-    align-self: center;
-    margin-left: 2rem;
-    grid-column: 1;
-    grid-row: 1;
-    & section {
-      font-size: 2.6rem;
-    }
-  }
-  &-factsDiv {
-    // align-self: center;
-    margin-left: 2rem;
-    grid-column: 1;
-    grid-row: 2;
   }
 }

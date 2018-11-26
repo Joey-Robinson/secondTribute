@@ -177,13 +177,13 @@ li {
   color: #111;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   position: sticky;
   top: 0;
   padding: 0;
   margin: 0; }
   .nav-wow {
-    height: 33.3vh;
+    height: 25vh;
     grid-column: 1;
     grid-row: 1;
     width: 100%;
@@ -202,7 +202,7 @@ li {
     grid-column: 1;
     grid-row: 2;
     width: 100%;
-    height: 33.3vh;
+    height: 25vh;
     background: url("../../../images/ff14bg.jpg") no-repeat center center/cover;
     filter: grayscale(100%);
     transition: all .3s ease-out; }
@@ -214,49 +214,56 @@ li {
       width: 100%;
       height: 100%;
       display: block; }
-  .nav-cats {
+  .nav-favoritecat {
     grid-column: 1;
     grid-row: 3;
     width: 100%;
-    height: 33.4vh;
+    height: 25vh;
     background: url("../../../images/mainecoontabby.jpg") no-repeat center center/cover;
     filter: grayscale(100%);
     transition: all .3s ease-out; }
-    .nav-cats:hover {
+    .nav-favoritecat:hover {
       transition: all .3s ease-in;
       filter: none;
       width: 400%; }
-    .nav-cats a {
+    .nav-favoritecat a {
+      width: 100%;
+      height: 100%;
+      display: block; }
+  .nav-catfacts {
+    grid-column: 1;
+    grid-row: 4;
+    width: 100%;
+    height: 25vh;
+    background: url("../../../images/meowmeow.jpg") no-repeat center center/cover;
+    filter: grayscale(100%);
+    transition: all .3s ease-out; }
+    .nav-catfacts:hover {
+      transition: all .3s ease-in;
+      filter: none;
+      width: 400%; }
+    .nav-catfacts a {
       width: 100%;
       height: 100%;
       display: block; }
 
-.cats {
+.catfacts {
+  grid-column: 2 / 4;
+  grid-row: 8; }
+
+.favoritecat {
   grid-column: 2 / 4;
   grid-row: 6;
   font-size: 3rem;
   color: #FF7D0A;
   display: grid;
   grid-template-rows: max-content max-content; }
-  .cats ul {
-    font-size: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr));
-    display: grid; }
-  .cats h3,
-  .cats h4,
-  .cats p {
+  .favoritecat section {
+    font-size: 2.6rem; }
+  .favoritecat h3,
+  .favoritecat h4,
+  .favoritecat p {
     display: inline-block; }
-  .cats-favDiv {
-    align-self: center;
-    margin-left: 2rem;
-    grid-column: 1;
-    grid-row: 1; }
-    .cats-favDiv section {
-      font-size: 2.6rem; }
-  .cats-factsDiv {
-    margin-left: 2rem;
-    grid-column: 1;
-    grid-row: 2; }
 
 .finalfantasy {
   grid-column: 2 / 4;
