@@ -171,25 +171,23 @@ li {
     transform: translateY(3px); }
 
 .nav {
-  height: 100vh;
   grid-column: 1;
-  background: #FF7D0A;
-  color: #111;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: max-content;
   position: sticky;
-  top: 0;
-  padding: 0;
-  margin: 0; }
+  top: 0; }
   .nav-wow {
     background: url("../../../images/wowbg.jpg") no-repeat center center/cover;
+    height: 100%;
     grid-column: 1;
     grid-row: 1;
     height: 25vh;
     width: 100%;
     filter: grayscale(100%);
     transition: all .3s ease-out; }
+    .nav-wow div {
+      display: block; }
     .nav-wow:hover {
       transition: all .3s ease-in;
       filter: none;
@@ -206,6 +204,8 @@ li {
     width: 100%;
     filter: grayscale(100%);
     transition: all .3s ease-out; }
+    .nav-finalfantasy div {
+      display: block; }
     .nav-finalfantasy:hover {
       transition: all .3s ease-in;
       filter: none;
@@ -222,6 +222,8 @@ li {
     width: 100%;
     filter: grayscale(100%);
     transition: all .3s ease-out; }
+    .nav-favoritecat div {
+      display: block; }
     .nav-favoritecat:hover {
       transition: all .3s ease-in;
       filter: none;
@@ -238,6 +240,8 @@ li {
     width: 100%;
     filter: grayscale(100%);
     transition: all .3s ease-out; }
+    .nav-catfacts div {
+      display: block; }
     .nav-catfacts:hover {
       transition: all .3s ease-in;
       filter: none;
