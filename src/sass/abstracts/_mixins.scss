@@ -1,3 +1,11 @@
+@mixin parallaxDefaults {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 @mixin navDefaults {
   height: 25vh;
   width: 100%;

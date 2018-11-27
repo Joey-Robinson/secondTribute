@@ -176,7 +176,8 @@ li {
   grid-template-columns: 1fr;
   grid-template-rows: max-content;
   position: sticky;
-  top: 0; }
+  top: 0;
+  z-index: 3; }
   .nav-wow {
     background: url("../../../images/wowbg.jpg") no-repeat center center/cover;
     height: 100%;
@@ -251,6 +252,30 @@ li {
       height: 100%;
       display: block; }
 
+.parallax {
+  grid-column: 2 / 4;
+  grid-row: 3;
+  min-height: 10rem;
+  z-index: 1;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("../../../images/mainecoonnav.jpg"); }
+
+.parallaxTwo {
+  grid-column: 2 / 4;
+  grid-row: 5;
+  min-height: 10rem;
+  z-index: 1;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("../../../images/mainecoonnavb&w.jpg"); }
+
 .catfacts {
   grid-column: 2 / 4;
   grid-row: 8;
@@ -258,10 +283,11 @@ li {
   margin-left: 2rem;
   color: #FF7D0A; }
   .catfacts ul {
-    font-size: 2rem; }
-  .catfacts hr {
-    color: #FF7D0A;
-    background: #FF7D0A; }
+    font-size: 1.8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr)); }
+    .catfacts ul li {
+      padding: 3px 0 3px 0; }
 
 .favoritecat {
   grid-column: 2 / 4;
@@ -498,7 +524,7 @@ li {
 .primary {
   display: grid;
   grid-template-columns: 4rem 1fr 50rem;
-  grid-template-rows: 5rem 100vh 5rem 100vh 5rem 100vh 5vh 100vh; }
+  grid-template-rows: 5rem 100vh max-content 100vh max-content 100vh max-content 100vh; }
   .primary-empty {
     grid-row: 3;
     grid-column: 2; }

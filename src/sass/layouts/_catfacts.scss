@@ -5,10 +5,11 @@
   margin-left: 2rem;
   color: $druidOrange;
   & ul {
-    font-size: 2rem;
-  }
-  & hr {
-    color: $druidOrange;
-    background: $druidOrange;
+    font-size: 1.8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr));
+    & li {
+      padding: 3px 0 3px 0;
+    }
   }
 }

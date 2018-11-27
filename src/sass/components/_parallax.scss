@@ -1,0 +1,17 @@
+.parallax {
+  grid-column: 2 / 4;
+  grid-row: 3;
+  min-height: 10rem;
+  z-index: 1;
+  @include parallaxDefaults;
+  background-image: url('../../../images/mainecoonnav.jpg');
+}
+
+.parallaxTwo {
+  grid-column: 2 / 4;
+  grid-row: 5;
+  min-height: 10rem;
+  z-index: 1;
+  @include parallaxDefaults;
+  background-image: url('../../../images/mainecoonnavb&w.jpg');
+}
