@@ -1,5 +1,5 @@
 export const catFacts = () => {
-  fetch("https://catfact.ninja/facts?limit=10")
+  fetch("https://catfact.ninja/facts?limit=25")
     .then((response) => {
       return response.json();
     })
@@ -12,7 +12,7 @@ export const catFacts = () => {
       const facts = document.getElementById('catfacts');
       const factsSection = document.createElement('section');
       const factsList = document.createElement('ul');
-      factsList.innerHTML = catData.join(" ");
+      factsList.innerHTML = `<h1>Cat Facts:</h1> ${catData.join(" ")}`;
       factsSection.appendChild(factsList);
       facts.appendChild(factsSection);
   });

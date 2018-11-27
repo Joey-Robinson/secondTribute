@@ -191,7 +191,7 @@ li {
     .nav-wow:hover {
       transition: all .3s ease-in;
       filter: none;
-      width: 400%; }
+      width: 300%; }
     .nav-wow a {
       width: 100%;
       height: 100%;
@@ -209,7 +209,7 @@ li {
     .nav-finalfantasy:hover {
       transition: all .3s ease-in;
       filter: none;
-      width: 400%; }
+      width: 300%; }
     .nav-finalfantasy a {
       width: 100%;
       height: 100%;
@@ -227,7 +227,7 @@ li {
     .nav-favoritecat:hover {
       transition: all .3s ease-in;
       filter: none;
-      width: 400%; }
+      width: 300%; }
     .nav-favoritecat a {
       width: 100%;
       height: 100%;
@@ -245,7 +245,7 @@ li {
     .nav-catfacts:hover {
       transition: all .3s ease-in;
       filter: none;
-      width: 400%; }
+      width: 300%; }
     .nav-catfacts a {
       width: 100%;
       height: 100%;
@@ -257,8 +257,11 @@ li {
   align-self: center;
   margin-left: 2rem;
   color: #FF7D0A; }
-  .catfacts section {
-    font-size: 2.6rem; }
+  .catfacts ul {
+    font-size: 2rem; }
+  .catfacts hr {
+    color: #FF7D0A;
+    background: #FF7D0A; }
 
 .favoritecat {
   grid-column: 2 / 4;
@@ -266,6 +269,7 @@ li {
   font-size: 3rem;
   color: #FF7D0A;
   display: grid;
+  margin-left: 2rem;
   grid-template-rows: max-content max-content; }
   .favoritecat section {
     font-size: 2.6rem; }

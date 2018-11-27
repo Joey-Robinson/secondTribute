@@ -19,6 +19,7 @@ export const favCat = () => {
         <h4>Grooming Needs:</h4> ${info.coat.groomingNeeds} <br />
         <h1>Living With A Maine Coon:</h1>
         <h4>Living With:</h4> ${info.livingWith} <br />
+        <br />
         <h4>History:</h4> ${info.history}
       </section>
       `

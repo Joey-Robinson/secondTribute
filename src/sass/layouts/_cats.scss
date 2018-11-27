@@ -4,6 +4,7 @@
   font-size: $base;
   color: $druidOrange;
   display: grid;
+  margin-left: 2rem;
   grid-template-rows: max-content max-content;
   & section {
     font-size: 2.6rem;
