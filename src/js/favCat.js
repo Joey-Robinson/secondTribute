@@ -17,11 +17,10 @@ export const favCat = () => {
         <h4>Color of fur:</h4> ${info.coat.colors} <br />
         <h4>Possible patterns:</h4> ${info.coat.pattern} <br />
         <h4>Grooming Needs:</h4> ${info.coat.groomingNeeds} <br />
-        <h1>Living With A Maine Coon:</h1>
-        <h4>Living With:</h4> ${info.livingWith} <br />
-        <br />
-        <h4>History:</h4> ${info.history}
       </section>
+      <div class="favoritecat-images">
+        <img src=${info.pictures.one} />
+      </div>
       `
     });
     favorite.innerHTML = numberOne;

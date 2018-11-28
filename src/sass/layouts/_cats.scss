@@ -5,7 +5,16 @@
   color: $druidOrange;
   display: grid;
   margin-left: 2rem;
-  grid-template-rows: max-content max-content;
+  grid-template-rows: max-content 1fr;
+  &-images {
+    align-self: center;
+    grid-row: 2;
+    & img {
+      padding: 1rem 0 1rem 0;
+      width: 35rem;
+      height: 45rem;
+    }
+  }
   & section {
     font-size: 2.6rem;
   }

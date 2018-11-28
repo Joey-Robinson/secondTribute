@@ -296,7 +296,14 @@ li {
   color: #FF7D0A;
   display: grid;
   margin-left: 2rem;
-  grid-template-rows: max-content max-content; }
+  grid-template-rows: max-content 1fr; }
+  .favoritecat-images {
+    align-self: center;
+    grid-row: 2; }
+    .favoritecat-images img {
+      padding: 1rem 0 1rem 0;
+      width: 35rem;
+      height: 45rem; }
   .favoritecat section {
     font-size: 2.6rem; }
   .favoritecat h3,
