@@ -15,8 +15,9 @@ export const favoriteCat = [
       pattern: "Solid Color, Tortoiseshell, Bicolor, Tricolor/Calico, Tabby, Smoke, Shaded",
       groomingNeeds: "High"
     },
-    pictures: {
-      one: "../../images/meowmeow.jpg"
-    }
+    pictures: [
+      '../../images/mainecoontabby.jpg',
+      '../../images/meowmeow.jpg'
+    ]
   }
 ]

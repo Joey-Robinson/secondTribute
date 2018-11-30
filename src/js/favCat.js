@@ -3,6 +3,9 @@ import { favoriteCat } from './favoriteCat';
 export const favCat = () => {
   const favorite = document.getElementById('favoritecat');
   const numberOne = favoriteCat.map((info) => {
+    const amazing = info.pictures.map((picture) => {
+      return `<img src=${picture} />`
+    })
     return `
       <section>
         <h1>Information About My Favorite Cat:</h1>
@@ -19,7 +22,7 @@ export const favCat = () => {
         <h4>Grooming Needs:</h4> ${info.coat.groomingNeeds} <br />
       </section>
       <div class="favoritecat-images">
-        <img src=${info.pictures.one} />
+        ${amazing.join(" ")}
       </div>
       `
     });
