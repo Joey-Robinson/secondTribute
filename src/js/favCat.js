@@ -3,8 +3,8 @@ import { favoriteCat } from './favoriteCat';
 export const favCat = () => {
   const favorite = document.getElementById('favoritecat');
   const numberOne = favoriteCat.map((info) => {
-    const amazing = info.pictures.map((picture) => {
-      return `<img src=${picture} />`
+    const amazing = info.pictures.map((picture, index) => {
+      return `<a href=${picture} role="link" aria-label="Link To Primary Image Number ${index+1} "target="_blank" rel="noopener noreferrer"><img src=${picture} alt="Maine Coon Image Number ${index+1}" /></a>`
     })
     return `
       <section>
@@ -13,7 +13,7 @@ export const favCat = () => {
         <h4>Favorite Cat Color:</h4> ${info.favoriteColor} <br />
         <h4>Weight:</h4> ${info.description.weight} <br />
         <h4>Eye Color:</h4> ${info.description.eyeColor} <br />
-        <h4>Life Span:</h4> ${info.description.lifeSpan} <br ?>
+        <h4>Life Span:</h4> ${info.description.lifeSpan} <br />
         <h4>Social & Attention Needs:</h4> ${info.description.socialNeeds} <br />
         <h1>Information About Their Fur:</h1>
         <h4>Type of fur:</h4> ${info.coat.length} & ${info.coat.type} <br />
@@ -24,7 +24,7 @@ export const favCat = () => {
       <div class="favoritecat-images">
         ${amazing.join(" ")}
       </div>
-      `
+    `
     });
     favorite.innerHTML = numberOne;
 };

@@ -16,8 +16,9 @@ export const favoriteCat = [
       groomingNeeds: "High"
     },
     pictures: [
-      '../../images/mainecoontabby.jpg',
-      '../../images/meowmeow.jpg'
+      '../../images/maine001.jpg',
+      '../../images/maine002.jpg',
+      '../../images/maine003.jpg'
     ]
   }
 ]
