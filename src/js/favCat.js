@@ -3,9 +3,6 @@ import { favoriteCat } from './favoriteCat';
 export const favCat = () => {
   const favorite = document.getElementById('favoritecat');
   const numberOne = favoriteCat.map((info) => {
-    const amazing = info.pictures.map((picture, index) => {
-      return `<a href=${picture} role="link" aria-label="Link To Primary Image Number ${index+1} "target="_blank" rel="noopener noreferrer"><img src=${picture} alt="Maine Coon Image Number ${index+1}" /></a>`
-    })
     return `
       <section>
         <h1>Information About My Favorite Cat:</h1>

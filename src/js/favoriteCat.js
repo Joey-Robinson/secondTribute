@@ -14,13 +14,6 @@ export const favoriteCat = [
       colors: "White, Black, Blue, Red, Cream, Brown, Silver, Tortoiseshell, Bluecream, Golden",
       pattern: "Solid Color, Tortoiseshell, Bicolor, Tricolor/Calico, Tabby, Smoke, Shaded",
       groomingNeeds: "High"
-    },
-    pictures: [
-      '../../images/maine001.jpg',
-      '../../images/maine002.jpg',
-      '../../images/maine003.jpg',
-      '../../images/maine004.jpg',
-
-    ]
+    }
   }
 ]
