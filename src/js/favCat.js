@@ -21,8 +21,16 @@ export const favCat = () => {
         <h4>Possible patterns:</h4> ${info.coat.pattern} <br />
         <h4>Grooming Needs:</h4> ${info.coat.groomingNeeds} <br />
       </section>
-      <div class="favoritecat-images">
-        ${amazing.join(" ")}
+      <div class="favoritecat">
+        <div class="favoritecat-slideshow slideshow">
+          <div class="favoritecat-slideshow__wrapper">
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+          </div>
+        </div>
       </div>
     `
     });

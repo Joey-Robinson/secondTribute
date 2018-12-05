@@ -18,7 +18,9 @@ export const favoriteCat = [
     pictures: [
       '../../images/maine001.jpg',
       '../../images/maine002.jpg',
-      '../../images/maine003.jpg'
+      '../../images/maine003.jpg',
+      '../../images/maine004.jpg',
+
     ]
   }
 ]

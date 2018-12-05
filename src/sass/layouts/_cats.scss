@@ -6,13 +6,16 @@
   display: grid;
   margin-left: 2rem;
   grid-template-rows: max-content 1fr;
-  &-images {
-    align-self: center;
+  &-slideshow {
     grid-row: 2;
-    & img {
-      padding: 1rem 0 1rem 0;
-      width: auto;
-      height: 25rem;
+    overflow: hidden;
+    height: 41rem;
+    width: 72.8rem;
+    transform: translate(-60%, -10%);
+    display: block;
+    &__wrapper {
+      width: 291.2rem;
+      animation: slideShow 18s ease infinite;
     }
   }
   & section {
@@ -23,4 +26,34 @@
     p, {
     display: inline-block;
   }
+}
+
+// .slide
+
+.slide {
+  float: left;
+  height: 51rem;
+  width: 72.8rem;
+}
+
+.slide:nth-child(1) {
+  background: url('../../../images/maine001.jpg') no-repeat center center / cover;
+}
+
+.slide:nth-child(2) {
+  background: url('../../../images/maine002.jpg') no-repeat center center / cover;
+}
+
+.slide:nth-child(3) {
+  background: url('../../../images/maine003.jpg') no-repeat center center / cover;
+}
+
+.slide:nth-child(4) {
+  background: url('../../../images/maine004.jpg') no-repeat center center / cover;
+}
+
+.slide-number {
+  color: #000;
+  text-align: center;
+  font-size: 10em;
 }
