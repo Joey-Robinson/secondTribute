@@ -11,7 +11,7 @@
     overflow: hidden;
     height: 41rem;
     width: 72.8rem;
-    transform: translate(-60%, -10%);
+    transform: translate(-75%, -5%);
     display: block;
     &__wrapper {
       width: 291.2rem;
@@ -28,11 +28,9 @@
   }
 }
 
-// .slide
-
 .slide {
   float: left;
-  height: 51rem;
+  height: 41rem;
   width: 72.8rem;
 }
 
@@ -50,10 +48,4 @@
 
 .slide:nth-child(4) {
   background: url('../../../images/maine004.jpg') no-repeat center center / cover;
-}
-
-.slide-number {
-  color: #000;
-  text-align: center;
-  font-size: 10em;
 }

@@ -318,7 +318,7 @@ li {
     overflow: hidden;
     height: 41rem;
     width: 72.8rem;
-    transform: translate(-60%, -10%);
+    transform: translate(-75%, -5%);
     display: block; }
     .favoritecat-slideshow__wrapper {
       width: 291.2rem;
@@ -332,7 +332,7 @@ li {
 
 .slide {
   float: left;
-  height: 51rem;
+  height: 41rem;
   width: 72.8rem; }
 
 .slide:nth-child(1) {
@@ -346,11 +346,6 @@ li {
 
 .slide:nth-child(4) {
   background: url("../../../images/maine004.jpg") no-repeat center center/cover; }
-
-.slide-number {
-  color: #000;
-  text-align: center;
-  font-size: 10em; }
 
 .finalfantasy {
   grid-column: 2 / 4;
