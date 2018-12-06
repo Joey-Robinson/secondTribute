@@ -12,11 +12,10 @@
     height: 43rem;
     width: 72.8rem;
     transform: translate(-75%, -5%);
-    // Align to the left? Have another block with different pictures?
     display: block;
     &__wrapper {
       width: 4368px;
-      animation: slideShow 8s ease infinite;
+      animation: slideShow 16s ease infinite;
     }
   }
   & section {
@@ -26,6 +25,7 @@
     h4,
     p, {
     display: inline-block;
+    font-style: italic;
   }
 }
 

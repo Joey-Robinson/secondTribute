@@ -3,13 +3,17 @@
   grid-row: 8;
   align-self: center;
   margin-left: 2rem;
-  color: $druidOrange;
+  color: $druidOrange; 
   & ul {
     font-size: 1.8rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr));
     & li {
-      padding: 3px 0 3px 0;
+      padding: 5px 0 1px 3px;
+      // border: 2px solid $specialRed;
     }
+  }
+  & h1 {
+    font-size: 4rem;
   }
 }
