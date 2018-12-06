@@ -1,18 +1,22 @@
 @keyframes slideShow {
-  20% {
+  5% {
     margin-left: 0px; }
+  20% {
+    margin-left: -728px; }
   30% {
     margin-left: -728px; }
+  40% {
+    margin-left: -1456px; }
   50% {
-    margin-left: -728px; }
+    margin-left: -1456px; }
   60% {
-    margin-left: -1456px; }
+    margin-left: -2184px; }
   70% {
-    margin-left: -1456px; }
+    margin-left: -2184px; }
   80% {
     margin-left: -2184px; }
   90% {
-    margin-left: -2184px; } }
+    margin-left: -3276px; } }
 
 @keyframes reveal {
   0% {
@@ -321,8 +325,8 @@ li {
     transform: translate(-75%, -5%);
     display: block; }
     .favoritecat-slideshow__wrapper {
-      width: 291.2rem;
-      animation: slideShow 18s ease infinite; }
+      width: 4368px;
+      animation: slideShow 8s ease infinite; }
   .favoritecat section {
     font-size: 2.6rem; }
   .favoritecat h3,
@@ -335,17 +339,20 @@ li {
   height: 41rem;
   width: 72.8rem; }
 
-.slide:nth-child(1) {
+.favoritecat-slideshow__slideOne {
   background: url("../../../images/maine001.jpg") no-repeat center center/cover; }
 
-.slide:nth-child(2) {
+.favoritecat-slideshow__slideTwo {
   background: url("../../../images/maine002.jpg") no-repeat center center/cover; }
 
-.slide:nth-child(3) {
+.favoritecat-slideshow__slideThree {
   background: url("../../../images/maine003.jpg") no-repeat center center/cover; }
 
-.slide:nth-child(4) {
+.favoritecat-slideshow__slideFour {
   background: url("../../../images/maine004.jpg") no-repeat center center/cover; }
+
+.favoritecat-slideshow__slideFive {
+  background: url("../../../images/maine005.jpg") no-repeat center center/cover; }
 
 .finalfantasy {
   grid-column: 2 / 4;

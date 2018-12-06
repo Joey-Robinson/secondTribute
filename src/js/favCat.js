@@ -21,11 +21,14 @@ export const favCat = () => {
       <div class="favoritecat">
         <div class="favoritecat-slideshow slideshow">
           <div class="favoritecat-slideshow__wrapper">
-            <div class="slide"></div>
-            <div class="slide"></div>
-            <div class="slide"></div>
-            <div class="slide"></div>
-            <div class="slide"></div>
+            <div class="favoritecat-slideshow__slideOne slide"></div>
+            <div class="favoritecat-slideshow__slideTwo slide"></div>
+            <div class="favoritecat-slideshow__slideThree slide"></div>
+            <div class="favoritecat-slideshow__slideFour slide"></div>
+            <div class="favoritecat-slideshow__slideFive slide"></div>
+            <div class="favoritecat-slideshow__slideSix slide"></div>
+            <div class="favoritecat-slideshow__slideSeven slide"></div>
+            <div class="favoritecat-slideshow__slideEight slide"></div>
           </div>
         </div>
       </div>

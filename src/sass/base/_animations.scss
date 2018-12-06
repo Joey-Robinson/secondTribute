@@ -1,24 +1,30 @@
 @keyframes slideShow {
-  20% {
+  5% {
     margin-left: 0px;
+  }
+  20% {
+    margin-left: -728px;
   }
   30% {
     margin-left: -728px;
   }
+  40% {
+    margin-left: -1456px;
+  }
   50% {
-    margin-left: -728px;
+    margin-left: -1456px;
   }
   60% {
-    margin-left: -1456px;
+    margin-left: -2184px;
   }
   70% {
-    margin-left: -1456px;
+    margin-left: -2184px;
   }
   80% {
     margin-left: -2184px;
   }
   90% {
-    margin-left: -2184px;
+    margin-left: -3276px;
   }
 }
 

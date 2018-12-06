@@ -14,8 +14,8 @@
     transform: translate(-75%, -5%);
     display: block;
     &__wrapper {
-      width: 291.2rem;
-      animation: slideShow 18s ease infinite;
+      width: 4368px;
+      animation: slideShow 8s ease infinite;
     }
   }
   & section {
@@ -34,18 +34,22 @@
   width: 72.8rem;
 }
 
-.slide:nth-child(1) {
+.favoritecat-slideshow__slideOne {
   background: url('../../../images/maine001.jpg') no-repeat center center / cover;
 }
 
-.slide:nth-child(2) {
+.favoritecat-slideshow__slideTwo {
   background: url('../../../images/maine002.jpg') no-repeat center center / cover;
 }
 
-.slide:nth-child(3) {
+.favoritecat-slideshow__slideThree {
   background: url('../../../images/maine003.jpg') no-repeat center center / cover;
 }
 
-.slide:nth-child(4) {
+.favoritecat-slideshow__slideFour {
   background: url('../../../images/maine004.jpg') no-repeat center center / cover;
+}
+
+.favoritecat-slideshow__slideFive {
+  background: url('../../../images/maine005.jpg') no-repeat center center / cover;
 }
