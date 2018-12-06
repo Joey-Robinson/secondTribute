@@ -1,22 +1,18 @@
 @keyframes slideShow {
-  5% {
-    margin-left: 0px; }
   20% {
-    margin-left: -728px; }
+    margin-left: 0px; }
   30% {
     margin-left: -728px; }
-  40% {
-    margin-left: -1456px; }
   50% {
-    margin-left: -1456px; }
+    margin-left: -728px; }
   60% {
-    margin-left: -2184px; }
+    margin-left: -1456px; }
   70% {
-    margin-left: -2184px; }
+    margin-left: -1456px; }
   80% {
     margin-left: -2184px; }
   90% {
-    margin-left: -3276px; } }
+    margin-left: -2184px; } }
 
 @keyframes reveal {
   0% {
@@ -320,7 +316,7 @@ li {
   .favoritecat-slideshow {
     grid-row: 2;
     overflow: hidden;
-    height: 41rem;
+    height: 43rem;
     width: 72.8rem;
     transform: translate(-75%, -5%);
     display: block; }
@@ -336,23 +332,20 @@ li {
 
 .slide {
   float: left;
-  height: 41rem;
+  height: 43rem;
   width: 72.8rem; }
 
 .favoritecat-slideshow__slideOne {
   background: url("../../../images/maine001.jpg") no-repeat center center/cover; }
 
 .favoritecat-slideshow__slideTwo {
-  background: url("../../../images/maine002.jpg") no-repeat center center/cover; }
+  background: url("../../../images/maine009.jpg") no-repeat center center/cover; }
 
 .favoritecat-slideshow__slideThree {
-  background: url("../../../images/maine003.jpg") no-repeat center center/cover; }
+  background: url("../../../images/maine010.jpg") no-repeat center center/cover; }
 
 .favoritecat-slideshow__slideFour {
   background: url("../../../images/maine004.jpg") no-repeat center center/cover; }
-
-.favoritecat-slideshow__slideFive {
-  background: url("../../../images/maine005.jpg") no-repeat center center/cover; }
 
 .finalfantasy {
   grid-column: 2 / 4;

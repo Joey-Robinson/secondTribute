@@ -9,9 +9,10 @@
   &-slideshow {
     grid-row: 2;
     overflow: hidden;
-    height: 41rem;
+    height: 43rem;
     width: 72.8rem;
     transform: translate(-75%, -5%);
+    // Align to the left? Have another block with different pictures?
     display: block;
     &__wrapper {
       width: 4368px;
@@ -30,7 +31,7 @@
 
 .slide {
   float: left;
-  height: 41rem;
+  height: 43rem;
   width: 72.8rem;
 }
 
@@ -39,17 +40,13 @@
 }
 
 .favoritecat-slideshow__slideTwo {
-  background: url('../../../images/maine002.jpg') no-repeat center center / cover;
+  background: url('../../../images/maine009.jpg') no-repeat center center / cover;
 }
 
 .favoritecat-slideshow__slideThree {
-  background: url('../../../images/maine003.jpg') no-repeat center center / cover;
+  background: url('../../../images/maine010.jpg') no-repeat center center / cover;
 }
 
 .favoritecat-slideshow__slideFour {
   background: url('../../../images/maine004.jpg') no-repeat center center / cover;
-}
-
-.favoritecat-slideshow__slideFive {
-  background: url('../../../images/maine005.jpg') no-repeat center center / cover;
 }
