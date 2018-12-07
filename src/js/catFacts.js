@@ -5,7 +5,7 @@ export const catFacts = () => {
     })
     .then((data) => {
       const catData = data.data.map((text) => {
-        return `<li><u>${text.fact}</u></li>`;
+        return `<li><strong>${text.fact}</strong></li>`;
       });
       catData.sort(() => 0.25 - Math.random());
       const facts = document.getElementById('catfacts');
