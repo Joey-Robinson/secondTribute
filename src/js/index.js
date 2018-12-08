@@ -134,6 +134,15 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
     <div class="modal-one">
       <p>Mythic Plus</p>
       <p>Researching Mythic Plus</p>
+      <p>
+        <a
+          href="http://www.wow-petopia.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Looking at cute pets
+        </a>
+      </p>
     </div>
     <div class="modal-two">
       <p>
@@ -146,6 +155,15 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
         </a>
       </p>
       <p>Tinkering With My UI</p>
+      <p>
+        <a
+          href="https://theunderminejournal.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Talking to Goblins
+        </a>
+      </p>
     </div>
     <div class="modal-three">
       <p>
@@ -155,6 +173,24 @@ fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=
           rel="noopener noreferrer"
         >
           Reading Dreamgrove
+        </a>
+      </p>
+      <p>
+        <a
+          href="https://wowhead.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Reading wowhead
+        </a>
+      </p>
+      <p>
+        <a
+          href="https://wow.gamepedia.com/Wowpedia"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Reading ALL THE LORE!
         </a>
       </p>
     </div>
