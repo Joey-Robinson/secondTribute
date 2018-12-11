@@ -32,6 +32,6 @@
     "postcss-cli": "^6.0.0"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Joey Robinson <joeyrobinsondev@gmail.com>",
+  "license": "MIT"
 }
