@@ -1,0 +1,105 @@
+@mixin parallaxDefaults {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@mixin navDefaults {
+  height: 25vh;
+  width: 100%;
+  filter: grayscale(100%);
+  transition: all .3s ease-out;
+
+  & div {
+    display: block;
+  }
+
+  &:hover {
+    transition: all .3s ease-in;
+    filter: none;
+    width: 300%;
+  }
+
+  & a {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==phone {
+    @media only screen and (max-width: 37.5em) {
+      // 600px
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint==customSmall {
+    @media only screen and (max-width: 50em) {
+      // 800px
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint==ultraSpecific {
+    @media only screen and (min-width: 53.125em) {
+      // 850px
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint==tabPort {
+    @media only screen and (max-width: 56.25em) {
+      // 900px
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint==customMedium {
+    @media only screen and (max-width: 62.5em) {
+      // 1000px
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint==tabLand {
+    @media only screen and (max-width: 75em) {
+      // 1200px
+      @content
+    }
+
+    ;
+  }
+
+  @if $breakpoint==bigDesktop {
+    @media only screen and (max-width: 112.5em) {
+      // 1800px
+      @content
+    }
+
+    ;
+  }
+}
+
+@include respond(phone) {}
+
+@include respond(tabPort) {}
+
+@include respond(customMedium) {}
+
+@include respond(tabLand) {}
+
+@include respond(bigDesktop) {}
