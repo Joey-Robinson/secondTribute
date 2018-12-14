@@ -33,5 +33,8 @@
   },
   "keywords": [],
   "author": "Joey Robinson <joeyrobinsondev@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0"
+  }
 }
