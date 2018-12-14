@@ -4,6 +4,10 @@ import ffCall from './api/finalFantasy';
 import weeklyAffixes from './api/weeklyAffixes';
 import wowCharacter from './api/wowCharacter';
 // Components
-import headerScroll from './components/header';
+import {
+  headerScroll
+} from './components/header';
 // User
 import ffResourcesList from './user/ffResources';
+
+// window.addEventListener("scroll", headerScroll);

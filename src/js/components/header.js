@@ -1,7 +1,7 @@
 export const headerScroll = () => {
   const distanceY = window.pageYOffset || document.documentElement.scrollTop,
     shrinkOn = 200,
-    headerEl = document.getElementById('js-header');
+    headerEl = document.getElementById('header');
 
   if (distanceY > shrinkOn) {
     headerEl.classList.add("smaller");
