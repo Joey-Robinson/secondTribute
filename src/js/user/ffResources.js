@@ -1,4 +1,4 @@
-export const ffResources = [
+const ffResources = [
   `
   <a
     href="http://garlandtools.org/"
@@ -72,3 +72,7 @@ export const ffResources = [
   </a>
   `
 ];
+
+export const ffResourcesList = ffResources.map((resource) => {
+  return `<li>${resource}</li>`
+});
