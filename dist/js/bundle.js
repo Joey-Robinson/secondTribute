@@ -3310,6 +3310,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 
 /***/ }),
 
+/***/ "./src/js/components/header.js":
+/*!*************************************!*\
+  !*** ./src/js/components/header.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n// window.onscroll = function () {\n//   scrollFunction()\n// };\n\n// export function scrollFunction() {\n//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {\n//     document.getElementById(\"header\").style.fontSize = \"30px\";\n//   } else {\n//     document.getElementById(\"header\").style.fontSize = \"90px\";\n//   }\n// }\n\nwindow.onscroll = function () {\n  resizeHeaderOnScroll();\n};\n\nvar resizeHeaderOnScroll = exports.resizeHeaderOnScroll = function resizeHeaderOnScroll() {\n  var distanceY = window.pageYOffset || document.documentElement.scrollTop,\n      shrinkOn = 200,\n      headerEl = document.getElementById('header');\n\n  if (distanceY > shrinkOn) {\n    headerEl.classList.add(\"smaller\");\n  } else {\n    headerEl.classList.remove(\"smaller\");\n  }\n};\n\n//# sourceURL=webpack:///./src/js/components/header.js?");
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
@@ -3318,7 +3330,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _catFacts = __webpack_require__(/*! ./api/catFacts */ \"./src/js/api/catFacts.js\");\n\nvar _catFacts2 = _interopRequireDefault(_catFacts);\n\nvar _finalFantasy = __webpack_require__(/*! ./api/finalFantasy */ \"./src/js/api/finalFantasy.js\");\n\nvar _finalFantasy2 = _interopRequireDefault(_finalFantasy);\n\nvar _weeklyAffixes = __webpack_require__(/*! ./api/weeklyAffixes */ \"./src/js/api/weeklyAffixes.js\");\n\nvar _weeklyAffixes2 = _interopRequireDefault(_weeklyAffixes);\n\nvar _wowCharacter = __webpack_require__(/*! ./api/wowCharacter */ \"./src/js/api/wowCharacter.js\");\n\nvar _wowCharacter2 = _interopRequireDefault(_wowCharacter);\n\nvar _ffResources = __webpack_require__(/*! ./user/ffResources */ \"./src/js/user/ffResources.js\");\n\nvar _ffResources2 = _interopRequireDefault(_ffResources);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("\n\nvar _catFacts = __webpack_require__(/*! ./api/catFacts */ \"./src/js/api/catFacts.js\");\n\nvar _catFacts2 = _interopRequireDefault(_catFacts);\n\nvar _finalFantasy = __webpack_require__(/*! ./api/finalFantasy */ \"./src/js/api/finalFantasy.js\");\n\nvar _finalFantasy2 = _interopRequireDefault(_finalFantasy);\n\nvar _weeklyAffixes = __webpack_require__(/*! ./api/weeklyAffixes */ \"./src/js/api/weeklyAffixes.js\");\n\nvar _weeklyAffixes2 = _interopRequireDefault(_weeklyAffixes);\n\nvar _wowCharacter = __webpack_require__(/*! ./api/wowCharacter */ \"./src/js/api/wowCharacter.js\");\n\nvar _wowCharacter2 = _interopRequireDefault(_wowCharacter);\n\nvar _header = __webpack_require__(/*! ./components/header */ \"./src/js/components/header.js\");\n\nvar _ffResources = __webpack_require__(/*! ./user/ffResources */ \"./src/js/user/ffResources.js\");\n\nvar _ffResources2 = _interopRequireDefault(_ffResources);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
