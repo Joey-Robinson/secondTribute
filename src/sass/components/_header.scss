@@ -1,5 +1,5 @@
 .header {
-  width: 100%;
+  width: 100vw;
   height: 10em;
   overflow: hidden;
   position: fixed;
@@ -60,8 +60,13 @@
 
 header.smaller {
   height: 7.5rem;
-  background: transparent;
+  background: rgba(34, 34, 34, .5);
+  width: 97.1vw;
   border-bottom: none;
+  transform: translate(-50%, -50%);
+  top: 3.67%;
+  left: 50%;
+  position: fixed;
 
   & h1 {
     line-height: 7.5rem;

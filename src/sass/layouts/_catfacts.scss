@@ -1,5 +1,11 @@
 .catfacts {
   grid-row: 10;
   grid-column: 1;
-  background: gold;
+  display: grid;
+  grid-template-rows: 10rem max-content;
+  grid-template-columns: 1fr;
+
+  & h1 {
+    grid-row: 2;
+  }
 }

@@ -1,5 +1,11 @@
 .finalfantasy {
   grid-row: 6;
   grid-column: 1;
-  background: orangered;
+  display: grid;
+  grid-template-rows: 10rem max-content;
+  grid-template-columns: 1fr;
+
+  & h1 {
+    grid-row: 2;
+  }
 }
