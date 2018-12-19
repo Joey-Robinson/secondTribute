@@ -1,0 +1,13 @@
+.wow {
+  grid-column: 1;
+  grid-row: 4;
+  background: url('../../src/images/firecat.jpg') no-repeat center center / cover;
+  display: grid;
+  grid-template-rows: 7.5rem max-content;
+  grid-template-columns: 1fr;
+  filter: saturate(3);
+
+  ul {
+    grid-row: 2;
+  }
+}

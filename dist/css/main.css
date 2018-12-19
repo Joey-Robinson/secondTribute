@@ -103,27 +103,6 @@ ul,
 li {
   list-style: none; }
 
-header.smaller {
-  height: 75px; }
-
-header.smaller h1#logo {
-  width: 150px;
-  height: 75px;
-  line-height: 55px;
-  font-size: 55px;
-  margin: 0; }
-
-header.smaller nav a {
-  line-height: 75px; }
-
-a {
-  text-decoration: none;
-  color: #fcfcfc;
-  font-weight: 300; }
-
-a:hover {
-  color: #3c3c3c; }
-
 .header {
   width: 100%;
   height: 10em;
@@ -132,55 +111,61 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 999;
-  border-bottom: solid 2px #f4f4f4;
-  background-color: rgba(80, 19, 28, 0.75);
+  border-bottom: solid 1.3px #FF7D0A;
+  background: #191919;
   transition: height 0.3s; }
   .header h1 {
     display: block;
     margin: 0;
-    padding: 0 3rem;
-    background-color: #fd5559;
+    padding: 0;
     float: left;
     font-family: "Open Sans", sans-serif;
     font-size: 6rem;
-    color: #fcfcfc;
-    text-shadow: 0.1em 0.03em #C0392B;
+    color: #FF7D0A;
+    text-shadow: 0.5px 0.5px #f0f0f0;
     font-weight: 400;
     transition: all 0.3s; }
+    .header h1:hover {
+      color: #f0f0f0;
+      text-shadow: 0.5px 0.5px #FF7D0A; }
   .header-container {
     width: 80%;
     margin: 0 auto;
     padding: 0 30px; }
   .header nav {
     display: block;
-    float: right; }
+    float: right;
+    position: absolute;
+    right: 0;
+    padding: 0 10rem 0 0; }
     .header nav a {
+      text-decoration: none;
       line-height: 150px;
       margin-left: 20px;
-      color: #fcfcfc;
+      color: #FF7D0A;
       font-weight: 300;
       font-size: 2rem;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      -ms-transition: all 0.3s;
-      -o-transition: all 0.3s;
       transition: all 0.3s; }
       .header nav a:hover {
-        color: #FF7D0A; }
+        color: #f0f0f0; }
 
 header.smaller {
-  height: 7.5rem; }
+  height: 7.5rem;
+  background: transparent;
+  border-bottom: none; }
   header.smaller h1 {
     line-height: 7.5rem;
-    font-size: 1.6rem;
-    background: #000;
-    float: left;
-    padding: 0 3rem 0 0; }
-  header.smaller nav a {
-    line-height: 7.5rem; }
-
-header.smaller nav a {
-  line-height: 75px; }
+    font-size: 5.5rem;
+    padding: 0;
+    margin: 0; }
+  header.smaller nav {
+    display: block;
+    float: right;
+    position: absolute;
+    right: 0;
+    padding: 0 10rem 0 0; }
+    header.smaller nav a {
+      line-height: 7.5rem; }
 
 @media all and (max-width: 760px) {
   header h1#logo {
@@ -217,7 +202,43 @@ header.smaller nav a {
   footer a {
     display: block; } }
 
+.catfacts {
+  grid-row: 10;
+  grid-column: 1;
+  background: gold; }
+
+.favoritecat {
+  grid-row: 8;
+  grid-column: 1;
+  background: darkblue; }
+
+.finalfantasy {
+  grid-row: 6;
+  grid-column: 1;
+  background: orangered; }
+
+.home {
+  grid-row: 2;
+  grid-column: 1;
+  background: purple;
+  display: grid;
+  grid-template-rows: 10rem max-content;
+  grid-template-columns: 1fr; }
+  .home h1 {
+    grid-row: 2; }
+
 .primary {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: max-content 100vh 2rem 100vh 2rem 100vh 2rem 100vh max-content; }
+  grid-template-rows: max-content 100vh 2rem 100vh 2rem 100vh 2rem 100vh 2rem 100vh max-content; }
+
+.wow {
+  grid-column: 1;
+  grid-row: 4;
+  background: url("../../src/images/firecat.jpg") no-repeat center center/cover;
+  display: grid;
+  grid-template-rows: 7.5rem max-content;
+  grid-template-columns: 1fr;
+  filter: saturate(3); }
+  .wow ul {
+    grid-row: 2; }
