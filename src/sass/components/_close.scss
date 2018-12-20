@@ -1,0 +1,38 @@
+.close {
+  display: block;
+  content: "&otimes;";
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 999;
+  color: $primaryColor;
+  background: $druidOrange;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.open {
+  content: "+";
+  display: block;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 999;
+  color: $primaryColor;
+  background: $druidOrange;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

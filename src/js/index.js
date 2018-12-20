@@ -4,7 +4,10 @@ import ffCall from "./api/finalFantasy";
 import weeklyAffixes from "./api/weeklyAffixes";
 import wowCharacter from "./api/wowCharacter";
 // Components
-import { resizeHeaderOnScroll } from "./components/header";
+import {
+  resizeHeaderOnScroll,
+  closeHeader
+} from "./components/header";
 // User
 import ffResourcesList from "./user/ffResources";
 

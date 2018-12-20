@@ -25,3 +25,18 @@ export const resizeHeaderOnScroll = () => {
     headerEl.classList.remove("smaller");
   }
 }
+
+export const closeHeader = () => {
+  const close = document.getElementById('close');
+  close.addEventListener("click", () => {
+    const header = document.getElementById('header');
+    close.classList.toggle("open");
+    if (header.style.display === 'block') {
+      header.style.display = 'none';
+    } else {
+      header.style.display = 'block';
+    }
+  })
+}
+
+closeHeader();
