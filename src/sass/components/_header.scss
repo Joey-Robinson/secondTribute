@@ -1,5 +1,5 @@
 .header {
-  width: 100vw;
+  width: 100%;
   height: 10em;
   overflow: hidden;
   position: fixed;
@@ -7,7 +7,6 @@
   left: 0;
   z-index: 999;
   border-bottom: solid 1.3px $druidOrange;
-  // background-color: rgba(80, 19, 28, 0.75);
   background: darken($primaryColor, 3.5);
   transition: height 0.3s;
 
@@ -32,7 +31,7 @@
   &-container {
     width: 80%;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 3rem;
   }
 
   & nav {
@@ -40,7 +39,7 @@
     float: right;
     position: absolute;
     right: 0;
-    padding: 0 10rem 0 0;
+    padding: 0 19rem 0 0;
 
     & a {
       text-decoration: none;
@@ -62,6 +61,11 @@ header.smaller {
   height: 7.5rem;
   background: rgba(34, 34, 34, .5);
   border-bottom: none;
+  width: 97.79%;
+  top: 3.6%;
+  left: 50%;
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
 
   & h1 {
     line-height: 7.5rem;
@@ -75,7 +79,7 @@ header.smaller {
     float: right;
     position: absolute;
     right: 0;
-    padding: 0 10rem 0 0;
+    padding: 0 17rem 0 0;
 
     & a {
       line-height: 7.5rem;
@@ -83,55 +87,55 @@ header.smaller {
   }
 }
 
-@media all and (max-width: 760px) {
-  header h1#logo {
-    display: block;
-    float: none;
-    margin: 0 auto;
-    height: 100px;
-    line-height: 80px;
-    text-align: center;
-  }
+// @media all and (max-width: 760px) {
+//   header h1#logo {
+//     display: block;
+//     float: none;
+//     margin: 0 auto;
+//     height: 100px;
+//     line-height: 80px;
+//     text-align: center;
+//   }
 
-  header nav {
-    display: block;
-    float: none;
-    height: 50px;
-    text-align: center;
-    margin: 0 auto;
-  }
+//   header nav {
+//     display: block;
+//     float: none;
+//     height: 50px;
+//     text-align: center;
+//     margin: 0 auto;
+//   }
 
-  header nav a {
-    line-height: 50px;
-    margin: 0 10px;
-  }
+//   header nav a {
+//     line-height: 50px;
+//     margin: 0 10px;
+//   }
 
-  header.smaller {
-    height: 75px;
-  }
+//   header.smaller {
+//     height: 75px;
+//   }
 
-  header.smaller h1#logo {
-    height: 40px;
-    line-height: 40px;
-    font-size: 30px;
-    width: 100%;
-  }
+//   header.smaller h1#logo {
+//     height: 40px;
+//     line-height: 40px;
+//     font-size: 30px;
+//     width: 100%;
+//   }
 
-  header.smaller nav {
-    height: 35px;
-  }
+//   header.smaller nav {
+//     height: 35px;
+//   }
 
-  header.smaller nav a {
-    line-height: 35px;
-  }
-}
+//   header.smaller nav a {
+//     line-height: 35px;
+//   }
+// }
 
-@media all and (max-width: 600px) {
-  .container {
-    width: 100%;
-  }
+// @media all and (max-width: 600px) {
+//   .container {
+//     width: 100%;
+//   }
 
-  footer a {
-    display: block;
-  }
-}
+//   footer a {
+//     display: block;
+//   }
+// }
