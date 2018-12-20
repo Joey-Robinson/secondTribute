@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./dist/css/main.css" type="text/css" />
-    <title>Meow</title>
-  </head>
 
-  <body>
-    <div class="primary" id="primary">
-      <button class="close" id="close"></button>
-      <div id="wrapper">
-        <header class="header" id="header">
-          <div class="header-container">
-            <a href="#home"> <h1 id="logo">Meerkats</h1> </a>
-            <nav>
-              <a href="#wow">World Of Warcraft</a>
-              <a href="#finalfantasy">Final Fantasy 14</a>
-              <a href="#favoritecat">Favorite Cat</a>
-              <a href="#catfacts">Cat Facts</a>
-            </nav>
-          </div>
-        </header>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./dist/css/main.css" type="text/css" />
+  <title>Meow</title>
+</head>
 
-      <div class="home" id="home"><h1>From Home</h1></div>
+<body>
+  <div class="primary" id="primary">
+    <button class="open" id="close"></button>
+    <div style="display:block;" id="wrapper">
+      <header class="header" id="header">
+        <div class="header-container">
+          <a href="#home">
+            <h1 id="logo">Meerkats</h1>
+          </a>
+          <nav>
+            <a href="#wow">World Of Warcraft</a>
+            <a href="#finalfantasy">Final Fantasy 14</a>
+            <a href="#favoritecat">Favorite Cat</a>
+            <a href="#catfacts">Cat Facts</a>
+          </nav>
+        </div>
+      </header>
+    </div>
 
-      <div class="wow" id="wow">
-        <div class="wow-primary"><h1>From World Of Warcraft</h1></div>
-      </div>
-      <div class="finalfantasy" id="finalfantasy">
-        <div class="finalfantasy-primary"><h1>From Final Fantasy</h1></div>
-      </div>
-      <div class="favoritecat" id="favoritecat">
-        <div class="favoritecat-primary"><h1>From Favorite Cat</h1></div>
-      </div>
-      <div class="catfacts" id="catfacts">
-        <div class="catfacts-primary"><h1>From Cat Facts</h1></div>
+    <div class="home" id="home">
+      <h1>From Home</h1>
+    </div>
+
+    <div class="wow" id="wow">
+      <div class="wow-primary">
+        <h1>From World Of Warcraft</h1>
       </div>
     </div>
-    <script src="./dist/js/bundle.js"></script>
-  </body>
+    <div class="finalfantasy" id="finalfantasy">
+      <div class="finalfantasy-primary">
+        <h1>From Final Fantasy</h1>
+      </div>
+    </div>
+    <div class="favoritecat" id="favoritecat">
+      <div class="favoritecat-primary">
+        <h1>From Favorite Cat</h1>
+      </div>
+    </div>
+    <div class="catfacts" id="catfacts">
+      <div class="catfacts-primary">
+        <h1>From Cat Facts</h1>
+      </div>
+    </div>
+  </div>
+  <script src="./dist/js/bundle.js"></script>
+</body>
+
 </html>
