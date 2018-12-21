@@ -6,7 +6,8 @@ import wowCharacter from "./api/wowCharacter";
 // Components
 import {
   resizeHeaderOnScroll,
-  closeHeader
+  closeHeader,
+  changeIcon
 } from "./components/header";
 // User
 import ffResourcesList from "./user/ffResources";
