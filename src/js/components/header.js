@@ -43,10 +43,10 @@ closeHeader();
 export const changeIcon = () => {
   const close = document.getElementById("close");
   close.addEventListener("click", () => {
-    if (close.innerHTML === "X") {
+    if (close.innerHTML === "x") {
       close.innerHTML = "+";
     } else {
-      close.innerHTML = "X";
+      close.innerHTML = "x";
     };
   });
 };
