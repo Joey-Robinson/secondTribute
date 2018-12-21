@@ -106,16 +106,16 @@ li {
 .open {
   display: block;
   position: fixed;
-  top: 4.5rem;
-  right: 2.5rem;
-  font-size: 3rem;
+  top: 0;
+  right: 1rem;
+  font-size: 2rem;
   text-align: center;
-  z-index: 999;
+  z-index: 1000;
   color: #FF7D0A;
   background: none;
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   border: none;
   outline: none;
   cursor: pointer; }
@@ -123,22 +123,20 @@ li {
 .header {
   display: block;
   width: 100%;
-  height: 10rem;
+  height: 7rem;
   overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
-  border-bottom: solid 1.3px #FF7D0A;
-  background: #191919;
   transition: height 0.3s; }
   .header h1 {
     display: block;
     margin: 0;
-    padding: 0;
+    padding: 1.35rem 0 0 0;
     float: left;
     font-family: "Open Sans", sans-serif;
-    font-size: 6rem;
+    font-size: 4rem;
     color: #FF7D0A;
     text-shadow: 0.5px 0.5px #f0f0f0;
     font-weight: 400;
@@ -156,11 +154,11 @@ li {
     position: fixed;
     right: 0;
     padding: 0 17rem 0 0;
-    height: 10rem; }
+    height: 7rem; }
     .header nav a {
       text-decoration: none;
-      line-height: 150px;
-      margin-left: 20px;
+      line-height: 10rem;
+      margin-left: 2rem;
       color: #FF7D0A;
       font-weight: 300;
       font-size: 2rem;
@@ -171,10 +169,10 @@ li {
 header.smaller {
   height: 6rem;
   border-bottom: none;
-  background: none; }
+  background: rgba(17, 17, 17, 0.75); }
   header.smaller h1 {
-    line-height: 7.5rem;
-    font-size: 5rem;
+    line-height: 7rem;
+    font-size: 4rem;
     padding: 0;
     margin: 0; }
   header.smaller nav {
@@ -231,13 +229,13 @@ header.smaller {
     justify-self: center;
     background: rgba(34, 34, 34, 0.5); }
 
-.home {
+.landing {
   grid-row: 2;
   grid-column: 1;
   display: grid;
   grid-template-rows: 10rem max-content;
   grid-template-columns: 1fr; }
-  .home h1 {
+  .landing h1 {
     grid-row: 2; }
 
 .primary {

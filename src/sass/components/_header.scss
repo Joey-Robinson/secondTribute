@@ -1,23 +1,23 @@
 .header {
   display: block;
   width: 100%;
-  height: 10rem;
+  height: 7rem;
   overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
-  border-bottom: solid 1.3px $druidOrange;
-  background: darken($primaryColor, 3.5);
+  // border-bottom: solid 1.3px $druidOrange;
+  // background: darken($primaryColor, 3.5);
   transition: height 0.3s;
 
   & h1 {
     display: block;
     margin: 0;
-    padding: 0;
+    padding: 1.35rem 0 0 0;
     float: left;
     font-family: "Open Sans", sans-serif;
-    font-size: 6rem;
+    font-size: 4rem;
     color: $druidOrange;
     text-shadow: 0.5px 0.5px $headerWhite;
     font-weight: 400;
@@ -41,12 +41,12 @@
     position: fixed;
     right: 0;
     padding: 0 17rem 0 0;
-    height: 10rem;
+    height: 7rem;
 
     & a {
       text-decoration: none;
-      line-height: 150px;
-      margin-left: 20px;
+      line-height: 10rem;
+      margin-left: 2rem;
       color: $druidOrange;
       font-weight: 300;
       font-size: 2rem;
@@ -62,11 +62,12 @@
 header.smaller {
   height: 6rem;
   border-bottom: none;
-  background: none;
+  // background: darken($primaryColor, 3.5);
+  background: rgba(17, 17, 17, .75);
 
   & h1 {
-    line-height: 7.5rem;
-    font-size: 5rem;
+    line-height: 7rem;
+    font-size: 4rem;
     padding: 0;
     margin: 0;
   }
