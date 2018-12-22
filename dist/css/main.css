@@ -235,8 +235,25 @@ header.smaller {
   display: grid;
   grid-template-rows: 10rem max-content;
   grid-template-columns: 1fr; }
-  .landing h1 {
-    grid-row: 2; }
+  .landing-top {
+    grid-row: 2;
+    justify-self: center;
+    align-self: center; }
+  .landing-middle {
+    grid-row: 3;
+    justify-self: center;
+    align-self: center; }
+  .landing-bottom {
+    grid-row: 4;
+    align-self: flex-end; }
+    .landing-bottom ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(36.5rem, 35rem));
+      justify-content: center;
+      grid-gap: 1rem; }
+      .landing-bottom ul img {
+        height: auto;
+        width: 100%; }
 
 .primary {
   display: grid;
