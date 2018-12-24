@@ -3330,7 +3330,19 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _catFacts = __webpack_require__(/*! ./api/catFacts */ \"./src/js/api/catFacts.js\");\n\nvar _catFacts2 = _interopRequireDefault(_catFacts);\n\nvar _finalFantasy = __webpack_require__(/*! ./api/finalFantasy */ \"./src/js/api/finalFantasy.js\");\n\nvar _finalFantasy2 = _interopRequireDefault(_finalFantasy);\n\nvar _weeklyAffixes = __webpack_require__(/*! ./api/weeklyAffixes */ \"./src/js/api/weeklyAffixes.js\");\n\nvar _weeklyAffixes2 = _interopRequireDefault(_weeklyAffixes);\n\nvar _wowCharacter = __webpack_require__(/*! ./api/wowCharacter */ \"./src/js/api/wowCharacter.js\");\n\nvar _wowCharacter2 = _interopRequireDefault(_wowCharacter);\n\nvar _header = __webpack_require__(/*! ./components/header */ \"./src/js/components/header.js\");\n\nvar _ffResources = __webpack_require__(/*! ./user/ffResources */ \"./src/js/user/ffResources.js\");\n\nvar _ffResources2 = _interopRequireDefault(_ffResources);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("\n\nvar _catFacts = __webpack_require__(/*! ./api/catFacts */ \"./src/js/api/catFacts.js\");\n\nvar _catFacts2 = _interopRequireDefault(_catFacts);\n\nvar _finalFantasy = __webpack_require__(/*! ./api/finalFantasy */ \"./src/js/api/finalFantasy.js\");\n\nvar _finalFantasy2 = _interopRequireDefault(_finalFantasy);\n\nvar _weeklyAffixes = __webpack_require__(/*! ./api/weeklyAffixes */ \"./src/js/api/weeklyAffixes.js\");\n\nvar _weeklyAffixes2 = _interopRequireDefault(_weeklyAffixes);\n\nvar _wowCharacter = __webpack_require__(/*! ./api/wowCharacter */ \"./src/js/api/wowCharacter.js\");\n\nvar _wowCharacter2 = _interopRequireDefault(_wowCharacter);\n\nvar _header = __webpack_require__(/*! ./components/header */ \"./src/js/components/header.js\");\n\nvar _ffResources = __webpack_require__(/*! ./user/ffResources */ \"./src/js/user/ffResources.js\");\n\nvar _ffResources2 = _interopRequireDefault(_ffResources);\n\nvar _landing = __webpack_require__(/*! ./pages/landing */ \"./src/js/pages/landing.js\");\n\nvar _landing2 = _interopRequireDefault(_landing);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/pages/landing.js":
+/*!*********************************!*\
+  !*** ./src/js/pages/landing.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar something = exports.something = function something() {\n  var landingListImages = [{\n    thumbnail: '../../images/finalfantasybackground.jpg',\n    largeImage: '../../src/images/finalfantasybackground.jpg'\n  }, {\n    thumbnail: '../../images/firecat-tiltshift.jpg',\n    largeImage: '../../src/images/finalfantasybackground.jpg'\n  }, {\n    thumbnail: '../../images/firecat.jpg',\n    largeImage: '../../src/images/finalfantasybackground.jpg'\n  }, {\n    thumbnail: '../../images/space.jpg',\n    largeImage: '../../src/images/finalfantasybackground.jpg'\n  }];\n\n  var landingList = document.getElementById(\"landing-list\");\n  var newLandingList = landingListImages.map(function (image, index) {\n    return '<li><img src=' + image.largeImage + '></li>';\n  });\n  landingList.innerHTML = newLandingList.join(\" \");\n};\n\nsomething();\n\n//# sourceURL=webpack:///./src/js/pages/landing.js?");
 
 /***/ }),
 

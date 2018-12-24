@@ -11,7 +11,7 @@ import {
 } from "./components/header";
 // User
 import ffResourcesList from "./user/ffResources";
-
+import landing from './pages/landing';
 // const removeLocationHash = () => {
 //   const noHashURL = window.location.href.replace(/#.*$/, '');
 //   window.history.replaceState('', document.title, noHashURL)
