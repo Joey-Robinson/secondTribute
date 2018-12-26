@@ -29,6 +29,7 @@
       grid-column-gap: 5px;
 
       & img {
+        filter: saturate(200%);
         height: auto;
         width: 100%;
       }

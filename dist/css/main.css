@@ -272,5 +272,6 @@ header.smaller {
       margin: 0;
       grid-column-gap: 5px; }
       .landing-bottom ul img {
+        filter: saturate(200%);
         height: auto;
         width: 100%; }
