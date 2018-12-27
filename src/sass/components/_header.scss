@@ -31,7 +31,7 @@
 
   &-container {
     width: 80%;
-    margin: 0 auto;
+    margin: 0;
     padding: 0 3rem;
   }
 
@@ -40,7 +40,7 @@
     float: right;
     position: fixed;
     right: 0;
-    padding: 0 17rem 0 0;
+    padding: 0 7rem 0 0;
     height: 7rem;
 
     & a {
@@ -63,7 +63,7 @@ header.smaller {
   height: 6rem;
   border-bottom: none;
   // background: darken($primaryColor, 3.5);
-  background: rgba(17, 17, 17, .75);
+  background: rgba(17, 17, 17, .5);
 
   & h1 {
     line-height: 7rem;
@@ -77,7 +77,7 @@ header.smaller {
     float: right;
     position: absolute;
     right: 0;
-    padding: 0 17rem 0 0;
+    padding: 0 7rem 0 0;
 
     & a {
       line-height: 7.5rem;

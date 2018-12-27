@@ -146,14 +146,14 @@ li {
       text-shadow: 0.5px 0.5px #FF7D0A; }
   .header-container {
     width: 80%;
-    margin: 0 auto;
+    margin: 0;
     padding: 0 3rem; }
   .header nav {
     display: block;
     float: right;
     position: fixed;
     right: 0;
-    padding: 0 17rem 0 0;
+    padding: 0 7rem 0 0;
     height: 7rem; }
     .header nav a {
       text-decoration: none;
@@ -169,7 +169,7 @@ li {
 header.smaller {
   height: 6rem;
   border-bottom: none;
-  background: rgba(17, 17, 17, 0.75); }
+  background: rgba(17, 17, 17, 0.5); }
   header.smaller h1 {
     line-height: 7rem;
     font-size: 4rem;
@@ -180,7 +180,7 @@ header.smaller {
     float: right;
     position: absolute;
     right: 0;
-    padding: 0 17rem 0 0; }
+    padding: 0 7rem 0 0; }
     header.smaller nav a {
       line-height: 7.5rem; }
 
@@ -243,8 +243,11 @@ header.smaller {
     grid-row: 2;
     grid-column: 1;
     height: 93vh;
-    width: 98vw;
-    justify-self: center; }
+    width: 98vw; }
+    .wow-primary h1 {
+      font-size: 3.5rem;
+      color: #FF7D0A;
+      text-align: center; }
 
 .landing {
   grid-row: 2;
