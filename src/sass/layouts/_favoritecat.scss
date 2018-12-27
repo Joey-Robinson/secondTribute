@@ -4,7 +4,7 @@
   display: grid;
   grid-template-rows: 7.5rem max-content;
   grid-template-columns: 1fr;
-  background: orangered;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 
   &-primary {
     grid-row: 2;
@@ -12,6 +12,5 @@
     height: 91vh;
     width: 97.8%;
     justify-self: center;
-    background: rgba(34, 34, 34, .5);
   }
 }

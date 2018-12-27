@@ -68,6 +68,8 @@ export const landing = () => {
     return `<li>
       <a 
         href=${image.largeImage}
+        target="_blank"
+        rel="noopener no referrer"
       >
         <img 
           src=${image.thumbnail} 
