@@ -12,8 +12,10 @@
     align-self: center;
     background: darken($primaryColor, 4);
     color: $headerWhite;
+    border-radius: 2rem;
 
     & h1 {
+      padding: 1rem 0 0 0;
       text-align: center;
       font-size: 3rem;
       color: $druidOrange;
@@ -24,12 +26,6 @@
       padding: 1rem 5rem 1rem 5rem;
     }
   }
-
-  // &-middle {
-  //   grid-row: 3;
-  //   justify-self: center;
-  //   align-self: center;
-  // }
 
   &-bottom {
     grid-row: 4;

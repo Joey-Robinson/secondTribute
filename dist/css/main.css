@@ -260,8 +260,10 @@ header.smaller {
     justify-self: center;
     align-self: center;
     background: #181818;
-    color: #f0f0f0; }
+    color: #f0f0f0;
+    border-radius: 2rem; }
     .landing-top h1 {
+      padding: 1rem 0 0 0;
       text-align: center;
       font-size: 3rem;
       color: #FF7D0A; }
