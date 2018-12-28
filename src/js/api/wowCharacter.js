@@ -4,14 +4,29 @@ export const wowCharacter = async () => {
   console.log(data);
   const wow = document.querySelector(".wow-primary");
   const wowBest = document.querySelector(".wow-best");
+  const recent = document.querySelector(".wow-recent");
   const profile = data.profile_url;
   const name = data.name;
   const spec = data.active_spec_name;
   const druid = data.class;
+  const recentPlus = data.mythic_plus_recent_runs;
   const plusRankRegion = data.mythic_plus_ranks.class_healer.region;
   const plusRankRealm = data.mythic_plus_ranks.class_healer.realm;
   const bestOverall = data.mythic_plus_best_runs;
   const druidInformation = 'https://wow.gamepedia.com/Druid';
+
+  const recentInner = recentPlus.map((dungeon) => {
+    return `
+      <table>
+        <tr>
+          <td>
+            ${dungeon.mythic_level}
+            ${dungeon.dungeon}
+          </td>
+        </tr>
+      </table>
+    `
+  })
   const wowBestInner = bestOverall.map((best) => {
     return `
     <table>
@@ -30,24 +45,24 @@ export const wowCharacter = async () => {
     </table>
   `
   })
-  wowBest.innerHTML = `<th>Best Runs:</th>${wowBestInner.join(" ")}`;
   wow.innerHTML = `
-    <table>
-      <tr>
-        <td>Name: <a href=${profile}>${name}</a></td>
-      </tr>
-      <tr>
-        <td>Spec | Class: <a href=${druidInformation}> ${spec} ${druid}</a></td>
-      </tr>
-      <tr>
-        <td>Current Region Rank: ${plusRankRegion}</td>
-      </tr>
-      <tr>
-        <td>Current Realm Rank: ${plusRankRealm}</td>
-      </tr>
-    </table>
+  <table>
+    <tr>
+      <td>Name: <a href=${profile}>${name}</a></td>
+    </tr>
+    <tr>
+      <td>Spec | Class: <a href=${druidInformation}> ${spec} ${druid}</a></td>
+    </tr>
+    <tr>
+      <td>Current Region Rank: ${plusRankRegion}</td>
+    </tr>
+    <tr>
+      <td>Current Realm Rank: ${plusRankRealm}</td>
+    </tr>
+  </table>
   `
-  // const bestOverall = data.mythic_plus_best_runs;
+  recent.innerHTML = `<th>Recent Mythic Plus:</th>${recentInner.join(" ")}`;
+  wowBest.innerHTML = `<th>Best Runs:</th>${wowBestInner.join(" ")}`;
   // const recentPlus = data.mythic_plus_recent_runs[0];
   // const recentPlusChest = data.mythic_plus_recent_runs[0].num_keystone_upgrades;
   // const recentPlusOne = data.mythic_plus_recent_runs[1];
