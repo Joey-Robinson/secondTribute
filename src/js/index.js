@@ -1,7 +1,7 @@
 // API
-import catFacts from "./api/catFacts";
-import ffCall from "./api/finalFantasy";
-import weeklyAffixes from "./api/weeklyAffixes";
+// import catFacts from "./api/catFacts";
+// import ffCall from "./api/finalFantasy";
+// import weeklyAffixes from "./api/weeklyAffixes";
 import wowCharacter from "./api/wowCharacter";
 // Components
 import {
@@ -10,7 +10,7 @@ import {
   changeIcon
 } from "./components/header";
 // User
-import ffResourcesList from "./user/ffResources";
+// import ffResourcesList from "./user/ffResources";
 import landing from './pages/landing';
 // const removeLocationHash = () => {
 //   const noHashURL = window.location.href.replace(/#.*$/, '');
