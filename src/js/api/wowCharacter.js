@@ -20,13 +20,21 @@ export const wowCharacter = async () => {
       <table>
         <tr>
           <td>
-            ${dungeon.mythic_level}
-            ${dungeon.dungeon}
+            <a
+              href=${dungeon.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              + ${dungeon.num_keystone_upgrades}
+              ${dungeon.dungeon} &hybull;
+              ${dungeon.mythic_level}
+            </a>
           </td>
         </tr>
       </table>
     `
-  })
+  });
+
   const wowBestInner = bestOverall.map((best) => {
     return `
     <table>
@@ -44,7 +52,8 @@ export const wowCharacter = async () => {
       </tr>
     </table>
   `
-  })
+  });
+
   wow.innerHTML = `
   <table>
     <tr>
@@ -60,9 +69,11 @@ export const wowCharacter = async () => {
       <td>Current Realm Rank: ${plusRankRealm}</td>
     </tr>
   </table>
-  `
-  recent.innerHTML = `<th>Recent Mythic Plus:</th>${recentInner.join(" ")}`;
-  wowBest.innerHTML = `<th>Best Runs:</th>${wowBestInner.join(" ")}`;
+  `;
+
+  recent.innerHTML = `<h4>Recent Mythic Plus Runs:</h4>${recentInner.join(" ")}`;
+  wowBest.innerHTML = `<h4>Best Mythic Plus Runs:</h4>${wowBestInner.join(" ")}`;
+
   // const recentPlus = data.mythic_plus_recent_runs[0];
   // const recentPlusChest = data.mythic_plus_recent_runs[0].num_keystone_upgrades;
   // const recentPlusOne = data.mythic_plus_recent_runs[1];
