@@ -6,6 +6,10 @@
   background-attachment: fixed;
 }
 
+@mixin wowTransition {
+  transition: all .3s ease-in-out;
+}
+
 @mixin navDefaults {
   height: 25vh;
   width: 100%;

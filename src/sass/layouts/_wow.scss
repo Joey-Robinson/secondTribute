@@ -4,31 +4,87 @@
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../src/images/firecat.jpg") no-repeat center center / cover;
   display: grid;
-  grid-template-rows: 6rem 1fr;
-  grid-template-columns: max-content max-content;
-  grid-column-gap: 20rem;
+  grid-template-rows: 6rem 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   filter: saturate(2);
   font-weight: bold;
+  justify-items: center;
 
-  div {
-    width: 100%;
-    height: 100%;
+  & h4 {
+    padding: 1rem 0 5px 0;
+
+    &::before {
+      content: "[ ";
+    }
+
+    &::after {
+      content: " ]";
+    }
+  }
+
+  & div {
     font-size: $base;
-    color: $druidOrange;
+    align-self: center;
   }
 
   &-primary {
+    color: $druidOrange;
     grid-row: 2;
     grid-column: 1;
   }
 
   &-best {
+    color: $druidOrange;
     grid-row: 2;
     grid-column: 2;
   }
 
   &-recent {
+    color: $druidOrange;
     grid-row: 2;
     grid-column: 3;
+  }
+
+  &-ristretta {
+    color: $monkGreen;
+    grid-row: 3;
+    grid-column: 1;
+    align-self: center;
+  }
+
+  &-ristrettaBest {
+    color: $monkGreen;
+    grid-row: 3;
+    grid-column: 2;
+    align-self: center;
+  }
+
+  &-ristrettaRecent {
+    color: $monkGreen;
+    grid-row: 3;
+    grid-column: 3;
+    align-self: center;
+  }
+}
+
+.ristretta {
+  & a {
+    color: $monkGreen;
+    @include wowTransition;
+
+    &:hover {
+      color: $druidOrange;
+    }
+  }
+}
+
+.meerkats {
+  & a {
+    color: $druidOrange;
+    @include wowTransition;
+
+    &:hover {
+      color: $monkGreen;
+    }
   }
 }

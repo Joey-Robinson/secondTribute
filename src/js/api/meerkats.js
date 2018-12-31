@@ -1,4 +1,4 @@
-export const wowCharacter = async () => {
+export const meerkats = async () => {
   const response = await fetch("https://raider.io/api/v1/characters/profile?region=us&realm=Zul'jin&name=Meerkatz&fields=gear,mythic_plus_scores,mythic_plus_ranks,mythic_plus_recent_runs,mythic_plus_best_runs")
   const data = await response.json();
   console.log(data);
@@ -45,7 +45,7 @@ export const wowCharacter = async () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-          ${best.mythic_level}
+          ${best.mythic_level} -
           ${best.dungeon}
           </a>
         </td>
@@ -55,31 +55,22 @@ export const wowCharacter = async () => {
   });
 
   wow.innerHTML = `
-  <table>
-    <tr>
-      <td>Name: <a href=${profile}>${name}</a></td>
-    </tr>
-    <tr>
-      <td>Spec | Class: <a href=${druidInformation}> ${spec} ${druid}</a></td>
-    </tr>
-    <tr>
-      <td>Current Region Rank: ${plusRankRegion}</td>
-    </tr>
-    <tr>
-      <td>Current Realm Rank: ${plusRankRealm}</td>
-    </tr>
-  </table>
+    <h4>Character Information</h4>
+      <table>
+        <tr>
+          <td>Name: <a href=${profile}>${name}</a></td>
+        </tr>
+        <tr>
+          <td>Spec | Class: <a href=${druidInformation}> ${spec} ${druid}</a></td>
+        </tr>
+        <tr>
+          <td>Current Realm Rank: ${plusRankRealm}</td>
+        </tr>
+      </table>
   `;
 
-  recent.innerHTML = `<h4>Recent Mythic Plus Runs:</h4>${recentInner.join(" ")}`;
-  wowBest.innerHTML = `<h4>Best Mythic Plus Runs:</h4>${wowBestInner.join(" ")}`;
-
-  // const recentPlus = data.mythic_plus_recent_runs[0];
-  // const recentPlusChest = data.mythic_plus_recent_runs[0].num_keystone_upgrades;
-  // const recentPlusOne = data.mythic_plus_recent_runs[1];
-  // const recentPlusChestOne = data.mythic_plus_recent_runs[1].num_keystone_upgrades;
-  // const recentPlusTwo = data.mythic_plus_recent_runs[2];
-  // const recentPlusChestTwo = data.mythic_plus_recent_runs[2].num_keystone_upgrade;
+  recent.innerHTML = `<h4>Recent Mythic Plus Runs</h4>${recentInner.join(" ")}`;
+  wowBest.innerHTML = `<h4>Best Mythic Plus Runs</h4>${wowBestInner.join(" ")}`;
 
   const changeFavIcon = img => {
     let favIcon = document.querySelector('link[rel="shortcut icon"]');
@@ -96,4 +87,4 @@ export const wowCharacter = async () => {
   changeFavIcon(favImage);
 }
 
-wowCharacter();
+meerkats();

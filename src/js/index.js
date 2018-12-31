@@ -2,7 +2,8 @@
 // import catFacts from "./api/catFacts";
 // import ffCall from "./api/finalFantasy";
 // import weeklyAffixes from "./api/weeklyAffixes";
-import wowCharacter from "./api/wowCharacter";
+import meerkats from "./api/meerkats";
+import ristretta from './api/ristretta';
 // Components
 import {
   resizeHeaderOnScroll,
