@@ -55,13 +55,13 @@ export const ristretta = async () => {
   });
 
   wow.innerHTML = `
-    <h4>Character Information</h4>
+    <h4>Monk Information</h4>
       <table>
         <tr>
-          <td>Name: <a href=${profile}>${name}</a></td>
+          <td>Name: <a target="_blank" rel="noreferrer noopener" href=${profile}>${name}</a></td>
         </tr>
         <tr>
-          <td>Spec | Class: <a href=${druidInformation}> ${spec} ${druid}</a></td>
+          <td>Spec | Class: <a target="_blank" rel="noreferrer noopener" href=${druidInformation}> ${spec} ${druid}</a></td>
         </tr>
         <tr>
           <td>Current Realm Rank: ${plusRankRealm}</td>
