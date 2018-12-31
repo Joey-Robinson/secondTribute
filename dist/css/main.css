@@ -184,6 +184,92 @@ header.smaller {
     header.smaller nav a {
       line-height: 7.5rem; }
 
+.modal {
+  background: blue;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 85vh;
+  width: 85vw;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 5rem;
+  justify-items: center;
+  z-index: 500; }
+  .modal-openButton {
+    border-radius: 7rem;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 3rem;
+    background: #00FF96;
+    color: #FF7D0A;
+    outline: #FF7D0A;
+    border: #FF7D0A;
+    box-shadow: 12px 0 15px -4px black, -12px 0 8px -4px black;
+    cursor: pointer;
+    transition: all .2s ease-in-out; }
+    .modal-openButton:hover {
+      width: 100%;
+      padding: 1rem;
+      margin: 1rem;
+      transform: translateY(1px); }
+    .modal-openButton:active {
+      width: 100%;
+      padding: 1rem;
+      margin: 1rem;
+      transform: translateY(3px); }
+  .modal-close {
+    padding: 0;
+    margin: 0;
+    grid-row: 3;
+    grid-column: 2;
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 20rem;
+    height: 50%;
+    background: #FF7D0A;
+    color: #00FF96;
+    border: #00FF96;
+    outline: orange;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 2.5px 2.5px orange;
+    transition: all .35s ease-in-out;
+    z-index: 101; }
+    .modal-close:hover {
+      padding: 0;
+      margin: 0;
+      width: 100%; }
+    .modal-close:active {
+      transition: all .1s ease-in-out;
+      transform: translateY(3px); }
+  .modal-backdrop {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 100vh;
+    width: 99.2vw;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 100; }
+  .modal-one {
+    grid-column: 1;
+    grid-row: 1; }
+  .modal-two {
+    grid-column: 2;
+    grid-row: 1; }
+  .modal-three {
+    grid-column: 3;
+    grid-row: 1; }
+
 .catfacts {
   grid-row: 10;
   grid-column: 1;
@@ -236,11 +322,16 @@ header.smaller {
   grid-row: 4;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../src/images/firecat.jpg") no-repeat center center/cover;
   display: grid;
-  grid-template-rows: 6rem 1fr 1fr;
+  grid-template-rows: 6rem 1fr min-content 1fr;
   grid-template-columns: repeat(3, 1fr);
   filter: saturate(2);
   font-weight: bold;
   justify-items: center; }
+  .wow h1 {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    font-size: 8rem;
+    color: #FF7D0A; }
   .wow h4 {
     padding: 0 0 5px 0; }
     .wow h4::before {
@@ -264,19 +355,22 @@ header.smaller {
     grid-column: 3; }
   .wow-ristretta {
     color: #00FF96;
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 1;
     align-self: center; }
   .wow-ristrettaBest {
     color: #00FF96;
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 2;
     align-self: center; }
   .wow-ristrettaRecent {
     color: #00FF96;
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 3;
     align-self: center; }
+  .wow-interests {
+    grid-row: 3;
+    grid-column: 2; }
 
 .ristretta a {
   color: #00FF96;

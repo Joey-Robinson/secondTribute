@@ -10,6 +10,7 @@ import {
   closeHeader,
   changeIcon
 } from "./components/header";
+import modalFunction from './components/modal';
 // User
 // import ffResourcesList from "./user/ffResources";
 import landing from './pages/landing';
