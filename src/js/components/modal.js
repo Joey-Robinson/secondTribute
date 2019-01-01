@@ -1,5 +1,6 @@
 export const modalFunction = () => {
   const openButton = document.querySelector('.wow-test');
+  const wow = document.getElementById('wow');
   const closeButton = document.createElement('button');
   const modalBackdrop = document.createElement('div');
   const modal = document.createElement('div');
@@ -23,8 +24,9 @@ export const modalFunction = () => {
     closeModal();
   });
   modalBackdrop.addEventListener('click', closeModal);
-  modalBackdrop.appendChild(closeButton);
-  modal.appendChild(modalBackdrop);
+  wow.append(modalBackdrop);
+  // modalBackdrop.appendChild(closeButton);
+  // modal.appendChild(modalBackdrop);
   modal.appendChild(closeButton);
   interests.appendChild(modal);
 }
