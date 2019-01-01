@@ -6,7 +6,7 @@ export const modalFunction = () => {
   const interests = document.querySelector('.wow-interests');
   modal.classList.add('modal');
   modalBackdrop.classList.add('modal-backdrop');
-
+  modal.innerHTML = `<h1>Hi</h1>`
   const closeModal = () => {
     modal.style.display = 'none';
     modalBackdrop.style.display = 'none';

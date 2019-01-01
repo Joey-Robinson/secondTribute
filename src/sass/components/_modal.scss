@@ -1,5 +1,5 @@
 .modal {
-  background: blue;
+  background: rgb(102, 173, 173);
   display: none;
   position: fixed;
   top: 50%;
@@ -45,22 +45,22 @@
   }
 
   &-close {
-    padding: 0;
+    padding: 0 0 1rem 0;
     margin: 0;
     grid-row: 3;
     grid-column: 2;
     width: 50%;
+    height: 50%;
     justify-self: center;
     align-self: center;
     border-radius: 20rem;
-    height: 50%;
     background: $druidOrange;
     color: $monkGreen;
     border: $monkGreen;
     outline: orange;
     cursor: pointer;
     font-size: 20px;
-    box-shadow: 2.5px 2.5px orange;
+    // box-shadow: $darkness;
     transition: all .35s ease-in-out;
     z-index: 101;
 
@@ -86,22 +86,7 @@
     overflow: hidden;
     transform: translate(-50%, -50%);
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
-    background: rgba(0, 0, 0, 0.85);
-    z-index: 100;
-  }
-
-  &-one {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  &-two {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  &-three {
-    grid-column: 3;
-    grid-row: 1;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 5;
   }
 }
