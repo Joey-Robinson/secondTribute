@@ -185,20 +185,25 @@ header.smaller {
       line-height: 7.5rem; }
 
 .modal {
-  background: #66adad;
+  background: #222;
   display: none;
   position: fixed;
-  top: 50%;
+  top: 52.5%;
   left: 50%;
-  height: 85vh;
-  width: 85vw;
+  height: 92vh;
+  width: 95vw;
   transform: translate(-50%, -50%);
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
   padding: 1rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr 5rem;
-  justify-items: center;
   z-index: 500; }
+  .modal-streamer {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 0 0 0 2.5rem; }
+    .modal-streamer h3 {
+      color: #00FF96; }
   .modal-openButton {
     border-radius: 7rem;
     width: 100%;
@@ -257,7 +262,7 @@ header.smaller {
     overflow: hidden;
     transform: translate(-50%, -50%);
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
-    background: rgba(0, 0, 0, 0.55);
+    background: rgba(0, 0, 0, 0.95);
     z-index: 5; }
 
 .catfacts {
