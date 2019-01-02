@@ -195,15 +195,20 @@ header.smaller {
   transform: translate(-50%, -50%);
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
   padding: 1rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr max-content 1fr;
   grid-template-rows: 1fr 1fr 5rem;
   z-index: 500; }
+  .modal h3 {
+    color: #00FF96; }
   .modal-streamer {
     grid-column: 1;
     grid-row: 1;
     padding: 0 0 0 2.5rem; }
-    .modal-streamer h3 {
-      color: #00FF96; }
+  .modal-resources {
+    padding: 0 5rem 0 5rem;
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 1; }
   .modal-openButton {
     border-radius: 7rem;
     width: 100%;

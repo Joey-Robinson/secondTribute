@@ -18,13 +18,78 @@ export const modalFunction = () => {
 
   modal.innerHTML = `
     <div class="modal-streamer">
-    <h3>Some Of My Favorite Streamers</h3>
+    <h3>Favorite Streamers</h3>
       <ul>
         ${streamerList.join(" ")}
       </ul>
     </div>
     <div class="modal-resources">
-      <h1>Test</h1>
+      <h3>Favorite Resrouces</h3>
+        <ul>
+          <li>
+            <a
+              href="https://questionablyepic.com/restodruid-catweaving/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+                Catweaving
+            </a>
+          </li>
+          <li>
+            <a
+              href="../../src/images/ui.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Playing With My UI
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.warcraftlogs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Reviewing Warcraft Logs
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.wowhead.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Checking Wowhead
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://www.wow-petopia.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Looking At Tamable Pets
+            </a>
+          </li>
+          <li>
+            <a 
+              href="https://wow.curseforge.com/addons"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Keeping Addons Updated
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://raider.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Researching Mythic Plus
+            </a>
+          </li>
+        </ul>
     </div>
   `;
 
