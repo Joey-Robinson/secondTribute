@@ -18,21 +18,21 @@ export const modalFunction = () => {
 
   modal.innerHTML = `
     <div class="modal-streamer">
-    <h3>Favorite Streamers</h3>
-      <ul>
-        ${streamerList.join(" ")}
-      </ul>
+      <h3>Favorite Streamers</h3>
+        <ul>
+          ${streamerList.join(" ")}
+        </ul>
     </div>
     <div class="modal-resources">
       <h3>Favorite Resrouces</h3>
         <ul>
           <li>
             <a
-              href="https://questionablyepic.com/restodruid-catweaving/"
+              href="https://theunderminejournal.com/"
               target="_blank"
               rel="noopener noreferrer"
               >
-                Catweaving
+                Talking To Goblins
             </a>
           </li>
           <li>
@@ -91,6 +91,141 @@ export const modalFunction = () => {
           </li>
         </ul>
     </div>
+    <div class="modal-classes">
+      <h3>Favorite Characters</h3>
+        <ul>
+          <li>
+            <a
+              href="https://worldofwarcraft.com/en-us/character/zuljin/Ristretta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ristretta - Mistweaver Monk
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://worldofwarcraft.com/en-us/character/zuljin/Meerkatz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Meerkatz - Restoration Druid
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://worldofwarcraft.com/en-us/character/zuljin/Meowkats"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Meowkats - Beast Master Hunter
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://worldofwarcraft.com/en-us/character/stormrage/Meerlocks"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Meerlocks - Affliction Warlock
+          </li>
+          <li>
+            <a
+              href="https://worldofwarcraft.com/en-us/character/zuljin/Merekats"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Merekats - Holy/Prot Paladin
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://worldofwarcraft.com/en-us/character/illidan/Orphea"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Orphea - Rogue
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://worldofwarcraft.com/en-us/character/zuljin/Meerkatz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Meerkatz - Balance Druid
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-favorites">
+        <h3>Favorite Dungeons</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.wowhead.com/court-of-stars"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Court Of Stars
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/the-arcway"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                The Arcway
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/the-underrot"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                The Underrot
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/eye-of-azshara-dungeon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Eye Of Azshara
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/halls-of-valor"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Halls Of Valor
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/temple-of-sethraliss"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Temple Of Sethraliss
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/waycrest-manor"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Waycrest Manor
+              </a>
+            </li>
+          </ul>
+      </div>  
   `;
 
   const closeModal = () => {

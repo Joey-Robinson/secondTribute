@@ -195,7 +195,7 @@ header.smaller {
   transform: translate(-50%, -50%);
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
   padding: 1rem;
-  grid-template-columns: 1fr max-content 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr 5rem;
   z-index: 500; }
   .modal h3 {
@@ -209,6 +209,15 @@ header.smaller {
     justify-self: center;
     grid-column: 2;
     grid-row: 1; }
+  .modal-classes {
+    grid-row: 1;
+    grid-column: 3;
+    justify-self: right;
+    padding: 0 2.5rem 0 0; }
+  .modal-favorites {
+    grid-row: 2;
+    grid-column: 1;
+    padding: 0 0 0 2.5rem; }
   .modal-openButton {
     border-radius: 7rem;
     width: 100%;
