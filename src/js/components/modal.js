@@ -23,8 +23,8 @@ export const modalFunction = () => {
           ${streamerList.join(" ")}
         </ul>
     </div>
-    <div class="modal-resources">
-      <h3>Favorite Resrouces</h3>
+    <div class="modal-activities">
+      <h3>Favorite Activities</h3>
         <ul>
           <li>
             <a
