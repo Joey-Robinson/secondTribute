@@ -198,6 +198,9 @@ header.smaller {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr 5rem;
   z-index: 500; }
+  .modal a:hover {
+    transition: all 0.1s ease-in;
+    color: #00FF96; }
   .modal h3 {
     color: #00FF96; }
   .modal-streamer {
@@ -205,7 +208,6 @@ header.smaller {
     grid-row: 1;
     padding: 0 0 0 2.5rem; }
   .modal-activities {
-    padding: 0 5rem 0 5rem;
     justify-self: center;
     grid-column: 2;
     grid-row: 1; }
@@ -218,6 +220,10 @@ header.smaller {
     grid-row: 2;
     grid-column: 1;
     padding: 0 0 0 2.5rem; }
+  .modal-mounts {
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: center; }
   .modal-openButton {
     border-radius: 7rem;
     width: 100%;
@@ -230,7 +236,7 @@ header.smaller {
     border: #FF7D0A;
     box-shadow: 12px 0 15px -4px black, -12px 0 8px -4px black;
     cursor: pointer;
-    transition: all .2s ease-in-out; }
+    transition: all 0.2s ease-in-out; }
     .modal-openButton:hover {
       width: 100%;
       padding: 1rem;
@@ -257,14 +263,14 @@ header.smaller {
     outline: orange;
     cursor: pointer;
     font-size: 20px;
-    transition: all .35s ease-in-out;
+    transition: all 0.35s ease-in-out;
     z-index: 101; }
     .modal-close:hover {
       padding: 0;
       margin: 0;
       width: 100%; }
     .modal-close:active {
-      transition: all .1s ease-in-out;
+      transition: all 0.1s ease-in-out;
       transform: translateY(3px); }
   .modal-backdrop {
     display: none;

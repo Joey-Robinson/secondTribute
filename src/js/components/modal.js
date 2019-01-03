@@ -225,7 +225,75 @@ export const modalFunction = () => {
               </a>
             </li>
           </ul>
-      </div>  
+      </div>
+      <div class="modal-mounts">
+        <h3>Favorite Mounts</h3>
+        <ul>
+          <li>
+            <a
+              href="https://www.wowhead.com/item=84101/reins-of-the-grand-expedition-yak"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Grand Expedition Yak
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.wowhead.com/item=87789/reins-of-the-blonde-riding-yak"
+              target=_"blank"
+              rel="noopener noreferrer"
+            >
+              Blonde Riding Yak
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.wowhead.com/item=131734/spirit-of-echero"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Spirits of Eche'ro
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.wowhead.com/item=163644/swift-albino-raptor"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Swift Albino Raptor
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.wowhead.com/spell=90619/fossilized-raptor"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Fossilized Raptor
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.wowhead.com/item=65891/vial-of-the-sands"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Vial Of The Sands
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.wowhead.com/item=163042/reins-of-the-mighty-caravan-brutosaur"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Other people's Brutosaur
+            </a>
+          </li>
+        </ul>
+      </div>
   `;
 
   const closeModal = () => {
