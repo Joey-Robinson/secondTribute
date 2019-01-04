@@ -235,11 +235,11 @@ header.smaller {
     padding: 1rem;
     margin: 1rem;
     font-size: 3rem;
-    background: #00FF96;
-    color: #FF7D0A;
-    outline: #FF7D0A;
-    border: #FF7D0A;
-    box-shadow: 12px 0 15px -4px black, -12px 0 8px -4px black;
+    background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
+    color: #f0f0f0;
+    font-weight: bolder;
+    outline: none;
+    border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out; }
     .modal-openButton:hover {
@@ -262,12 +262,12 @@ header.smaller {
     justify-self: center;
     align-self: center;
     border-radius: 20rem;
-    background: #FF7D0A;
-    color: #00FF96;
+    background: linear-gradient(to left, orange, yellow, green, cyan, blue, violet);
+    color: #f0f0f0;
     border: #00FF96;
     outline: orange;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 2rem;
     transition: all 0.35s ease-in-out;
     z-index: 101; }
     .modal-close:hover {
@@ -340,7 +340,7 @@ header.smaller {
 .wow {
   grid-column: 1;
   grid-row: 4;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../src/images/firecat.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../src/images/firecat.jpg") no-repeat center center/cover;
   display: grid;
   grid-template-rows: 6rem 1fr min-content 1fr;
   grid-template-columns: repeat(3, 1fr);

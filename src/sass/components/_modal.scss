@@ -12,12 +12,14 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr 5rem;
   z-index: 500;
+
   & a {
     &:hover {
       transition: all 0.1s ease-in;
       color: $monkGreen;
     }
   }
+
   h3 {
     color: $monkGreen;
   }
@@ -52,23 +54,25 @@
     grid-column: 2;
     justify-self: center;
   }
+
   &-transmog {
     grid-row: 2;
     grid-column: 3;
     justify-self: center;
     padding: 0 0 0 3.5rem;
   }
+
   &-openButton {
     border-radius: 7rem;
     width: 100%;
     padding: 1rem;
     margin: 1rem;
     font-size: $base;
-    background: $monkGreen;
-    color: $druidOrange;
-    outline: $druidOrange;
-    border: $druidOrange;
-    box-shadow: $darkness;
+    background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
+    color: $headerWhite;
+    font-weight: bolder;
+    outline: none;
+    border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 
@@ -97,12 +101,12 @@
     justify-self: center;
     align-self: center;
     border-radius: 20rem;
-    background: $druidOrange;
-    color: $monkGreen;
+    background: linear-gradient(to left, orange, yellow, green, cyan, blue, violet);
+    color: $headerWhite;
     border: $monkGreen;
     outline: orange;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 2rem;
     transition: all 0.35s ease-in-out;
     z-index: 101;
 
