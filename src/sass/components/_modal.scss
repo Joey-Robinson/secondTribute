@@ -52,7 +52,12 @@
     grid-column: 2;
     justify-self: center;
   }
-
+  &-transmog {
+    grid-row: 2;
+    grid-column: 3;
+    justify-self: center;
+    padding: 0 0 0 3.5rem;
+  }
   &-openButton {
     border-radius: 7rem;
     width: 100%;

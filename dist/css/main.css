@@ -224,6 +224,11 @@ header.smaller {
     grid-row: 2;
     grid-column: 2;
     justify-self: center; }
+  .modal-transmog {
+    grid-row: 2;
+    grid-column: 3;
+    justify-self: center;
+    padding: 0 0 0 3.5rem; }
   .modal-openButton {
     border-radius: 7rem;
     width: 100%;

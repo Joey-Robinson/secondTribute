@@ -294,6 +294,74 @@ export const modalFunction = () => {
           </li>
         </ul>
       </div>
+      <div class="modal-transmog">
+        <h3>Favorite Transmog</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.wowhead.com/transmog-set=1605/vestments-of-the-haunted-forest-heroic-recolor"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Druid - Haunted Forest
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://worldofwarcraft.com/en-us/character/zuljin/Ristretta"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Monk - Custom Monk Set
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/transmog-set=2208/garb-of-the-astral-warden-mythic-recolor"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Druid - Astral Warden
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/transmog-set=2151/vindictive-gladiators-dragonhide-armor-horde-recolor"
+                target="_blank"
+                rel="noopener norferrer"
+              >
+                Druid - Dragonhide Armor
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/transmog-set=2016/oathclaw-wargarb-mythic-recolor"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Druid - Oathclaw Wargarb
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/transmog-set=717/brutal-gladiators-chain-armor"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Hunter - Chain Armor
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.wowhead.com/transmog-set=1438/vestments-of-the-red-crane-heroic-recolor"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Monk - Red Crane
+              </a>
+            </li>
+          </ul>
+        </div>
   `;
 
   const closeModal = () => {
