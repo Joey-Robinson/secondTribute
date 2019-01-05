@@ -5,7 +5,8 @@ import {
 export const ffCall = async () => {
   const response = await fetch("https://xivapi.com/character/10803092");
   const data = await response.json();
-  const ffProfessions = document.querySelector('.finalfantasy-professions');
+  const primary = document.querySelector('.finalfantasy-primary');
+  const ffProfessions = document.querySelector('.finalfantasy-professionsList');
   const name = data.Character.Name;
   const birthday = data.Character.Nameday;
   const server = data.Character.Server;
@@ -16,6 +17,30 @@ export const ffCall = async () => {
   for (const professionImage in professions) {
     ffProfessions.innerHTML += `<img src="${professions[professionImage]}" alt="${professionImage}"/>`
   }
+  primary.innerHTML = `
+    <h3>Name: ${name}</h3>
+    <h3>Birthday: ${birthday}</h3>
+    <h3>Server: ${server}</h3>
+    <h3>Free Company: 
+      <a
+        href=${armory}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        The Last Homely House
+      </a>
+    </h3>
+    <h3>Current Look:
+      <br />
+      <a
+        href=${portrait}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="${portrait}" />
+      </a>
+    </h3>
+  `
 }
 
 ffCall();
