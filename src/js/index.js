@@ -14,6 +14,8 @@ import {
 import modalFunction from './components/modal';
 // User
 // import ffResourcesList from "./user/ffResources";
+import favoriteCat from './user/favoriteCat';
+// Pages
 import landing from './pages/landing';
 // const removeLocationHash = () => {
 //   const noHashURL = window.location.href.replace(/#.*$/, '');
