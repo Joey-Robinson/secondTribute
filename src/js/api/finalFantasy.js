@@ -3,8 +3,9 @@ import {
 } from '../user/finalFantasyProfessions';
 
 export const ffCall = async () => {
-  const response = await fetch("https://xivapi.com/character/10803092");
+  const response = await fetch("https://xivapi.com/Character/10803092?key=e6a0198acbbf45bda79ab685");
   const data = await response.json();
+  console.log(data);
   const primary = document.querySelector('.finalfantasy-primary');
   const ffProfessions = document.querySelector('.finalfantasy-professionsList');
   const name = data.Character.Name;

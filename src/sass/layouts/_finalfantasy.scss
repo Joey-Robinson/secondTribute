@@ -35,11 +35,11 @@
   }
 
   &-professions {
-    padding: 0;
+    padding: 0 0 0 41rem;
     margin: 0;
     grid-row: 2;
     grid-column: 3;
-    justify-self: right;
+    text-align: center;
 
     img {
       margin: 5px;
