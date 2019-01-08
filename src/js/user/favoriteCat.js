@@ -21,19 +21,62 @@ const favoriteCat = {
 export const favoriteCatFunction = () => {
   const favoriteCatPrimary = document.querySelector('.favoritecat-primary');
   const favoriteCatFacts = document.querySelector('.favoritecat-facts');
-  favoriteCatPrimary.innerHTML += `
-    <h1>Facts About My Favorite Cat:</h1>
-    <h3>Favorite Type Of Cat: ${favoriteCat.name}</h3>
-    <h3>Favorite Color: ${favoriteCat.favoriteColor}</h3>
-    <h3>Favorite Eye Color: ${favoriteCat.eyes}</h3>
-    <h3>Favorite Fur Color: ${favoriteCat.furPattern}</h3>
+  const favoriteCatFur = document.querySelector('.favoritecat-fur');
+
+  favoriteCatPrimary.innerHTML = `
+    <h4>Information About My Favorite Cat:</h4>
+      <table>
+        <tr>
+          <td><h4>Favorite Cat:</h4> ${favoriteCat.name}</td>
+        </tr>
+        <tr>
+          <td><h4>Favorite Fur Color:</h4> ${favoriteCat.favoriteColor}</td>
+        </tr>
+        <tr>
+          <td><h4>Favorite Eye Color:</h4> ${favoriteCat.eyes}</td>
+        </tr>
+        <tr>
+          <td><h4>Favorite Fur Pattern:</h4> ${favoriteCat.furPattern}</td>
+        </tr>
+      </table>
   `;
   favoriteCatFacts.innerHTML = `
-    <h3>Typical Weight: ${favoriteCat.description.weight}</h3>
-    <h3>Different Eye Colors: ${favoriteCat.description.eyeColor}</h3>
-    <h3>Lifespan: ${favoriteCat.description.lifeSpan}</h3>
-    <h3>Social Needs: ${favoriteCat.description.socialNeeds}</h3>
+    <h4>Random Facts About ${favoriteCat.name}'s</h4>
+      <table>
+        <tr>
+          <td><h4>Weight:</h4> ${favoriteCat.description.weight}</td>
+        </tr>
+        <tr>
+          <td><h4>Eye Colors:</h4> ${favoriteCat.description.eyeColor}</td>
+        </tr>
+        <tr>
+          <td><h4>Lifespan:</h4> ${favoriteCat.description.lifeSpan}</td>
+        </tr>
+        <tr>
+          <td><h4>Social Needs:</h4> ${favoriteCat.description.socialNeeds}</td>
+        </tr>
+      </table>
   `;
+  favoriteCatFur.innerHTML = `
+    <h4>All About Their Fur!</h4>
+      <table>
+        <tr>
+          <td><h4>Length:</h4> ${favoriteCat.coat.length}</td>
+        </tr>
+        <tr>
+          <td><h4>Straight Or Curly:</h4> ${favoriteCat.coat.type}</td>
+        </tr>
+        <tr>
+          <td><h4>Colors:</h4> ${favoriteCat.coat.colors}</td>
+        </tr>
+        <tr>
+          <td><h4>Patterns:</h4> ${favoriteCat.coat.pattern}</td>
+        </tr>
+        <tr>
+          <td><h4>Grooming Needs:</h4> ${favoriteCat.coat.groomingNeeds}</td>
+        </tr>
+      </table>
+  `
 }
 
 favoriteCatFunction();
