@@ -7,6 +7,10 @@ import {
 } from '../user/finalFantasyJobs';
 
 import {
+  finalFantasyMounts
+} from '../user/finalFantasyMounts';
+
+import {
   ffResourcesList
 } from '../user/ffResources';
 
@@ -17,6 +21,7 @@ export const ffCall = async () => {
   const primary = document.querySelector('.finalfantasy-primary');
   const ffProfessions = document.querySelector('.finalfantasy-professions__one');
   const ffProfessionsTwo = document.querySelector('.finalfantasy-professions__two');
+  const ffMounts = document.querySelector('.finalfantasy-professions__three');
   const name = data.Character.Name;
   const birthday = data.Character.Nameday;
   const server = data.Character.Server;
@@ -27,11 +32,15 @@ export const ffCall = async () => {
   const freeCompany = "https://na.finalfantasyxiv.com/lodestone/freecompany/9234490298434948752/";
   const jobs = finalFantasyJobs;
   const professions = finalFantasyProfessions;
+  const mounts = finalFantasyMounts;
   for (const professionImage in professions) {
-    ffProfessions.innerHTML += `<img src="${professions[professionImage]}" alt="${professionImage}"/>`
+    ffProfessions.innerHTML += `<img src="${professions[professionImage]}" alt="Profession Job ${professionImage}"/>`
   }
   for (const combatImage in jobs) {
-    ffProfessionsTwo.innerHTML += `<img src="${jobs[combatImage]}" alt="${combatImage}" />`
+    ffProfessionsTwo.innerHTML += `<img src="${jobs[combatImage]}" alt="Combat Job ${combatImage}" />`
+  }
+  for (const mountImage in mounts) {
+    ffMounts.innerHTML += `<img src=${mounts[mountImage]} alt="Favorite Mount ${mountImage}" />`
   }
   resourcesTwo.innerHTML = ffResourcesList.join(" ");
   primary.innerHTML = `
