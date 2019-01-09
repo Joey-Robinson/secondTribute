@@ -11,6 +11,10 @@ import {
 } from '../user/finalFantasyMounts';
 
 import {
+  finalFantasyMinions
+} from '../user/finalFantasyMinions';
+
+import {
   ffResourcesList
 } from '../user/ffResources';
 
@@ -22,6 +26,7 @@ export const ffCall = async () => {
   const ffProfessions = document.querySelector('.finalfantasy-professions__one');
   const ffProfessionsTwo = document.querySelector('.finalfantasy-professions__two');
   const ffMounts = document.querySelector('.finalfantasy-professions__three');
+  const ffMinions = document.querySelector('.finalfantasy-professions__four');
   const name = data.Character.Name;
   const birthday = data.Character.Nameday;
   const server = data.Character.Server;
@@ -33,6 +38,7 @@ export const ffCall = async () => {
   const jobs = finalFantasyJobs;
   const professions = finalFantasyProfessions;
   const mounts = finalFantasyMounts;
+  const minions = finalFantasyMinions;
   for (const professionImage in professions) {
     ffProfessions.innerHTML += `<img src="${professions[professionImage]}" alt="Profession Job ${professionImage}"/>`
   }
@@ -41,6 +47,9 @@ export const ffCall = async () => {
   }
   for (const mountImage in mounts) {
     ffMounts.innerHTML += `<img src=${mounts[mountImage]} alt="Favorite Mount ${mountImage}" />`
+  }
+  for (const minionImage in minions) {
+    ffMinions.innerHTML += `<img src=${minions[minionImage]} alt="Favorite Minion ${minionImage}" />`;
   }
   resourcesTwo.innerHTML = ffResourcesList.join(" ");
   primary.innerHTML = `
