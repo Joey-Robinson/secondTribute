@@ -388,16 +388,10 @@ header.smaller {
   .finalfantasy-activities {
     grid-column: 2;
     grid-row: 2; }
-    .finalfantasy-activities__one {
-      padding: 0;
-      margin: 0;
-      columns: 2;
+    .finalfantasy-activities ul {
       color: #FF7D0A;
-      font-size: 3rem; }
-    .finalfantasy-activities__two {
-      columns: 2;
-      color: #FF7D0A;
-      font-size: 3rem; }
+      font-size: 3rem;
+      columns: 2; }
     .finalfantasy-activities h1 {
       text-align: center; }
   .finalfantasy-professions {
