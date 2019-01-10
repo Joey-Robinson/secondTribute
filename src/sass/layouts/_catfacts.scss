@@ -2,9 +2,10 @@
   grid-row: 10;
   grid-column: 1;
   display: grid;
-  grid-template-rows: 7.5rem max-content;
+  grid-template-rows: 6rem max-content;
   grid-template-columns: 1fr;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  // background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: orangered;
 
   &-primary {
     grid-row: 2;
