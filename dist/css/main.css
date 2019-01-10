@@ -406,6 +406,13 @@ header.smaller {
       margin: 7px;
       width: 4rem;
       height: 4rem; }
+  .finalfantasy-chocobo {
+    grid-row: 3;
+    grid-column: 1; }
+  .finalfantasy-chocobor {
+    grid-row: 3;
+    grid-column: 3;
+    transform: scaleX(-1); }
   .finalfantasy-bottom {
     grid-row: 3;
     grid-column: 2;
