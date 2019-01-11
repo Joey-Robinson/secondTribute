@@ -455,7 +455,7 @@ header.smaller {
 .primary {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: max-content 100vh 5rem 100vh 2rem 100vh 2rem 100vh 2rem 100vh max-content; }
+  grid-template-rows: max-content 100vh 2rem 100vh 2rem 100vh 2rem 100vh 2rem 100vh max-content; }
 
 .wow {
   grid-column: 1;
@@ -545,15 +545,16 @@ header.smaller {
       color: #FF7D0A; }
     .landing-top article {
       font-size: 2.5rem;
-      padding: 1rem 5rem 1rem 5rem; }
+      padding: 1rem 5rem 2rem 5rem; }
   .landing-bottom {
     grid-column: 1 / -1;
     grid-row: 3;
-    align-self: center; }
+    align-self: center;
+    padding: 1rem 0 0 0; }
     .landing-bottom ul {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(37rem, 46rem));
-      padding: 3px 5px 0 1.75rem;
+      padding: 3px 5px 5px 1.9rem;
       margin: 0;
       grid-column-gap: 6.5px; }
       .landing-bottom ul img {
