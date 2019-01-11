@@ -312,7 +312,8 @@ header.smaller {
   grid-template-columns: 40rem 1fr 40rem;
   z-index: 2;
   color: #FF7D0A;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  z-index: 10; }
   .favoritecat div {
     z-index: 1; }
   .favoritecat a {
@@ -459,7 +460,8 @@ header.smaller {
   .primary-testing {
     grid-row: 7;
     justify-self: left;
-    z-index: 5; }
+    z-index: 5;
+    padding: 0 0 10rem 0; }
 
 .wow {
   grid-column: 1;
