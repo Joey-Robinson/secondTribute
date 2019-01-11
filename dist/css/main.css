@@ -457,6 +457,10 @@ header.smaller {
   grid-template-columns: 1fr;
   grid-template-rows: max-content 100vh 2rem 100vh 2rem 100vh 2rem 100vh 2rem 100vh max-content; }
 
+.testing {
+  grid-row: 3;
+  justify-self: left; }
+
 .wow {
   grid-column: 1;
   grid-row: 4;
