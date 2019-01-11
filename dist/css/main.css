@@ -535,7 +535,9 @@ header.smaller {
     grid-row: 1;
     grid-column: 1;
     justify-self: center;
-    background: pink; }
+    background: pink;
+    align-self: flex-end;
+    z-index: 1000; }
   .landing-bottom {
     grid-column: 1 / -1;
     grid-row: 2 / 3; }

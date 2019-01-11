@@ -13,6 +13,8 @@
     grid-column: 1;
     justify-self: center;
     background: pink;
+    align-self: flex-end;
+    z-index: 1000;
   }
 
   &-bottom {
