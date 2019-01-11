@@ -1,9 +1,9 @@
 export const finalFantasyJobs = {
-  astrologian: '../../src/images/astrologian.png',
-  whitemage: '../../src/images/whitemage.png',
-  scholar: '../../src/images/scholar.png',
-  redmage: '../../src/images/redmage.png',
-  bard: '../../src/images/bard.png',
-  summoner: '../../src/images/summoner.png',
-  warrior: '../../src/images/warrior.png'
+  astrologian: '../../../dist/images/astrologian.png',
+  whitemage: '../../../dist/images/whitemage.png',
+  scholar: '../../../dist/images/scholar.png',
+  redmage: '../../../dist/images/redmage.png',
+  bard: '../../../dist/images/bard.png',
+  summoner: '../../../dist/images/summoner.png',
+  warrior: '../../../dist/images/warrior.png'
 }

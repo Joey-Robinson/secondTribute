@@ -2,7 +2,7 @@
   grid-column: 1;
   grid-row: 4;
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../../src/images/firecat.jpg") no-repeat center center / cover;
+    url("../../../dist/images/firecat.jpg") no-repeat center center / cover;
   display: grid;
   grid-template-rows: 6rem 1fr min-content 1fr;
   grid-template-columns: repeat(3, 1fr);
