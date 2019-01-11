@@ -4,7 +4,6 @@
   display: grid;
   grid-template-rows: 10rem max-content;
   grid-template-columns: 1fr;
-  overflow: hidden;
 
   &-top {
     grid-row: 2 / 4;

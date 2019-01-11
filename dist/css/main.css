@@ -528,8 +528,7 @@ header.smaller {
   grid-column: 1;
   display: grid;
   grid-template-rows: 10rem max-content;
-  grid-template-columns: 1fr;
-  overflow: hidden; }
+  grid-template-columns: 1fr; }
   .landing-top {
     grid-row: 2 / 4;
     height: 100%;
