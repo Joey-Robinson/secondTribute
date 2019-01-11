@@ -42,22 +42,22 @@ const landingListImages = [{
     thumbnail: "../images/dravanianforelandsthumbnail.jpg",
     largeImage: "../images/dravanianforelands.jpg"
   },
-  {
-    thumbnail: "../images/rubyseathumbnail.jpg",
-    largeImage: "../images/rubysea.jpg"
-  },
-  {
-    thumbnail: "../images/seaofcloudsthumbnail.jpg",
-    largeImage: "../images/seaofclouds.jpg"
-  },
-  {
-    thumbnail: "../images/thelochsthumbnail.jpg",
-    largeImage: "../images/thelochs.jpg"
-  },
-  {
-    thumbnail: "../images/legiondalaranthumbnail.jpg",
-    largeImage: "../images/legiondalaran.jpg"
-  }
+  // {
+  //   thumbnail: "../images/rubyseathumbnail.jpg",
+  //   largeImage: "../images/rubysea.jpg"
+  // },
+  // {
+  //   thumbnail: "../images/seaofcloudsthumbnail.jpg",
+  //   largeImage: "../images/seaofclouds.jpg"
+  // },
+  // {
+  //   thumbnail: "../images/thelochsthumbnail.jpg",
+  //   largeImage: "../images/thelochs.jpg"
+  // },
+  // {
+  //   thumbnail: "../images/legiondalaranthumbnail.jpg",
+  //   largeImage: "../images/legiondalaran.jpg"
+  // }
 ];
 
 // Had to add relative pathing from bundle.js
