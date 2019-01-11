@@ -15,7 +15,6 @@ import {
 import modalFunction from './components/modal';
 
 // User
-import favoriteCat from './user/favoriteCat';
 
 // Pages
 import landing from './pages/landing';
