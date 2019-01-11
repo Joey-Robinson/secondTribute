@@ -456,11 +456,10 @@ header.smaller {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: max-content 100vh 2rem 100vh 2rem 100vh 2rem 100vh 2rem 100vh max-content; }
-
-.testing {
-  grid-row: 7;
-  justify-self: left;
-  z-index: 5; }
+  .primary-testing {
+    grid-row: 7;
+    justify-self: left;
+    z-index: 5; }
 
 .wow {
   grid-column: 1;

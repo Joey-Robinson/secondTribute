@@ -2,10 +2,10 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: max-content 100vh 2rem 100vh 2rem 100vh 2rem 100vh 2rem 100vh max-content;
-}
 
-.testing {
-  grid-row: 7;
-  justify-self: left;
-  z-index: 5;
+  &-testing {
+    grid-row: 7;
+    justify-self: left;
+    z-index: 5;
+  }
 }
