@@ -30,14 +30,14 @@
     grid-column: 1 / -1;
     grid-row: 4;
     align-self: flex-end;
+    justify-items: center;
 
     & ul {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(37.5rem, 40rem));
+      grid-template-columns: repeat(auto-fill, minmax(40rem, 40rem));
       padding: 0;
       margin: 0;
       grid-column-gap: 6.5px;
-      justify-self: center;
 
       & img {
         filter: saturate(200%);
