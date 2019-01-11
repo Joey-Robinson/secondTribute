@@ -8,27 +8,27 @@
     linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
     linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
 
-  &-top {
-    grid-row: 2;
-    height: 100%;
-    // width: ;
-    justify-self: center;
-    align-self: center;
-    background: darken($primaryColor, 4);
-    color: $headerWhite;
+  // &-top {
+  //   grid-row: 2;
+  //   height: 100%;
+  //   // width: ;
+  //   justify-self: center;
+  //   align-self: center;
+  //   background: darken($primaryColor, 4);
+  //   color: $headerWhite;
 
-    & h1 {
-      padding: 1rem 0 0 0;
-      text-align: center;
-      font-size: 3rem;
-      color: $druidOrange;
-    }
+  //   & h1 {
+  //     padding: 1rem 0 0 0;
+  //     text-align: center;
+  //     font-size: 3rem;
+  //     color: $druidOrange;
+  //   }
 
-    & article {
-      font-size: 2.5rem;
-      padding: 5px 5rem 2rem 5rem;
-    }
-  }
+  //   & article {
+  //     font-size: 2.5rem;
+  //     padding: 5px 5rem 2rem 5rem;
+  //   }
+  // }
 
   &-bottom {
     grid-column: 1 / -1;
