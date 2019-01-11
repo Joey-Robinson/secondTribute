@@ -45,18 +45,6 @@ const landingListImages = [{
   {
     thumbnail: "../images/rubyseathumbnail.jpg",
     largeImage: "../images/rubysea.jpg"
-  },
-  {
-    thumbnail: "../images/seaofcloudsthumbnail.jpg",
-    largeImage: "../images/seaofclouds.jpg"
-  },
-  {
-    thumbnail: "../images/thelochsthumbnail.jpg",
-    largeImage: "../images/thelochs.jpg"
-  },
-  {
-    thumbnail: "../images/legiondalaranthumbnail.jpg",
-    largeImage: "../images/legiondalaran.jpg"
   }
 ];
 
