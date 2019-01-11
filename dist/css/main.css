@@ -458,7 +458,7 @@ header.smaller {
   grid-template-rows: max-content 100vh 2rem 100vh 2rem 100vh 2rem 100vh 2rem 100vh max-content; }
 
 .testing {
-  grid-row: 6;
+  grid-row: 7;
   justify-self: left;
   z-index: 5; }
 
