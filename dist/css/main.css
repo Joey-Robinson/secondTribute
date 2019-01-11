@@ -540,7 +540,8 @@ header.smaller {
       grid-template-columns: repeat(auto-fill, minmax(37rem, 46rem));
       padding: 0 5px 5px 1.9rem;
       margin: 0;
-      grid-gap: 7px; }
+      grid-column-gap: 6.5px;
+      grid-row-gap: 2rem; }
       .landing-bottom ul img {
         filter: saturate(200%);
         height: auto;
