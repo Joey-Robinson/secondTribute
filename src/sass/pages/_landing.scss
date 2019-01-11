@@ -13,14 +13,11 @@
     grid-row: 2 / 3;
 
     & ul {
-      align-self: center;
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(37rem, 46rem));
       padding: 0 5px 5px 1.9rem;
       margin: 0;
-      grid-column-gap: 6.5px;
-      grid-row-gap: 2rem;
-      // grid-gap: 7px;
+      grid-gap: 7px;
 
       & img {
         filter: saturate(200%);
