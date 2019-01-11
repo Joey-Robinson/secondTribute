@@ -461,7 +461,7 @@ header.smaller {
     grid-row: 7;
     justify-self: left;
     z-index: 5;
-    padding: 0 0 10rem 0; }
+    margin: 0 0 10rem 0; }
 
 .wow {
   grid-column: 1;
