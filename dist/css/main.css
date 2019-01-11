@@ -551,12 +551,11 @@ header.smaller {
     align-self: flex-end; }
     .landing-bottom ul {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(39rem, 40rem));
+      grid-template-columns: repeat(auto-fill, minmax(42rem, 35rem));
       padding: 0;
       margin: 0;
-      grid-column-gap: 4px;
-      justify-self: center; }
+      grid-column-gap: 6.5px; }
       .landing-bottom ul img {
         filter: saturate(200%);
         height: auto;
-        width: 45rem; }
+        width: 100%; }
