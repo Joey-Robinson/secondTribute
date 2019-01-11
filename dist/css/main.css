@@ -532,7 +532,7 @@ header.smaller {
   grid-template-columns: 1fr; }
   .landing-top {
     grid-row: 2;
-    height: 100%;
+    height: 80%;
     justify-self: center;
     align-self: center;
     background: #181818;
@@ -552,7 +552,7 @@ header.smaller {
     .landing-bottom ul {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(37rem, 46rem));
-      padding: 1rem 5px 10rem 2.5rem;
+      padding: 1rem 5px 10rem 2rem;
       margin: 0;
       grid-column-gap: 6.5px; }
       .landing-bottom ul img {
