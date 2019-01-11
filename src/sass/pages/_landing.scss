@@ -4,10 +4,11 @@
   display: grid;
   grid-template-rows: 7rem max-content;
   grid-template-columns: 1fr;
+  background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
 
   &-top {
     grid-row: 2;
-    height: 80%;
+    height: 100%;
     // width: ;
     justify-self: center;
     align-self: center;

@@ -529,10 +529,11 @@ header.smaller {
   grid-column: 1;
   display: grid;
   grid-template-rows: 7rem max-content;
-  grid-template-columns: 1fr; }
+  grid-template-columns: 1fr;
+  background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet); }
   .landing-top {
     grid-row: 2;
-    height: 80%;
+    height: 100%;
     justify-self: center;
     align-self: center;
     background: #181818;
