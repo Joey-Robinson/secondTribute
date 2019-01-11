@@ -311,7 +311,8 @@ header.smaller {
   grid-template-rows: 6rem max-content max-content;
   grid-template-columns: 40rem 1fr 40rem;
   z-index: 2;
-  color: #FF7D0A; }
+  color: #FF7D0A;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); }
   .favoritecat div {
     z-index: 1; }
   .favoritecat a {
