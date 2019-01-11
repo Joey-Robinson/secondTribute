@@ -533,9 +533,9 @@ header.smaller {
   background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%); }
   .landing-bottom {
     grid-column: 1 / -1;
-    grid-row: 2 / 3;
-    align-self: center; }
+    grid-row: 2 / 3; }
     .landing-bottom ul {
+      align-self: center;
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(37rem, 46rem));
       padding: 0 5px 5px 1.9rem;
