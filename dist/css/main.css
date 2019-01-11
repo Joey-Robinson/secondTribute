@@ -549,9 +549,7 @@ header.smaller {
     grid-column: 1 / -1;
     grid-row: 4;
     align-self: flex-end;
-    justify-self: center;
-    justify-items: center;
-    justify-content: center; }
+    justify-self: center; }
     .landing-bottom ul {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(39rem, 40rem));
