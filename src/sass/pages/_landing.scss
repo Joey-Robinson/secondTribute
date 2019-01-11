@@ -30,14 +30,13 @@
     grid-column: 1 / -1;
     grid-row: 4;
     align-self: flex-end;
-    justify-self: center;
 
     & ul {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(39rem, 40rem));
       padding: 0;
       margin: 0;
-      grid-column-gap: 6.5px;
+      grid-column-gap: 2px;
       justify-self: center;
 
       & img {
