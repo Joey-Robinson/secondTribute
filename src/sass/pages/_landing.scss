@@ -33,12 +33,11 @@
 
     & ul {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(35rem, 40rem));
+      grid-template-columns: repeat(auto-fill, minmax(37.5rem, 40rem));
       padding: 0;
       margin: 0;
       grid-column-gap: 6.5px;
       justify-self: center;
-      justify-items: center;
 
       & img {
         filter: saturate(200%);
