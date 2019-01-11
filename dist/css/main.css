@@ -542,18 +542,18 @@ header.smaller {
     .landing-top h1 {
       padding: 1rem 0 0 0;
       text-align: center;
-      font-size: 3rem;
+      font-size: 2.5rem;
       color: #FF7D0A; }
     .landing-top article {
-      font-size: 2.5rem;
-      padding: 1rem 5rem 1rem 5rem; }
+      font-size: 2rem;
+      padding: 5px 5rem 5px 5rem; }
   .landing-bottom {
     grid-column: 1 / -1;
     grid-row: 2 / 3; }
     .landing-bottom ul {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(37rem, 46rem));
-      padding: 10rem 5px 5px 1.9rem;
+      padding: 13rem 5px 5px 1.9rem;
       margin: 0;
       grid-gap: 7px; }
       .landing-bottom ul img {
