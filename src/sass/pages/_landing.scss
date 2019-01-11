@@ -11,12 +11,11 @@
   &-bottom {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    padding: 7rem 0 0 0;
 
     & ul {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(37rem, 46rem));
-      padding: 0 5px 5px 1.9rem;
+      padding: 7rem 5px 5px 1.9rem;
       margin: 0;
       grid-gap: 7px;
 
