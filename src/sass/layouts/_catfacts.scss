@@ -4,8 +4,7 @@
   display: grid;
   grid-template-rows: 6rem max-content;
   grid-template-columns: 1fr;
-  // background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background: orangered;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 
   &-primary {
     grid-row: 2;
