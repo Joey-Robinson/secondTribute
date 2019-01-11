@@ -551,7 +551,7 @@ header.smaller {
     align-self: flex-end; }
     .landing-bottom ul {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(35rem, 35rem));
+      grid-template-columns: repeat(auto-fill, minmax(38rem, 40rem));
       padding: 0;
       margin: 0;
       grid-column-gap: 6.5px; }
