@@ -5,37 +5,36 @@
   grid-template-rows: 7rem max-content;
   grid-template-columns: 1fr;
 
-  // &-top {
-  //   grid-row: 2 / 3;
-  //   height: 100%;
-  //   justify-self: center;
-  //   align-self: center;
-  //   background: darken($primaryColor, 4);
-  //   color: $headerWhite;
+  &-top {
+    grid-row: 2;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+    background: darken($primaryColor, 4);
+    color: $headerWhite;
 
-  //   & h1 {
-  //     padding: 1rem 0 0 0;
-  //     text-align: center;
-  //     font-size: 3rem;
-  //     color: $druidOrange;
-  //   }
+    & h1 {
+      padding: 1rem 0 0 0;
+      text-align: center;
+      font-size: 3rem;
+      color: $druidOrange;
+    }
 
-  //   & article {
-  //     font-size: 2.5rem;
-  //     padding: 1rem 5rem 1rem 5rem;
-  //   }
-  // }
+    & article {
+      font-size: 2.5rem;
+      padding: 1rem 5rem 1rem 5rem;
+    }
+  }
 
   &-bottom {
     grid-column: 1 / -1;
-    grid-row: 2 / 3;
+    grid-row: 3;
     align-self: center;
-    justify-content: center;
 
     & ul {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(37rem, 46rem));
-      // padding: 1rem 5px 10rem 2.5rem;
+      padding: 1rem 5px 10rem 2.5rem;
       margin: 0;
       grid-column-gap: 6.5px;
 
