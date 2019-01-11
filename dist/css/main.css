@@ -531,7 +531,7 @@ header.smaller {
   grid-template-rows: 10rem max-content;
   grid-template-columns: 1fr; }
   .landing-top {
-    grid-row: 2 / 4;
+    grid-row: 2 / 3;
     height: 100%;
     justify-self: center;
     align-self: center;
@@ -547,7 +547,7 @@ header.smaller {
       padding: 1rem 5rem 1rem 5rem; }
   .landing-bottom {
     grid-column: 1 / -1;
-    grid-row: 4;
+    grid-row: 3;
     align-self: flex-end; }
     .landing-bottom ul {
       display: grid;

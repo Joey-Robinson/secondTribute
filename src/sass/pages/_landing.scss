@@ -6,7 +6,7 @@
   grid-template-columns: 1fr;
 
   &-top {
-    grid-row: 2 / 4;
+    grid-row: 2 / 3;
     height: 100%;
     justify-self: center;
     align-self: center;
@@ -28,7 +28,7 @@
 
   &-bottom {
     grid-column: 1 / -1;
-    grid-row: 4;
+    grid-row: 3;
     align-self: flex-end;
 
     & ul {
