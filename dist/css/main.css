@@ -458,8 +458,9 @@ header.smaller {
   grid-template-rows: max-content 100vh 2rem 100vh 2rem 100vh 2rem 100vh 2rem 100vh max-content; }
 
 .testing {
-  grid-row: 3;
-  justify-self: left; }
+  grid-row: 6;
+  justify-self: left;
+  z-index: 5; }
 
 .wow {
   grid-column: 1;
