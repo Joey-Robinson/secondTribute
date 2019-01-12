@@ -16,6 +16,7 @@
     align-self: flex-start;
     background: darken($primaryColor, 4);
     color: $headerWhite;
+    z-index: 10;
 
     & h1 {
       padding: 1rem 0 0 0;

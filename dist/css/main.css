@@ -524,7 +524,8 @@ header.smaller {
     background: pink;
     align-self: flex-start;
     background: #181818;
-    color: #f0f0f0; }
+    color: #f0f0f0;
+    z-index: 10; }
     .landing-top h1 {
       padding: 1rem 0 0 0;
       text-align: center;
