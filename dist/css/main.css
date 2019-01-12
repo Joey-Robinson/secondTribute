@@ -398,6 +398,7 @@ header.smaller {
     color: #FF7D0A;
     font-size: 3rem; }
   .finalfantasy h1 {
+    font-size: 3.5rem;
     color: #D4AF37;
     font-size: 4rem;
     font-style: oblique; }
@@ -416,7 +417,7 @@ header.smaller {
     margin: 0; }
     .finalfantasy-activities ul {
       color: #FF7D0A;
-      font-size: 3rem;
+      font-size: 2.5rem;
       columns: 2; }
     .finalfantasy-activities h1 {
       text-align: center; }
