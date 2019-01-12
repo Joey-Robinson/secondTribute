@@ -312,7 +312,7 @@ header.smaller {
   grid-template-columns: 40rem 1fr 40rem;
   z-index: 2;
   color: #FF7D0A;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: #000;
   z-index: 10; }
   .favoritecat div {
     z-index: 1; }
@@ -325,10 +325,6 @@ header.smaller {
     font-size: 4rem;
     color: #FF7D0A;
     font-weight: bold; }
-  .favoritecat-empty {
-    grid-row: 1 / -1;
-    grid-column: 1 / -1;
-    background: rgba(0, 0, 0, 0.55); }
   .favoritecat h3 {
     text-align: center; }
   .favoritecat-primary {
@@ -456,12 +452,14 @@ header.smaller {
 .primary {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: max-content 100vh 2rem 100vh 2rem 100vh 2rem 100vh 2rem 100vh max-content; }
+  grid-template-rows: max-content 100vh 2rem 100vh 2rem 100vh 1rem 100vh 2rem 100vh max-content; }
   .primary-testing {
-    grid-row: 7;
+    position: absolute;
+    left: 0;
+    top: 285%;
+    grid-row: 6;
     justify-self: left;
-    z-index: 5;
-    align-self: flex-start; }
+    z-index: 3; }
 
 .wow {
   grid-column: 1;
