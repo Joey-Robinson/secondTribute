@@ -397,6 +397,9 @@ header.smaller {
   .finalfantasy h3 {
     color: #FF7D0A;
     font-size: 3rem; }
+  .finalfantasy ul,
+  .finalfantasy li {
+    font-size: 2.5rem; }
   .finalfantasy h1 {
     color: #D4AF37;
     font-size: 4rem;
@@ -416,7 +419,6 @@ header.smaller {
     margin: 0; }
     .finalfantasy-activities ul {
       color: #FF7D0A;
-      font-size: 3rem;
       columns: 2; }
     .finalfantasy-activities h1 {
       text-align: center; }
@@ -429,25 +431,6 @@ header.smaller {
       margin: 7px;
       width: 4rem;
       height: 4rem; }
-  .finalfantasy-chocobo {
-    grid-row: 3;
-    grid-column: 1; }
-  .finalfantasy-chocobor {
-    grid-row: 3;
-    grid-column: 3;
-    transform: scaleX(-1); }
-  .finalfantasy-hoh {
-    grid-row: 3;
-    grid-column: 2;
-    padding: 0 0 15rem 0;
-    align-self: flex-start;
-    justify-self: center; }
-  .finalfantasy-bottom {
-    grid-row: 3;
-    grid-column: 2;
-    justify-self: center; }
-    .finalfantasy-bottom img {
-      padding: 0 15rem 0 0; }
 
 .primary {
   display: grid;
