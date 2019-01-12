@@ -533,7 +533,7 @@ header.smaller {
       color: #FF7D0A; }
     .landing-top article {
       font-size: 2rem;
-      padding: 5px 5rem 1rem 5rem; }
+      padding: 5px 5rem 1.5rem 5rem; }
   .landing-bottom {
     grid-column: 1 / -1;
     grid-row: 2 / 3; }
