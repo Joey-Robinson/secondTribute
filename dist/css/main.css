@@ -312,7 +312,7 @@ header.smaller {
   grid-template-columns: 40rem 1fr 40rem;
   z-index: 2;
   color: #FF7D0A;
-  background: #000;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/mainebackground.jpg") no-repeat center center/cover;
   z-index: 10; }
   .favoritecat div {
     z-index: 1; }
@@ -542,7 +542,8 @@ header.smaller {
       grid-template-columns: repeat(auto-fill, minmax(37rem, 46rem));
       padding: 14rem 5px 5px 1.9rem;
       margin: 0;
-      grid-gap: 7px; }
+      grid-column-gap: 7px;
+      grid-row-gap: 6px; }
       .landing-bottom ul img {
         filter: saturate(200%);
         height: auto;
