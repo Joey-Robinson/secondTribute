@@ -308,7 +308,7 @@ header.smaller {
   grid-row: 8;
   grid-column: 1;
   display: grid;
-  grid-template-rows: 6rem max-content max-content;
+  grid-template-rows: 6rem max-content max-content max-content;
   grid-template-columns: 40rem 1fr 40rem;
   z-index: 2;
   color: #FF7D0A;
@@ -331,7 +331,7 @@ header.smaller {
     justify-content: center;
     justify-self: center;
     grid-row: 2;
-    grid-column: 2;
+    grid-column: 1 / -1;
     padding: 0;
     margin: 0;
     z-index: 2; }
@@ -339,7 +339,7 @@ header.smaller {
       text-align: center; }
   .favoritecat-onlymcrescue {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 4;
     justify-self: center;
     align-self: center; }
     .favoritecat-onlymcrescue img {
@@ -347,7 +347,7 @@ header.smaller {
       height: 25rem; }
   .favoritecat-mcrescue {
     grid-column: 3;
-    grid-row: 2;
+    grid-row: 4;
     justify-self: center;
     align-self: center; }
     .favoritecat-mcrescue img {
@@ -355,7 +355,7 @@ header.smaller {
       height: 25rem; }
   .favoritecat-purebredrescue {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 4;
     justify-self: center;
     align-self: center; }
     .favoritecat-purebredrescue img {
@@ -371,21 +371,12 @@ header.smaller {
       height: 25rem; }
   .favoritecat-adopt {
     grid-column: 3;
-    grid-row: 3;
+    grid-row: 4;
     justify-self: center;
     align-self: center; }
     .favoritecat-adopt img {
       width: 20rem;
       height: 25rem; }
-  .favoritecat video {
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    width: auto;
-    height: auto;
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
-    z-index: -100; }
 
 .finalfantasy {
   grid-row: 6;
