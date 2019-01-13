@@ -314,6 +314,9 @@ header.smaller {
   color: #FF7D0A;
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/mainebackground.jpg") no-repeat center center/cover;
   z-index: 10; }
+  .favoritecat img {
+    width: 20rem;
+    height: auto; }
   .favoritecat div {
     z-index: 1; }
   .favoritecat a {
@@ -342,41 +345,26 @@ header.smaller {
     grid-row: 4;
     justify-self: center;
     align-self: center; }
-    .favoritecat-onlymcrescue img {
-      width: 20rem;
-      height: 25rem; }
   .favoritecat-mcrescue {
     grid-column: 3;
     grid-row: 4;
     justify-self: center;
     align-self: center; }
-    .favoritecat-mcrescue img {
-      width: 20rem;
-      height: 25rem; }
   .favoritecat-purebredrescue {
     grid-column: 1;
     grid-row: 4;
     justify-self: center;
     align-self: center; }
-    .favoritecat-purebredrescue img {
-      width: 20rem;
-      height: 25rem; }
   .favoritecat-mcadopt {
     grid-column: 2;
     grid-row: 3;
     justify-self: center;
     align-self: center; }
-    .favoritecat-mcadopt img {
-      width: 20rem;
-      height: 25rem; }
   .favoritecat-adopt {
     grid-column: 3;
     grid-row: 4;
     justify-self: center;
     align-self: center; }
-    .favoritecat-adopt img {
-      width: 20rem;
-      height: 25rem; }
 
 .finalfantasy {
   grid-row: 6;

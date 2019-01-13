@@ -10,6 +10,11 @@
     url("../images/mainebackground.jpg") no-repeat center center / cover;
   z-index: 10;
 
+  & img {
+    width: 20rem;
+    height: auto;
+  }
+
   & div {
     z-index: 1;
   }
@@ -46,10 +51,6 @@
   }
 
   &-onlymcrescue {
-    img {
-      width: 20rem;
-      height: 25rem;
-    }
 
     grid-column: 1;
     grid-row: 4;
@@ -58,10 +59,7 @@
   }
 
   &-mcrescue {
-    img {
-      width: 20rem;
-      height: 25rem;
-    }
+
 
     grid-column: 3;
     grid-row: 4;
@@ -70,10 +68,6 @@
   }
 
   &-purebredrescue {
-    img {
-      width: 20rem;
-      height: 25rem;
-    }
 
     grid-column: 1;
     grid-row: 4;
@@ -83,10 +77,6 @@
   }
 
   &-mcadopt {
-    img {
-      width: 20rem;
-      height: 25rem;
-    }
 
     grid-column: 2;
     grid-row: 3;
@@ -95,10 +85,6 @@
   }
 
   &-adopt {
-    img {
-      width: 20rem;
-      height: 25rem;
-    }
 
     grid-column: 3;
     grid-row: 4;
