@@ -2,17 +2,29 @@
   grid-row: 8;
   grid-column: 1;
   display: grid;
-  grid-template-rows: 6rem max-content max-content max-content;
-  grid-template-columns: 40rem 1fr 40rem;
+  grid-template-rows: 6rem max-content max-content 1fr max-content;
+  grid-template-columns: max-content 1fr max-content;
   z-index: 2;
   color: $druidOrange;
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("../images/mainebackground.jpg") no-repeat center center / cover;
   z-index: 10;
 
-  & img {
-    width: 20rem;
-    height: auto;
+  & ul {
+    grid-row: 5;
+    grid-column: 1 / -1;
+    columns: 5;
+    display: flex;
+    justify-content: space-evenly;
+
+    h3 {
+      text-align: center;
+    }
+
+    img {
+      width: auto;
+      height: 25rem;
+    }
   }
 
   & div {
@@ -32,9 +44,9 @@
     font-weight: bold;
   }
 
-  h3 {
-    text-align: center;
-  }
+  // h3 {
+  //   text-align: center;
+  // }
 
   &-primary {
     justify-content: center;
@@ -50,39 +62,4 @@
     }
   }
 
-  &-onlymcrescue {
-    grid-column: 1;
-    grid-row: 3;
-    justify-self: center;
-    align-self: center;
-  }
-
-  &-mcrescue {
-    grid-column: 3;
-    grid-row: 3;
-    justify-self: center;
-    align-self: center;
-  }
-
-  &-purebredrescue {
-    grid-column: 1;
-    grid-row: 4;
-    justify-self: center;
-    align-self: center;
-
-  }
-
-  &-mcadopt {
-    grid-column: 2;
-    grid-row: 3;
-    justify-self: center;
-    align-self: center;
-  }
-
-  &-adopt {
-    grid-column: 3;
-    grid-row: 4;
-    justify-self: center;
-    align-self: center;
-  }
 }

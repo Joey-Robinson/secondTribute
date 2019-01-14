@@ -308,15 +308,23 @@ header.smaller {
   grid-row: 8;
   grid-column: 1;
   display: grid;
-  grid-template-rows: 6rem max-content max-content max-content;
-  grid-template-columns: 40rem 1fr 40rem;
+  grid-template-rows: 6rem max-content max-content 1fr max-content;
+  grid-template-columns: max-content 1fr max-content;
   z-index: 2;
   color: #FF7D0A;
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/mainebackground.jpg") no-repeat center center/cover;
   z-index: 10; }
-  .favoritecat img {
-    width: 20rem;
-    height: auto; }
+  .favoritecat ul {
+    grid-row: 5;
+    grid-column: 1 / -1;
+    columns: 5;
+    display: flex;
+    justify-content: space-evenly; }
+    .favoritecat ul h3 {
+      text-align: center; }
+    .favoritecat ul img {
+      width: auto;
+      height: 25rem; }
   .favoritecat div {
     z-index: 1; }
   .favoritecat a {
@@ -328,8 +336,6 @@ header.smaller {
     font-size: 4rem;
     color: #FF7D0A;
     font-weight: bold; }
-  .favoritecat h3 {
-    text-align: center; }
   .favoritecat-primary {
     justify-content: center;
     justify-self: center;
@@ -340,31 +346,6 @@ header.smaller {
     z-index: 2; }
     .favoritecat-primary h1 {
       text-align: center; }
-  .favoritecat-onlymcrescue {
-    grid-column: 1;
-    grid-row: 3;
-    justify-self: center;
-    align-self: center; }
-  .favoritecat-mcrescue {
-    grid-column: 3;
-    grid-row: 3;
-    justify-self: center;
-    align-self: center; }
-  .favoritecat-purebredrescue {
-    grid-column: 1;
-    grid-row: 4;
-    justify-self: center;
-    align-self: center; }
-  .favoritecat-mcadopt {
-    grid-column: 2;
-    grid-row: 3;
-    justify-self: center;
-    align-self: center; }
-  .favoritecat-adopt {
-    grid-column: 3;
-    grid-row: 4;
-    justify-self: center;
-    align-self: center; }
 
 .finalfantasy {
   grid-row: 6;
