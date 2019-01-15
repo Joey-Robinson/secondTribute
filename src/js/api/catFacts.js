@@ -5,6 +5,7 @@ export const catFacts = async () => {
   const catData = data.data.map((text) => {
     return `<li><strong>${text.fact}</strong></li>`;
   });
+  catData.sort(() => 0.25 - Math.random());
   catList.innerHTML = catData.join(" ");
   console.log(data);
 }

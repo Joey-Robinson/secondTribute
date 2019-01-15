@@ -17,9 +17,21 @@
       font-size: 2rem;
       color: $druidOrange;
       padding: 1rem 2.5rem 1.5rem 2.5rem;
+      overflow: hidden;
 
       & li {
         padding: 7px 0 7px 0;
+        transition: all .2s ease-out;
+
+        &:hover {
+          font-size: 2rem;
+          padding: 5px 2rem 5px 2rem;
+          transition: all .2s ease-in;
+          transform: scale(1.1);
+          z-index: 3;
+          background: darken($primaryColor, .5);
+          position: relative;
+        }
       }
     }
   }
