@@ -18,7 +18,6 @@ export const landing = () => {
         <img
           class="lazyload"
           data-src=${image.thumbnail}
-          src=${image.thumbnail}
           alt="Landing Area Image ${index +1}"
         >
       </a>
