@@ -10,17 +10,6 @@ module.exports = {
     path: path.resolve(__dirname, "dist/js"),
     filename: "bundle.js"
   },
-  plugins: [
-    new CopyWebpackPlugin([{
-      from: './images/',
-      to: '../images/[name].jpg'
-    }]),
-    new ImageminPlugin({
-      plugins: [ImageminWebP({
-        quality: 50
-      })]
-    })
-  ],
   module: {
     rules: [{
       test: /\.js$/,
@@ -32,5 +21,16 @@ module.exports = {
         }
       }
     }]
-  }
+  },
+  plugins: [
+    new CopyWebpackPlugin([{
+      from: './images/',
+      to: '../images/[name].jpg'
+    }]),
+    new ImageminPlugin({
+      plugins: [ImageminWebP({
+        quality: 50
+      })]
+    })
+  ]
 };
