@@ -40,16 +40,16 @@ export const ffCall = async () => {
   const mounts = finalFantasyMounts;
   const minions = finalFantasyMinions;
   for (const professionImage in professions) {
-    ffProfessions.innerHTML += `<img src="${professions[professionImage]}" alt="Profession Job ${professionImage}"/>`
+    ffProfessions.innerHTML += `<img class="lazyload" data-src="${professions[professionImage]}" alt="Profession Job ${professionImage}"/>`
   }
   for (const combatImage in jobs) {
-    ffProfessionsTwo.innerHTML += `<img src="${jobs[combatImage]}" alt="Combat Job ${combatImage}" />`
+    ffProfessionsTwo.innerHTML += `<img class="lazyload" data-src="${jobs[combatImage]}" alt="Combat Job ${combatImage}" />`
   }
   for (const mountImage in mounts) {
-    ffMounts.innerHTML += `<img src=${mounts[mountImage]} alt="Favorite Mount ${mountImage}" />`
+    ffMounts.innerHTML += `<img class="lazyload" data-src=${mounts[mountImage]} alt="Favorite Mount ${mountImage}" />`
   }
   for (const minionImage in minions) {
-    ffMinions.innerHTML += `<img src=${minions[minionImage]} alt="Favorite Minion ${minionImage}" />`;
+    ffMinions.innerHTML += `<img class="lazyload" data-src=${minions[minionImage]} alt="Favorite Minion ${minionImage}" />`;
   }
   resourcesTwo.innerHTML = ffResourcesList.join(" ");
   primary.innerHTML = `
