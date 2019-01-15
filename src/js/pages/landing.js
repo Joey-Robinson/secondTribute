@@ -1,50 +1,50 @@
 const landingListImages = [{
-    thumbnail: "../compressedimages/finalfantasybackgroundthumbnail.webp",
-    largeImage: "../compressedimages/finalfantasybackground.webp"
+    thumbnail: "../compressedimages/finalfantasybackgroundthumbnail.png",
+    largeImage: "../compressedimages/finalfantasybackground.png"
   },
   {
-    thumbnail: "../compressedimages/karasangthumbnail.webp",
-    largeImage: "../compressedimages/karasang.webp"
+    thumbnail: "../compressedimages/karasangthumbnail.png",
+    largeImage: "../compressedimages/karasang.png"
   },
   {
-    thumbnail: "../compressedimages/wodspiresthumbnail.webp",
-    largeImage: "../compressedimages/wodspires.webp"
+    thumbnail: "../compressedimages/wodspiresthumbnail.png",
+    largeImage: "../compressedimages/wodspires.png"
   },
   {
-    thumbnail: "../compressedimages/firecatthumbnail.webp",
-    largeImage: "../compressedimages/firecat.webp"
+    thumbnail: "../compressedimages/firecatthumbnail.png",
+    largeImage: "../compressedimages/firecat.png"
   },
   {
-    thumbnail: "../compressedimages/wodnagrandthumbnail.webp",
-    largeImage: "../compressedimages/wodnagrand.webp"
+    thumbnail: "../compressedimages/wodnagrandthumbnail.png",
+    largeImage: "../compressedimages/wodnagrand.png"
   },
   {
-    thumbnail: "../compressedimages/nagrandthumbnail.webp",
-    largeImage: "../compressedimages/nagrand.webp"
+    thumbnail: "../compressedimages/nagrandthumbnail.png",
+    largeImage: "../compressedimages/nagrand.png"
   },
   {
-    thumbnail: "../compressedimages/zangarmarshthumbnail.webp",
-    largeImage: "../compressedimages/zangarmarsh.webp"
+    thumbnail: "../compressedimages/zangarmarshthumbnail.png",
+    largeImage: "../compressedimages/zangarmarsh.png"
   },
   {
-    thumbnail: "../compressedimages/valethumbnail.webp",
-    largeImage: "../compressedimages/vale.webp"
+    thumbnail: "../compressedimages/valethumbnail.png",
+    largeImage: "../compressedimages/vale.png"
   },
   {
-    thumbnail: "../compressedimages/kunlaithumbnail.webp",
-    largeImage: "../compressedimages/kunlai.webp"
+    thumbnail: "../compressedimages/kunlaithumbnail.png",
+    largeImage: "../compressedimages/kunlai.png"
   },
   {
-    thumbnail: "../compressedimages/churningmiststhumbnail.webp",
-    largeImage: "../compressedimages/churningmists.webp"
+    thumbnail: "../compressedimages/churningmiststhumbnail.png",
+    largeImage: "../compressedimages/churningmists.png"
   },
   {
-    thumbnail: "../compressedimages/dravanianforelandsthumbnail.webp",
-    largeImage: "../compressedimages/dravanianforelands.webp"
+    thumbnail: "../compressedimages/dravanianforelandsthumbnail.png",
+    largeImage: "../compressedimages/dravanianforelands.png"
   },
   {
-    thumbnail: "../compressedimages/rubyseathumbnail.webp",
-    largeImage: "../compressedimages/rubysea.webp"
+    thumbnail: "../compressedimages/rubyseathumbnail.png",
+    largeImage: "../compressedimages/rubysea.png"
   }
 ];
 
@@ -60,13 +60,11 @@ export const landing = () => {
         target="_blank"
         rel="noopener no referrer"
       >
-        <picture>
-          <img
-            class="lazyload"
-            data-src=${image.thumbnail} 
-            alt="Landing Area Image ${index +1}"
-          >
-        </picture>
+        <img
+          class="lazyload"
+          data-src=${image.thumbnail} 
+          alt="Landing Area Image ${index +1}"
+        >
       </a>
       </li>`;
   });
