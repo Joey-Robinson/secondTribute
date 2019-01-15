@@ -13,7 +13,7 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([{
       from: './images/**/**',
-      to: '../images/[name].webp'
+      to: '../images/[name].png'
     }]),
     new ImageminPlugin({
       plugins: [ImageminWebP({
