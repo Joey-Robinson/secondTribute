@@ -7,11 +7,11 @@ const landingListImages = [{
     largeImage: "../compressedimages/karasang.png"
   },
   {
-    thumbnail: "../compressedimages/wodspiresthumbnail.png",
+    thumbnail: "../../../dist/compressedimages/wodspires.png",
     largeImage: "../compressedimages/wodspires.png"
   },
   {
-    thumbnail: "../compressedimages/firecatthumbnail.png",
+    thumbnail: "../images/firecatthumbnail.png",
     largeImage: "../compressedimages/firecat.png"
   },
   {
@@ -62,7 +62,7 @@ export const landing = () => {
       >
         <img
           class="lazyload"
-          data-src=${image.thumbnail} 
+          data-src=${image.thumbnail}
           alt="Landing Area Image ${index +1}"
         >
       </a>
