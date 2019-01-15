@@ -1,10 +1,10 @@
 const landingListImages = [{
-    thumbnail: "../../../dist/compressedimages/finalfantasybackgroundthumbnail.webp",
-    largeImage: "../../../dist/compressedimages/finalfantasybackground.webp"
+    thumbnail: "../../../dist/compressedimages/finalfantasybackgroundthumbnail.png",
+    largeImage: "../../../dist/compressedimages/finalfantasybackground.png"
   },
   {
-    thumbnail: "../compressedimages/karasangthumbnail.webp",
-    largeImage: "../compressedimages/karasang.webp"
+    thumbnail: "../compressedimages/karasangthumbnail.png",
+    largeImage: "../compressedimages/karasang.png"
   },
   {
     thumbnail: "../compressedimages/wodspiresthumbnail.webp",
