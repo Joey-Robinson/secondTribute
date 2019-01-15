@@ -48,58 +48,6 @@ const landingListImages = [{
   }
 ];
 
-// const landingListImages = [{
-//     thumbnail: "../../../dist/images/finalfantasybackground.jpg",
-//     largeImage: "../../../dist/images/finalfantasybackground.jpg"
-//   },
-//   {
-//     thumbnail: "../../../dist/images/karasangthumbnail.jpg",
-//     largeImage: "../../../dist/images/karasang.jpg"
-//   },
-//   {
-//     thumbnail: "../../../dist/images/wodspiresthumbnail.jpg",
-//     largeImage: "../../../dist/images/wodspires.jpg"
-//   },
-//   {
-//     thumbnail: "../../../dist/images/firecatthumbnail.jpg",
-//     largeImage: "../../../dist/images/firecat.jpg"
-//   },
-//   {
-//     thumbnail: "../../../dist/images/wodnagrandthumbnail.jpg",
-//     largeImage: "../../../dist/images/wodnagrand.jpg"
-//   },
-//   {
-//     thumbnail: "../../../dist/images/nagrandthumbnail.jpg",
-//     largeImage: "../../../dist/images/nagrand.jpg"
-//   },
-//   {
-//     thumbnail: "../../../dist/images/zangarmarshthumbnail.jpg",
-//     largeImage: "../../../dist/images/zangarmarsh.jpg"
-//   },
-//   {
-//     thumbnail: "../../../dist/images/valethumbnail.jpg",
-//     largeImage: "../../../dist/images/vale.jpg"
-//   },
-//   {
-//     thumbnail: "../../../dist/images/kunlaithumbnail.jpg",
-//     largeImage: "../../../dist/images/kunlai.jpg"
-//   },
-//   {
-//     thumbnail: "../../../dist/images/churningmiststhumbnail.jpg",
-//     largeImage: "../../../dist/images/churningmists.jpg"
-//   },
-//   {
-//     thumbnail: "../../../dist/images/dravanianforelandsthumbnail.jpg",
-//     largeImage: "../../../dist/images/dravanianforelands.jpg"
-//   },
-//   {
-//     thumbnail: "../../../dist/images/rubyseathumbnail.jpg",
-//     largeImage: "../../../dist/images/rubysea.jpg"
-//   }
-// ];
-
-
-
 
 // Had to add relative pathing from bundle.js
 export const landing = () => {
@@ -112,8 +60,9 @@ export const landing = () => {
         target="_blank"
         rel="noopener no referrer"
       >
-        <img 
-          src=${image.thumbnail} 
+        <img
+          class="lazyload"
+          data-src=${image.thumbnail} 
           alt="Landing Area Image ${index +1}"
         >
       </a>

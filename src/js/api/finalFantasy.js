@@ -99,7 +99,7 @@ export const ffCall = async () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="${portrait}" />
+        <img class="lazyload" data-src="${portrait}" />
       </a>
     </h3>
   `
