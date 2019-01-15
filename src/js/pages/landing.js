@@ -1,6 +1,6 @@
 const landingListImages = [{
-  thumbnail: "../images/finalfantasybackgroundthumbnail.jpg",
-  largeImage: "../images/finalfantasybackground.jpg"
+  thumbnail: "../images/finalfantasybackgroundthumbnail.webp",
+  largeImage: "../images/finalfantasybackground.webp"
 }];
 
 
