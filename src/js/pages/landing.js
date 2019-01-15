@@ -61,11 +61,10 @@ export const landing = () => {
         rel="noopener no referrer"
       >
         <picture>
-          <source type="image/webp" srcset=${image.thumbnail}>
           <img
-          class="lazyload"
-          data-src=${image.thumbnail} 
-          alt="Landing Area Image ${index +1}"
+            class="lazyload"
+            data-src=${image.thumbnail} 
+            alt="Landing Area Image ${index +1}"
           >
         </picture>
       </a>
