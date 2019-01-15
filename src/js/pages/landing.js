@@ -1,10 +1,10 @@
 const landingListImages = [{
-    thumbnail: "../../../dist/compressedimages/finalfantasybackgroundthumbnail.png",
-    largeImage: "../../../dist/compressedimages/finalfantasybackground.png"
+    thumbnail: "../compressedimages/finalfantasybackgroundthumbnail.webp",
+    largeImage: "../compressedimages/finalfantasybackground.webp"
   },
   {
-    thumbnail: "../compressedimages/karasangthumbnail.png",
-    largeImage: "../compressedimages/karasang.png"
+    thumbnail: "../compressedimages/karasangthumbnail.webp",
+    largeImage: "../compressedimages/karasang.webp"
   },
   {
     thumbnail: "../compressedimages/wodspiresthumbnail.webp",
@@ -60,11 +60,14 @@ export const landing = () => {
         target="_blank"
         rel="noopener no referrer"
       >
-        <img
+        <picture>
+          <source type="image/webp" srcset=${image.thumbnail}>
+          <img
           class="lazyload"
           data-src=${image.thumbnail} 
           alt="Landing Area Image ${index +1}"
-        >
+          >
+        </picture>
       </a>
       </li>`;
   });
