@@ -15,11 +15,11 @@ export const landing = () => {
         target="_blank"
         rel="noopener no referrer"
       >
-        <img
-          class="lazyload"
-          data-src=${image.thumbnail}
-          alt="Landing Area Image ${index +1}"
-        >
+      <picture>
+        <source type="image/webp" srcset="${image.thumbnail}">
+        <source type="image/jpeg" srcset="${image.thumbnail}">
+        <img class="lazyload" data-src="${image.thumbnail}">
+      </picture>
       </a>
       </li>`;
   });
