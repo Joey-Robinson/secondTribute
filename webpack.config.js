@@ -1,4 +1,7 @@
 const path = require("path");
+const ImageminWebP = require('imagemin-webp');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: "development",
@@ -7,6 +10,17 @@ module.exports = {
     path: path.resolve(__dirname, "dist/js"),
     filename: "bundle.js"
   },
+  plugins: [
+    new CopyWebpackPlugin([{
+      from: './dist/images/**/**',
+      to: '../compressedimages/[name].webp'
+    }]),
+    new ImageminPlugin({
+      plugins: [ImageminWebP({
+        quality: 50
+      })]
+    })
+  ],
   module: {
     rules: [{
       test: /\.js$/,
