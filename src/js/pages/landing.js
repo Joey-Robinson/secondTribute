@@ -1,50 +1,50 @@
 const landingListImages = [{
-    thumbnail: "../images/finalfantasybackground.jpg",
-    largeImage: "../../../dist/images/finalfantasybackground.jpg"
+    thumbnail: "../compressedimages/finalfantasybackgroundthumbnail.webp",
+    largeImage: "../compressedimages/finalfantasybackground.webp"
   },
   {
-    thumbnail: "../images/karasangthumbnail.jpg",
-    largeImage: "../images/karasang.jpg"
+    thumbnail: "../compressedimages/karasangthumbnail.webp",
+    largeImage: "../compressedimages/karasang.webp"
   },
   {
-    thumbnail: "../images/wodspiresthumbnail.jpg",
-    largeImage: "../images/wodspires.jpg"
+    thumbnail: "../compressedimages/wodspiresthumbnail.webp",
+    largeImage: "../compressedimages/wodspires.webp"
   },
   {
-    thumbnail: "../images/firecatthumbnail.jpg",
-    largeImage: "../images/firecat.jpg"
+    thumbnail: "../compressedimages/firecatthumbnail.webp",
+    largeImage: "../compressedimages/firecat.webp"
   },
   {
-    thumbnail: "../images/wodnagrandthumbnail.jpg",
-    largeImage: "../images/wodnagrand.jpg"
+    thumbnail: "../compressedimages/wodnagrandthumbnail.webp",
+    largeImage: "../compressedimages/wodnagrand.webp"
   },
   {
-    thumbnail: "../images/nagrandthumbnail.jpg",
-    largeImage: "../images/nagrand.jpg"
+    thumbnail: "../compressedimages/nagrandthumbnail.webp",
+    largeImage: "../compressedimages/nagrand.webp"
   },
   {
-    thumbnail: "../images/zangarmarshthumbnail.jpg",
-    largeImage: "../images/zangarmarsh.jpg"
+    thumbnail: "../compressedimages/zangarmarshthumbnail.webp",
+    largeImage: "../compressedimages/zangarmarsh.webp"
   },
   {
-    thumbnail: "../images/valethumbnail.jpg",
-    largeImage: "../images/vale.jpg"
+    thumbnail: "../compressedimages/valethumbnail.webp",
+    largeImage: "../compressedimages/vale.webp"
   },
   {
-    thumbnail: "../images/kunlaithumbnail.jpg",
-    largeImage: "../images/kunlai.jpg"
+    thumbnail: "../compressedimages/kunlaithumbnail.webp",
+    largeImage: "../compressedimages/kunlai.webp"
   },
   {
-    thumbnail: "../images/churningmiststhumbnail.jpg",
-    largeImage: "../images/churningmists.jpg"
+    thumbnail: "../compressedimages/churningmiststhumbnail.webp",
+    largeImage: "../compressedimages/churningmists.webp"
   },
   {
-    thumbnail: "../images/dravanianforelandsthumbnail.jpg",
-    largeImage: "../images/dravanianforelands.jpg"
+    thumbnail: "../compressedimages/dravanianforelandsthumbnail.webp",
+    largeImage: "../compressedimages/dravanianforelands.webp"
   },
   {
-    thumbnail: "../images/rubyseathumbnail.jpg",
-    largeImage: "../images/rubysea.jpg"
+    thumbnail: "../compressedimages/rubyseathumbnail.webp",
+    largeImage: "../compressedimages/rubysea.webp"
   }
 ];
 
