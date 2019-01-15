@@ -316,8 +316,8 @@ header.smaller {
   z-index: 10; }
   .favoritecat-kitty {
     grid-column: 3;
-    grid-row: 2;
-    float: right; }
+    grid-row: 3;
+    padding: 0 2.5rem 0 0; }
   .favoritecat table {
     font-size: 3.5rem;
     font-weight: bold; }
@@ -327,8 +327,6 @@ header.smaller {
     columns: 5;
     display: flex;
     justify-content: space-evenly; }
-    .favoritecat ul h3 {
-      text-align: center; }
     .favoritecat ul img {
       width: auto;
       height: 25rem; }
