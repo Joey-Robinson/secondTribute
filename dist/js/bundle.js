@@ -3389,7 +3389,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n// Prod\nvar finalFantasyJobs = exports.finalFantasyJobs = {\n  astrologian: '../compressedimages/astrologian.png',\n  whitemage: '../compressedimages/whitemage.png',\n  scholar: '../compressedimages/scholar.png',\n  redmage: '../compressedimages/redmage.png',\n  bard: '../compressedimages/bard.png',\n  summoner: '../compressedimages/summoner.png',\n  warrior: '../compressedimages/warrior.png'\n};\n\n//# sourceURL=webpack:///./src/js/user/finalFantasyJobs.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n// Prod\nvar finalFantasyJobs = exports.finalFantasyJobs = {\n  astrologian: '../images/astrologian.png',\n  whitemage: '../images/whitemage.png',\n  scholar: '../images/scholar.png',\n  redmage: '../images/redmage.png',\n  bard: '../images/bard.png',\n  summoner: '../images/summoner.png',\n  warrior: '../images/warrior.png'\n};\n\n//# sourceURL=webpack:///./src/js/user/finalFantasyJobs.js?");
 
 /***/ }),
 
@@ -3401,7 +3401,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n// Prod\nvar finalFantasyMinions = exports.finalFantasyMinions = {\n  bom_boko: '../compressedimages/bom_boko.png',\n  brina: '../compressedimages/brina.png',\n  calca: '../compressedimages/calca.png',\n  coeurl_kitten: '../compressedimages/coeurl_kitten.png',\n  fat_cat: '../compressedimages/fat_cat.png',\n  heavy_hatchling: '../compressedimages/heavy_hatchling.png',\n  koala_joey: '../compressedimages/koala_joey.png',\n  odder_otter: '../compressedimages/odder_otter.png',\n  unicolt: '../compressedimages/unicolt.png',\n  wind_up_alisaie: '../compressedimages/wind-up_alisaie.png',\n  wind_up_alphinaud: '../compressedimages/wind-up_alphinaud.png',\n  wind_up_namazu: '../compressedimages/wind-up_namazu.png',\n  wind_up_raubahn: '../compressedimages/wind-up_raubahn.png',\n  dress_up_thancred: '../compressedimages/dress-up_thancred.png',\n  gaelikitten: '../compressedimages/gaelikitten.png'\n};\n\n//# sourceURL=webpack:///./src/js/user/finalFantasyMinions.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n// Prod\nvar finalFantasyMinions = exports.finalFantasyMinions = {\n  bom_boko: '../images/bom_boko.png',\n  brina: '../images/brina.png',\n  calca: '../images/calca.png',\n  coeurl_kitten: '../images/coeurl_kitten.png',\n  fat_cat: '../images/fat_cat.png',\n  heavy_hatchling: '../images/heavy_hatchling.png',\n  koala_joey: '../images/koala_joey.png',\n  odder_otter: '../images/odder_otter.png',\n  unicolt: '../images/unicolt.png',\n  wind_up_alisaie: '../images/wind-up_alisaie.png',\n  wind_up_alphinaud: '../images/wind-up_alphinaud.png',\n  wind_up_namazu: '../images/wind-up_namazu.png',\n  wind_up_raubahn: '../images/wind-up_raubahn.png',\n  dress_up_thancred: '../images/dress-up_thancred.png',\n  gaelikitten: '../images/gaelikitten.png'\n};\n\n//# sourceURL=webpack:///./src/js/user/finalFantasyMinions.js?");
 
 /***/ }),
 
@@ -3413,7 +3413,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n// Prod\nvar finalFantasyMounts = exports.finalFantasyMounts = {\n  behemoth: '../compressedimages/behemoth.png',\n  blissful_kamuy: '../compressedimages/blissful_kamuy.png',\n  cloud_mallow: '../compressedimages/cloud_mallow.png',\n  dark_lanner: '../compressedimages/dark_lanner.png',\n  demonic_lanner: '../compressedimages/demonic_lanner.png',\n  fat_chocobo: '../compressedimages/fat_chocobo.png',\n  ixion: '../compressedimages/ixion.png',\n  mikoshi: '../compressedimages/mikoshi.png',\n  mychocobo: '../compressedimages/mychocobo.png',\n  original_fat_chocobo: '../compressedimages/original_fat_chocobo.png',\n  rose_lanner: '../compressedimages/rose_lanner.png',\n  sophic_lanner: '../compressedimages/sophic_lanner.png',\n  twintania: '../compressedimages/twintania.png',\n  tyrannosaur: '../compressedimages/tyrannosaur.png',\n  zu: '../compressedimages/zu.png'\n};\n\n//# sourceURL=webpack:///./src/js/user/finalFantasyMounts.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n// Prod\nvar finalFantasyMounts = exports.finalFantasyMounts = {\n  behemoth: '../images/behemoth.png',\n  blissful_kamuy: '../images/blissful_kamuy.png',\n  cloud_mallow: '../images/cloud_mallow.png',\n  dark_lanner: '../images/dark_lanner.png',\n  demonic_lanner: '../images/demonic_lanner.png',\n  fat_chocobo: '../images/fat_chocobo.png',\n  ixion: '../images/ixion.png',\n  mikoshi: '../images/mikoshi.png',\n  mychocobo: '../images/mychocobo.png',\n  original_fat_chocobo: '../images/original_fat_chocobo.png',\n  rose_lanner: '../images/rose_lanner.png',\n  sophic_lanner: '../images/sophic_lanner.png',\n  twintania: '../images/twintania.png',\n  tyrannosaur: '../images/tyrannosaur.png',\n  zu: '../images/zu.png'\n};\n\n//# sourceURL=webpack:///./src/js/user/finalFantasyMounts.js?");
 
 /***/ }),
 
@@ -3425,7 +3425,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar finalFantasyProfessions = exports.finalFantasyProfessions = {\n  alchemist: '../compressedimages/alchemist.png',\n  armorer: '../compressedimages/armorer.png',\n  blacksmith: '../compressedimages/blacksmith.png',\n  carpenter: '../compressedimages/carpenter.png',\n  culinarian: '../compressedimages/culinarian.png',\n  goldsmith: '../compressedimages/goldsmith.png',\n  leatherworking: '../compressedimages/leatherworking.png',\n  weaver: '../compressedimages/weaver.png',\n  botanist: '../compressedimages/botanist.png',\n  fishing: '../compressedimages/fishing.png',\n  mining: '../compressedimages/mining.png'\n};\n\n//# sourceURL=webpack:///./src/js/user/finalFantasyProfessions.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar finalFantasyProfessions = exports.finalFantasyProfessions = {\n  alchemist: '../images/alchemist.png',\n  armorer: '../images/armorer.png',\n  blacksmith: '../images/blacksmith.png',\n  carpenter: '../images/carpenter.png',\n  culinarian: '../images/culinarian.png',\n  goldsmith: '../images/goldsmith.png',\n  leatherworking: '../images/leatherworking.png',\n  weaver: '../images/weaver.png',\n  botanist: '../images/botanist.png',\n  fishing: '../images/fishing.png',\n  mining: '../images/mining.png'\n};\n\n//# sourceURL=webpack:///./src/js/user/finalFantasyProfessions.js?");
 
 /***/ }),
 
