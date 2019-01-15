@@ -314,6 +314,13 @@ header.smaller {
   color: #FF7D0A;
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/mainebackground.jpg") no-repeat center center/cover;
   z-index: 10; }
+  .favoritecat-kitty {
+    grid-column: 3;
+    grid-row: 2;
+    float: right; }
+  .favoritecat table {
+    font-size: 3.5rem;
+    font-weight: bold; }
   .favoritecat ul {
     grid-row: 5;
     grid-column: 1 / -1;

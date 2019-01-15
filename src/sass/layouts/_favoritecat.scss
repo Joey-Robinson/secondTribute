@@ -10,6 +10,17 @@
     url("../images/mainebackground.jpg") no-repeat center center / cover;
   z-index: 10;
 
+  &-kitty {
+    grid-column: 3;
+    grid-row: 2;
+    float: right;
+  }
+
+  & table {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+
   & ul {
     grid-row: 5;
     grid-column: 1 / -1;
