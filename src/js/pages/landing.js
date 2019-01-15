@@ -1,52 +1,7 @@
 const landingListImages = [{
-    thumbnail: "../compressedimages/finalfantasybackgroundthumbnail.png",
-    largeImage: "../compressedimages/finalfantasybackground.png"
-  },
-  {
-    thumbnail: "../compressedimages/karasangthumbnail.png",
-    largeImage: "../compressedimages/karasang.png"
-  },
-  {
-    thumbnail: "../compressedimages/wodspiresthumbnail.png",
-    largeImage: "../compressedimages/wodspires.png"
-  },
-  {
-    thumbnail: "../compressedimages/firecatthumbnail.png",
-    largeImage: "../compressedimages/firecat.png"
-  },
-  {
-    thumbnail: "../compressedimages/wodnagrandthumbnail.png",
-    largeImage: "../compressedimages/wodnagrand.png"
-  },
-  {
-    thumbnail: "../compressedimages/nagrandthumbnail.png",
-    largeImage: "../compressedimages/nagrand.png"
-  },
-  {
-    thumbnail: "../compressedimages/zangarmarshthumbnail.png",
-    largeImage: "../compressedimages/zangarmarsh.png"
-  },
-  {
-    thumbnail: "../compressedimages/valethumbnail.png",
-    largeImage: "../compressedimages/vale.png"
-  },
-  {
-    thumbnail: "../compressedimages/kunlaithumbnail.png",
-    largeImage: "../compressedimages/kunlai.png"
-  },
-  {
-    thumbnail: "../compressedimages/churningmiststhumbnail.png",
-    largeImage: "../compressedimages/churningmists.png"
-  },
-  {
-    thumbnail: "../compressedimages/dravanianforelandsthumbnail.png",
-    largeImage: "../compressedimages/dravanianforelands.png"
-  },
-  {
-    thumbnail: "../compressedimages/rubyseathumbnail.png",
-    largeImage: "../compressedimages/rubysea.png"
-  }
-];
+  thumbnail: "../../../dist/compressedimages/finalfantasybackgroundthumbnail.png",
+  largeImage: "../../../dist/compressedimages/finalfantasybackground.png"
+}];
 
 
 // Had to add relative pathing from bundle.js
