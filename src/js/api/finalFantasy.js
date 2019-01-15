@@ -49,7 +49,7 @@ export const ffCall = async () => {
     ffMounts.innerHTML += `<img class="lazyload" data-src=${mounts[mountImage]} alt="Favorite Mount ${mountImage}" />`
   }
   for (const minionImage in minions) {
-    ffMinions.innerHTML += `<img class="lazyload" data-src=${minions[minionImage]} alt="Favorite Minion ${minionImage}" />`;
+    ffMinions.innerHTML += `<li><img class="lazyload" data-src=${minions[minionImage]} alt="Favorite Minion ${minionImage}" /></li>`;
   }
   resourcesTwo.innerHTML = ffResourcesList.join(" ");
   primary.innerHTML = `
