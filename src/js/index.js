@@ -1,11 +1,10 @@
 // API
-// import catFacts from "./api/catFacts";
 import {
   ffCall
 } from "./api/finalFantasy";
-
 import meerkats from "./api/meerkats";
 import ristretta from './api/ristretta';
+import catFacts from './api/catFacts';
 // Components
 import {
   resizeHeaderOnScroll,

@@ -3262,6 +3262,18 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 
 /***/ }),
 
+/***/ "./src/js/api/catFacts.js":
+/*!********************************!*\
+  !*** ./src/js/api/catFacts.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nfunction _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step(\"next\", value); }, function (err) { step(\"throw\", err); }); } } return step(\"next\"); }); }; }\n\nvar catFacts = exports.catFacts = function () {\n  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {\n    var response, data, catList, catData;\n    return regeneratorRuntime.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            _context.next = 2;\n            return fetch(\"https://catfact.ninja/facts?limit=500\");\n\n          case 2:\n            response = _context.sent;\n            _context.next = 5;\n            return response.json();\n\n          case 5:\n            data = _context.sent;\n            catList = document.querySelector('.catfacts-list');\n            catData = data.data.map(function (text) {\n              return \"<li><strong>\" + text.fact + \"</strong></li>\";\n            });\n\n            catList.innerHTML = catData.join(\" \");\n            console.log(data);\n\n          case 10:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee, undefined);\n  }));\n\n  return function catFacts() {\n    return _ref.apply(this, arguments);\n  };\n}();\n\ncatFacts();\n\n//# sourceURL=webpack:///./src/js/api/catFacts.js?");
+
+/***/ }),
+
 /***/ "./src/js/api/finalFantasy.js":
 /*!************************************!*\
   !*** ./src/js/api/finalFantasy.js ***!
@@ -3330,7 +3342,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _finalFantasy = __webpack_require__(/*! ./api/finalFantasy */ \"./src/js/api/finalFantasy.js\");\n\nvar _meerkats = __webpack_require__(/*! ./api/meerkats */ \"./src/js/api/meerkats.js\");\n\nvar _meerkats2 = _interopRequireDefault(_meerkats);\n\nvar _ristretta = __webpack_require__(/*! ./api/ristretta */ \"./src/js/api/ristretta.js\");\n\nvar _ristretta2 = _interopRequireDefault(_ristretta);\n\nvar _header = __webpack_require__(/*! ./components/header */ \"./src/js/components/header.js\");\n\nvar _modal = __webpack_require__(/*! ./components/modal */ \"./src/js/components/modal.js\");\n\nvar _modal2 = _interopRequireDefault(_modal);\n\nvar _landing = __webpack_require__(/*! ./pages/landing */ \"./src/js/pages/landing.js\");\n\nvar _landing2 = _interopRequireDefault(_landing);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("\n\nvar _finalFantasy = __webpack_require__(/*! ./api/finalFantasy */ \"./src/js/api/finalFantasy.js\");\n\nvar _meerkats = __webpack_require__(/*! ./api/meerkats */ \"./src/js/api/meerkats.js\");\n\nvar _meerkats2 = _interopRequireDefault(_meerkats);\n\nvar _ristretta = __webpack_require__(/*! ./api/ristretta */ \"./src/js/api/ristretta.js\");\n\nvar _ristretta2 = _interopRequireDefault(_ristretta);\n\nvar _catFacts = __webpack_require__(/*! ./api/catFacts */ \"./src/js/api/catFacts.js\");\n\nvar _catFacts2 = _interopRequireDefault(_catFacts);\n\nvar _header = __webpack_require__(/*! ./components/header */ \"./src/js/components/header.js\");\n\nvar _modal = __webpack_require__(/*! ./components/modal */ \"./src/js/components/modal.js\");\n\nvar _modal2 = _interopRequireDefault(_modal);\n\nvar _landing = __webpack_require__(/*! ./pages/landing */ \"./src/js/pages/landing.js\");\n\nvar _landing2 = _interopRequireDefault(_landing);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
