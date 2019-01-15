@@ -1,50 +1,50 @@
 const landingListImages = [{
-    thumbnail: "../images/finalfantasybackgroundthumbnail.png",
-    largeImage: "../images/finalfantasybackground.png"
+    thumbnail: "../compressedimages/finalfantasybackgroundthumbnail.png",
+    largeImage: "../compressedimages/finalfantasybackground.png"
   },
   {
-    thumbnail: "../images/karasangthumbnail.png",
-    largeImage: "../images/karasang.png"
+    thumbnail: "../compressedimages/karasangthumbnail.png",
+    largeImage: "../compressedimages/karasang.png"
   },
   {
-    thumbnail: "../images/wodspires.png",
-    largeImage: "../images/wodspires.png"
+    thumbnail: "../compressedimages/wodspiresthumbnail.png",
+    largeImage: "../compressedimages/wodspires.png"
   },
   {
-    thumbnail: "../images/firecatthumbnail.png",
-    largeImage: "../images/firecat.png"
+    thumbnail: "../compressedimages/firecatthumbnail.png",
+    largeImage: "../compressedimages/firecat.png"
   },
   {
-    thumbnail: "../images/wodnagrandthumbnail.png",
-    largeImage: "../images/wodnagrand.png"
+    thumbnail: "../compressedimages/wodnagrandthumbnail.png",
+    largeImage: "../compressedimages/wodnagrand.png"
   },
   {
-    thumbnail: "../images/nagrandthumbnail.png",
-    largeImage: "../images/nagrand.png"
+    thumbnail: "../compressedimages/nagrandthumbnail.png",
+    largeImage: "../compressedimages/nagrand.png"
   },
   {
-    thumbnail: "../images/zangarmarshthumbnail.png",
-    largeImage: "../images/zangarmarsh.png"
+    thumbnail: "../compressedimages/zangarmarshthumbnail.png",
+    largeImage: "../compressedimages/zangarmarsh.png"
   },
   {
-    thumbnail: "../images/valethumbnail.png",
-    largeImage: "../images/vale.png"
+    thumbnail: "../compressedimages/valethumbnail.png",
+    largeImage: "../compressedimages/vale.png"
   },
   {
-    thumbnail: "../images/kunlaithumbnail.png",
-    largeImage: "../images/kunlai.png"
+    thumbnail: "../compressedimages/kunlaithumbnail.png",
+    largeImage: "../compressedimages/kunlai.png"
   },
   {
-    thumbnail: "../images/churningmiststhumbnail.png",
-    largeImage: "../images/churningmists.png"
+    thumbnail: "../compressedimages/churningmiststhumbnail.png",
+    largeImage: "../compressedimages/churningmists.png"
   },
   {
-    thumbnail: "../images/dravanianforelandsthumbnail.png",
-    largeImage: "../images/dravanianforelands.png"
+    thumbnail: "../compressedimages/dravanianforelandsthumbnail.png",
+    largeImage: "../compressedimages/dravanianforelands.png"
   },
   {
-    thumbnail: "../images/rubyseathumbnail.png",
-    largeImage: "../images/rubysea.png"
+    thumbnail: "../compressedimages/rubyseathumbnail.png",
+    largeImage: "../compressedimages/rubysea.png"
   }
 ];
 
@@ -62,7 +62,8 @@ export const landing = () => {
       >
         <img
           class="lazyload"
-          data-src="${image.thumbnail}"
+          data-src=${image.thumbnail}
+          src=${image.thumbnail}
           alt="Landing Area Image ${index +1}"
         >
       </a>
