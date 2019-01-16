@@ -16,7 +16,7 @@
     "webpackWatch": "webpack --watch",
     "start": "webpack --webpackWatch & webpack-dev-server --open & webpack",
     "build": "webpack --config webpack.config.js",
-    "compress:JS": "uglifyjs --compress --mangle -- dist/js/bundle.js",
+    "compress:JS": "uglifyjs dist/js/bundle.js --compress --mangle -o dist/js/bundle.min.js",
     "babelBuild": "babel src -d dist"
   },
   "devDependencies": {
