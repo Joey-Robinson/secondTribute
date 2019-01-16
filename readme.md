@@ -39,4 +39,18 @@ const recentInner = recentPlus.map((dungeon, index) => {
 });
 ```
 
-Is
+The above is a snippet taken directly from meerkats.js to give an example of how the data is presented. Each area is similar to that, with a table layout and data being interpolated via \${}. Overall I'm happy with how this section turned out.
+
+## The WoW Modal
+
+Since I made the decision to present the information like I did, I needed another way of squeezing information in a tight area. The best solution I could think of was a modal. This particular modal occupies (when activated)
+92vh and 95vw. This was to have the user immersed when activating it, while still giving them an option to click the backdrop to close the Modal if they wanted to. Looking at the Modal itself shows that I even had limited space to utilize here. So I had to pick what I wanted very carefully, but knew that I could present it well with CSS Grid.
+
+When the open button (link) is clicked, the browser is centered on the #wow section and also opens the Modal to a plethora of infromation. Each section here is a favorite X of the user. Example: Favorite Streamers. Each section here is inside one of the Modal's grid sections:
+
+```css
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr 1fr 5rem;
+```
+
+Here you can see how the information is presented. 3 Columns with a width of 1fr, 2 Rows with a height of 1fr and 1 Row with a height of 5rem (this is for the close button).
