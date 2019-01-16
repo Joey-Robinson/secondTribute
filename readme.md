@@ -10,7 +10,7 @@
 
 Starting from the top
 
-- I used webpack & babel together to compile and bundle my index.js file into bundle.js. I did this so I could use modern features, without comprimising my usability.
+- I used webpack & babel together to compile and bundle my index.js file into bundle.js. I did this so I could use modern features, without comprimising my usability. I also wanted to be able to export different files and have a primary file that bundles everything for me (similar to React).
 - In addition to the two tools listed above, I used uglify.js to minify my bundle.js into bundle.min.js, and give myself a small performance increase.
 
 SCSS
