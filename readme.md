@@ -256,3 +256,19 @@ for (const mountImage in mounts) {
   } alt="Favorite Mount ${mountImage}" />`;
 }
 ```
+
+Here, I'm using the key value as part of the alt tag, as well as a descriptor for the image. Using this for loop (this was the only way I was able to do this) I was able to present the information how I wanted.
+
+The problem here, and one I'll avoid making in the future, is that using this method sets me up for failure. When using this, I'm unable to return a li inside of a UL, and instead have to return (into a UL) the images themselves. In order to achieve this, I went into the CSS and did this:
+
+```css
+& ul {
+  color: $druidOrange;
+  font-size: 2.5rem;
+  columns: 2;
+}
+```
+
+I changed the amount of columns to give the illusion of a small list, but in reality, as I mentioned, it's only images in each section.
+
+If I were to recreate this, I 100% would use a different approach to this, so I don't shoot myself in the foot like I did. While I accomplished what I wanted, I feel I could have approached it better with more thought. Even if the result was interesting.
