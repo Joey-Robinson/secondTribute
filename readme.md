@@ -272,3 +272,20 @@ The problem here, and one I'll avoid making in the future, is that using this me
 I changed the amount of columns to give the illusion of a small list, but in reality, as I mentioned, it's only images in each section.
 
 If I were to recreate this, I 100% would use a different approach to this, so I don't shoot myself in the foot like I did. While I accomplished what I wanted, I feel I could have approached it better with more thought. Even if the result was interesting.
+
+## Final Fantasy - The Bottom
+
+This was interesting to me. Each section has an empty grid area around of 2rem. So what I wanted to do, was place the gif in the area, but not in the syntax. To do this, I placed it inside of one of the empty areas surrounding each section see here:
+
+```css
+&-testing {
+  position: absolute;
+  left: 0;
+  top: 288%;
+  grid-row: 6;
+  justify-self: left;
+  z-index: 3;
+}
+```
+
+So I had to find some exact positioning with this, which I know isn't ideal, but I felt like I accomplished what I set out to do
