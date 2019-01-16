@@ -16,7 +16,6 @@ export const landing = () => {
         rel="noopener no referrer"
       >
       <picture>
-        <source type="image/webp" srcset="${image.thumbnail}">
         <img class="lazyload" data-src="${image.thumbnail}">
       </picture>
       </a>
