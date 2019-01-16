@@ -55,7 +55,8 @@ export const landing = () => {
   const landingList = document.getElementById("landing-list");
   const newLandingList = landingListImages.map((image, index) => {
     return `<li>
-    <a 
+    <a
+      aria-label="Link For Landing Image ${image.largeImage}"
       href=${image.largeImage}
       target="_blank"
       rel="noopener no referrer"
