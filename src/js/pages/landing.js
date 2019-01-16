@@ -1,50 +1,50 @@
 const landingListImages = [{
-    thumbnail: "../images/finalfantasybackground.webp",
-    largeImage: "../images/finalfantasybackground.webp"
+    thumbnail: "../images/finalfantasybackground.jpg",
+    largeImage: "../images/finalfantasybackground.jpg"
   },
   {
-    thumbnail: "../images/karasangthumbnail.webp",
-    largeImage: "../images/karasang.webp"
+    thumbnail: "../images/karasangthumbnail.jpg",
+    largeImage: "../images/karasang.jpg"
   },
   {
-    thumbnail: "../images/wodspiresthumbnail.webp",
-    largeImage: "../images/wodspires.webp"
+    thumbnail: "../images/wodspiresthumbnail.jpg",
+    largeImage: "../images/wodspires.jpg"
   },
   {
-    thumbnail: "../images/firecatthumbnail.webp",
-    largeImage: "../images/firecat.webp"
+    thumbnail: "../images/firecatthumbnail.jpg",
+    largeImage: "../images/firecat.jpg"
   },
   {
-    thumbnail: "../images/wodnagrandthumbnail.webp",
-    largeImage: "../images/wodnagrand.webp"
+    thumbnail: "../images/wodnagrandthumbnail.jpg",
+    largeImage: "../images/wodnagrand.jpg"
   },
   {
-    thumbnail: "../images/nagrandthumbnail.webp",
-    largeImage: "../images/nagrand.webp"
+    thumbnail: "../images/nagrandthumbnail.jpg",
+    largeImage: "../images/nagrand.jpg"
   },
   {
-    thumbnail: "../images/zangarmarshthumbnail.webp",
-    largeImage: "../images/zangarmarsh.webp"
+    thumbnail: "../images/zangarmarshthumbnail.jpg",
+    largeImage: "../images/zangarmarsh.jpg"
   },
   {
-    thumbnail: "../images/valethumbnail.webp",
-    largeImage: "../images/vale.webp"
+    thumbnail: "../images/valethumbnail.jpg",
+    largeImage: "../images/vale.jpg"
   },
   {
-    thumbnail: "../images/kunlaithumbnail.webp",
-    largeImage: "../images/kunlai.webp"
+    thumbnail: "../images/kunlaithumbnail.jpg",
+    largeImage: "../images/kunlai.jpg"
   },
   {
-    thumbnail: "../images/churningmiststhumbnail.webp",
-    largeImage: "../images/churningmists.webp"
+    thumbnail: "../images/churningmiststhumbnail.jpg",
+    largeImage: "../images/churningmists.jpg"
   },
   {
-    thumbnail: "../images/dravanianforelandsthumbnail.webp",
-    largeImage: "../images/dravanianforelands.webp"
+    thumbnail: "../images/dravanianforelandsthumbnail.jpg",
+    largeImage: "../images/dravanianforelands.jpg"
   },
   {
-    thumbnail: "../images/rubyseathumbnail.webp",
-    largeImage: "../images/rubysea.webp"
+    thumbnail: "../images/rubyseathumbnail.jpg",
+    largeImage: "../images/rubysea.jpg"
   }
 ];
 
@@ -55,18 +55,18 @@ export const landing = () => {
   const landingList = document.getElementById("landing-list");
   const newLandingList = landingListImages.map((image, index) => {
     return `<li>
-      <a 
-        href=${image.largeImage}
-        target="_blank"
-        rel="noopener no referrer"
+    <a 
+      href=${image.largeImage}
+      target="_blank"
+      rel="noopener no referrer"
+    >
+      <img
+        class="lazyload"
+        data-src=${image.thumbnail} 
+        alt="Landing Area Image ${index +1}"
       >
-        <img
-          class="lazyload"
-          data-src=${image.thumbnail} 
-          alt="Landing Area Image ${index +1}"
-        >
-      </a>
-      </li>`;
+    </a>
+    </li>`;
   });
   landingList.innerHTML = newLandingList.join(" ");
 };
