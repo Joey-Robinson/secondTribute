@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "webpackProd": "webpack --mode production",
     "watch:sass": "node-sass src/sass/main.scss dist/css/main.css -w",
     "dev": "live-server --port=8080",
     "cssStart": "npm-run-all --parallel dev watch:sass",
@@ -14,7 +15,9 @@
     "build:css": "npm-run-all compile:sass concat:css prefix:css compress:sass",
     "webpackWatch": "webpack --watch",
     "start": "webpack --webpackWatch & webpack-dev-server --open & webpack",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "compress:JS": "uglifyjs --compress --mangle -- dist/js/bundle.js",
+    "babelBuild": "babel src -d dist"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.0",

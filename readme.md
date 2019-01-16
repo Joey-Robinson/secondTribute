@@ -295,3 +295,68 @@ So I had to find some exact positioning with this, which I know isn't ideal, but
 Following the themes of the other sections I wanted simplicity. I had originally made a large object to pull data from to simulate an API call, but I felt like that was too much for no reason (don't reinvent the wheel or something) so I dropped it, and just put static data in instead.
 
 Since (sadly) there's not an API I know of that allows access to Maine Coon information, I made the decision to keep this area light. So this section of the Readme will also be light. The only real standout here is the fatcat gif to the side. It's cute.
+
+#Catfacts
+
+Sadly, [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) is a thing. I don't know how to enable this as of yet, but, I will give a walk through of what I had in mind so you (the reader) can get an idea of what I wanted to do.
+
+```javascript
+export const catFacts = async () => {
+  const response = await fetch("https://catfact.ninja/facts?limit=500");
+  const data = await response.json();
+  const catList = document.querySelector(".catfacts-list");
+  const catData = data.data.map(text => {
+    return `<li><strong>${text.fact}</strong></li>`;
+  });
+  catData.sort(() => 0.25 - Math.random());
+  catList.innerHTML = catData.join(" ");
+  console.log(data);
+};
+
+catFacts();
+```
+
+Simply using map -> return -> join to combine the information I wanted. The list (as you can see in the fetch request) is querying 500 results, which wasn't a problem because of this:
+
+```css
+.catfacts {
+  grid-row: 10 / -1;
+  grid-column: 1;
+  display: grid;
+  grid-template-rows: 6rem max-content;
+  grid-template-columns: 1fr;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+  &-primary {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: center;
+    height: 100%;
+
+    & ul {
+      columns: 3;
+      font-size: 2rem;
+      color: $druidOrange;
+      padding: 1rem 2.5rem 1.5rem 2.5rem;
+      overflow: hidden;
+
+      & li {
+        padding: 7px 0 7px 0;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+          font-size: 2rem;
+          padding: 5px 2rem 5px 2rem;
+          transition: all 0.2s ease-in;
+          transform: scale(1.1);
+          z-index: 3;
+          background: darken($primaryColor, 0.5);
+          position: relative;
+        }
+      }
+    }
+  }
+}
+```
+
+If you look, you can see that I'm placing the content into row 10 / -1, meaning that this div will continue to be filled indefinitely. Again, I wasn't able to to this because of CORS, which I don't know how to deal with currently (or at least, not when I'm exporting it to be bundled).
