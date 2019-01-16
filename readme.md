@@ -130,4 +130,129 @@ I used several heading tags to present the information on the far left (again, u
 
 ## Final Fantasy - The Middle
 
-If you take a glance at the middle
+If you take a glance at the middle, you can see 3 areas. Each area is its own .js file following this layout:
+
+```javascript
+const ffResources = [
+  `
+  <a
+    aria-label="Link For Garland Tools"
+    href="http://garlandtools.org/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Garland Tools
+  </a>
+  `,
+  `
+  <a
+    aria-label="Link For Final Fantasy 14 Angler"
+    href="http://ff14angler.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    FF14 Angler
+  </a>
+  `,
+  `
+  <a
+    aria-label="Link For Final Fantasy 14 Housing"
+    href="http://en.ff14housing.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    FF14 Housing DB
+  </a>
+  `,
+  `
+  <a
+    aria-label="Link For Final Fantasy 14 Gardening Website"
+    href="http://www.ffxivgardening.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    FF14 Gardening
+  </a>
+  `,
+  `
+  <a
+    aria-label="Link For Final Fantasy 14 Crafting Website"
+    href="https://ffxivcrafting.com/crafting"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Crafting as a Service
+  </a>
+  `,
+  `
+  <a
+    aria-label="Link For Final Fantasy Materia Optimizer"
+    href="http://ffxiv.ariyala.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    FF14 Materia Optimizer
+  </a>
+  `,
+  `
+  <a
+    aria-label="Link For Final Fantasy 14 Subreddit"
+    href="https://nf.reddit.com/r/ffxiv/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    FF14 Subreddit
+  </a>
+  `,
+  `
+  <a
+    aria-label="Link For Final Fantasy 14 Teamcraft Website"
+    href="https://ffxivteamcraft.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Teamcraft
+  </a>
+  `
+];
+
+export const ffResourcesList = ffResources.map(resource => {
+  return `<li>${resource}</li>`;
+});
+```
+
+Each file follows this format. Data -> map -> return then it's exported and joined into the primary final fantasy section. Similar to the WoW Modal, I needed to gather the information for this area then present it as best as I could. My only complaint is that below this middle area, I have a gap that I had wanted to use for an image, but it didn't flow well with everything around it, so I had opted not to use it.
+
+## Final Fantasy - The Right
+
+This was an interesting area to tackle. First, let me give some context. Each area on the right has a file specificed for it that follows this format:
+
+```javascript
+export const finalFantasyMounts = {
+  behemoth: "../images/behemoth.png",
+  blissful_kamuy: "../images/blissful_kamuy.png",
+  cloud_mallow: "../images/cloud_mallow.png",
+  dark_lanner: "../images/dark_lanner.png",
+  demonic_lanner: "../images/demonic_lanner.png",
+  fat_chocobo: "../images/fat_chocobo.png",
+  ixion: "../images/ixion.png",
+  mikoshi: "../images/mikoshi.png",
+  mychocobo: "../images/mychocobo.png",
+  original_fat_chocobo: "../images/original_fat_chocobo.png",
+  rose_lanner: "../images/rose_lanner.png",
+  sophic_lanner: "../images/sophic_lanner.png",
+  twintania: "../images/twintania.png",
+  tyrannosaur: "../images/tyrannosaur.png",
+  zu: "../images/zu.png"
+};
+```
+
+So, why an object and not an array? I wanted to use the key value of the object for a couple of things, like this:
+
+```javascript
+for (const mountImage in mounts) {
+  ffMounts.innerHTML += `<img class="lazyload" data-src=${
+    mounts[mountImage]
+  } alt="Favorite Mount ${mountImage}" />`;
+}
+```

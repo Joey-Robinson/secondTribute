@@ -111,7 +111,7 @@ li {
   font-size: 2rem;
   text-align: center;
   z-index: 1000;
-  color: #FF7D0A;
+  color: #f0f0f0;
   background: none;
   border-radius: 50%;
   width: 2rem;
@@ -169,12 +169,13 @@ li {
 header.smaller {
   height: 6rem;
   border-bottom: none;
-  background: rgba(17, 17, 17, 0.5); }
+  background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet); }
   header.smaller h1 {
     line-height: 7rem;
     font-size: 4rem;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    color: #f0f0f0; }
   header.smaller nav {
     display: block;
     float: right;
@@ -182,7 +183,8 @@ header.smaller {
     right: 0;
     padding: 0 7rem 0 0; }
     header.smaller nav a {
-      line-height: 7.5rem; }
+      line-height: 7.5rem;
+      color: #f0f0f0; }
 
 .modal {
   background: #222;
@@ -266,9 +268,10 @@ header.smaller {
     color: #f0f0f0;
     border: #00FF96;
     outline: orange;
+    font-weight: bold;
     cursor: pointer;
     font-size: 2rem;
-    transition: all 0.35s ease-in-out;
+    transition: all 0.2s ease-in-out;
     z-index: 101; }
     .modal-close:hover {
       padding: 0;
