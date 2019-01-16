@@ -1,3 +1,34 @@
+# Tools Used
+
+1. Webpack
+2. Babel
+3. UglifyJS
+4. SCSS
+5. npm scripts
+6. netlify
+7. [Google Auditor](https://web.dev/measure)
+
+Starting from the top
+
+- I used webpack & babel together to compile and bundle my index.js file into bundle.js. I did this so I could use modern features, without comprimising my usability.
+- In addition to the two tools listed above, I used uglify.js to minify my bundle.js into bundle.min.js, and give myself a small performance increase.
+
+SCSS
+
+- I wanted to use something other than vanilla CSS to design everything here. I also am a _HUGE_ fan of modular/component based coding. Additionally, I've used SCSS for about a year now and feel comfortable with it. Though I'm sure I'm not using it to its fullest potential
+
+npm scripts
+
+- I just needed a task runner. I've never used gulp or grunt and I didn't feel the need to learn or know either at this time when I have access to npm scripts.
+
+netlify
+
+- Free https hosting and automated building when I push. What a glorious tool
+
+Google Auditor
+
+- I wanted to always check and see if I forgot some key thing, and this does a good job at doing that, for the most part
+
 # Meerkats Tribute Page
 
 So this was a bit easier to do vs. my previous project [Sweetest Southen Creations.](https://github.com/Joey-Robinson/SweetestSouthernCreations) I knew the information I wanted, it was just a matter of relaying the information how I wanted. I picked something I felt that would match what I wanted as well as being able to present the information as neatly as possible.
