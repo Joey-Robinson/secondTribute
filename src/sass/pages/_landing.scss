@@ -40,12 +40,14 @@
     & ul {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(37rem, 46rem));
-      justify-self: center;
-
-      // padding: 14rem 5px 5px 1.9rem;
+      padding: 14rem 5px 5px 1.9rem;
       margin: 0;
       grid-column-gap: 7px;
       grid-row-gap: 6px;
+
+      @include respond(bigDesktop) {
+        grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
+      }
 
       & img {
         filter: saturate(200%);
