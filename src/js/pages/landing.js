@@ -1,6 +1,6 @@
 const landingListImages = [{
-  thumbnail: "../images/finalfantasybackgroundthumbnail.jpg",
-  largeImage: "../images/finalfantasybackground.jpg"
+  thumbnail: "../images/finalfantasybackgroundthumbnail.webp",
+  largeImage: "../images/finalfantasybackground.webp"
 }];
 
 
@@ -17,7 +17,6 @@ export const landing = () => {
       >
       <picture>
         <source type="image/webp" srcset="${image.thumbnail}">
-        <source type="image/jpeg" srcset="${image.thumbnail}">
         <img class="lazyload" data-src="${image.thumbnail}">
       </picture>
       </a>
