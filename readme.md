@@ -288,4 +288,10 @@ This was interesting to me. Each section has an empty grid area around of 2rem. 
 }
 ```
 
-So I had to find some exact positioning with this, which I know isn't ideal, but I felt like I accomplished what I set out to do
+So I had to find some exact positioning with this, which I know isn't ideal, but I felt like I accomplished what I set out to do. This again loops back to the middle section being left empty (not because this specifically, but it added to what I spoke about above).
+
+# Favorite Cat
+
+Following the themes of the other sections I wanted simplicity. I had originally made a large object to pull data from to simulate an API call, but I felt like that was too much for no reason (don't reinvent the wheel or something) so I dropped it, and just put static data in instead.
+
+Since (sadly) there's not an API I know of that allows access to Maine Coon information, I made the decision to keep this area light. So this section of the Readme will also be light. The only real standout here is the fatcat gif to the side. It's cute.
