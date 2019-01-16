@@ -1,7 +1,52 @@
 const landingListImages = [{
-  thumbnail: "../images/finalfantasybackgroundthumbnail.jpg",
-  largeImage: "../images/finalfantasybackground.jpg"
-}];
+    thumbnail: "../images/finalfantasybackground.jpg",
+    largeImage: "../images/finalfantasybackground.jpg"
+  },
+  {
+    thumbnail: "../images/karasangthumbnail.jpg",
+    largeImage: "../images/karasang.jpg"
+  },
+  {
+    thumbnail: "../images/wodspiresthumbnail.jpg",
+    largeImage: "../images/wodspires.jpg"
+  },
+  {
+    thumbnail: "../images/firecatthumbnail.jpg",
+    largeImage: "../images/firecat.jpg"
+  },
+  {
+    thumbnail: "../images/wodnagrandthumbnail.jpg",
+    largeImage: "../images/wodnagrand.jpg"
+  },
+  {
+    thumbnail: "../images/nagrandthumbnail.jpg",
+    largeImage: "../images/nagrand.jpg"
+  },
+  {
+    thumbnail: "../images/zangarmarshthumbnail.jpg",
+    largeImage: "../images/zangarmarsh.jpg"
+  },
+  {
+    thumbnail: "../images/valethumbnail.jpg",
+    largeImage: "../images/vale.jpg"
+  },
+  {
+    thumbnail: "../images/kunlaithumbnail.jpg",
+    largeImage: "../images/kunlai.jpg"
+  },
+  {
+    thumbnail: "../images/churningmiststhumbnail.jpg",
+    largeImage: "../images/churningmists.jpg"
+  },
+  {
+    thumbnail: "../images/dravanianforelandsthumbnail.jpg",
+    largeImage: "../images/dravanianforelands.jpg"
+  },
+  {
+    thumbnail: "../images/rubyseathumbnail.jpg",
+    largeImage: "../images/rubysea.jpg"
+  }
+];
 
 
 // Had to add relative pathing from bundle.js
@@ -17,7 +62,7 @@ export const landing = () => {
       >
         <img
           class="lazyload"
-          data-src=${image.thumbnail}
+          data-src=${image.thumbnail} 
           alt="Landing Area Image ${index +1}"
         >
       </a>
