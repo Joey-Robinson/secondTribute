@@ -105,9 +105,10 @@
     color: $headerWhite;
     border: $monkGreen;
     outline: orange;
+    font-weight: bold;
     cursor: pointer;
     font-size: 2rem;
-    transition: all 0.35s ease-in-out;
+    transition: all 0.2s ease-in-out;
     z-index: 101;
 
     &:hover {

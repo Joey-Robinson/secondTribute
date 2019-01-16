@@ -4,6 +4,8 @@ So this was a bit easier to do vs. my previous project [Sweetest Southen Creatio
 
 # The Preparation For Wow
 
+Going into this I had a general idea of how I wanted this section to be presented. Or at least, after the first iteration I did. I wanted there to be information that was readily avaliable to the user without having to check other sources, or at the very least, it links to that information so the user can check for themselves.
+
 First, I needed to find if the information I wanted was readily available to me. Fortunately, it was. First, I started by looking through the [Raider.io API](https://raider.io/api) to see what data I could pull. This API was incredible in terms of the data I was able to pull from it. Ranging from a few things such as:
 
 1. Recent Mythic Plus
@@ -53,4 +55,79 @@ grid-template-columns: repeat(3, 1fr);
 grid-template-rows: 1fr 1fr 5rem;
 ```
 
-Here you can see how the information is presented. 3 Columns with a width of 1fr, 2 Rows with a height of 1fr and 1 Row with a height of 5rem (this is for the close button).
+Here you can see how the information is presented. 3 Columns with a width of 1fr, 2 Rows with a height of 1fr and 1 Row with a height of 5rem (this is for the close button). I had to gather as much information as I could knowing my limitations anud then present it accordingly, which I do feel like I did.
+
+### Wow Ending
+
+Overall I feel happy about how the information is presented and represented. I'm especially happy that I was able to heavily use JavaScript here to showcase that information. If I could or if I were to redo this section, I would probably have a tad bit more information between the two areas so I could maybe showcase something else there. Not entirely sure what, but the option would be nice.
+
+# Final Fantasy Section
+
+Unlike the WoW section, here I wanted something silly and playful. The feeling of being overwhelmed but not to the point where it's a detriment to the user experience. Similar to the WoW section, I used a [third party api](https://xivapi.com/) to make my call and pull the information. If you look, this section seems to be overly cluttered without much sense, but you can draw contrasts between this and the wow section.
+
+Here, I don't think using a table layout was a good idea. What I did instead was this:
+
+```javascript
+primary.innerHTML = `
+  <h1>A Bit About Me:</h1>
+    <h3>Name: 
+      <a
+        aria-label="Lodestone Link For Meerkats Comparthe"
+        href=${armory}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ${name}
+      </a>
+    </h3>
+    <h3>Birthday: ${birthday}</h3>
+    <h3>Server: ${server}</h3>
+    <h3>Free Company: 
+      <a
+        aria-label="Lodestone Link For The Last Homely House"
+        href=${freeCompany}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        The Last Homely House
+      </a>
+    </h3>
+    <h3>Favorite NPC Race: 
+      <a
+        aria-label="Link For Final Fantasy Wiki For Moogles"
+        href=${moogles}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Moogles!
+      </a>
+    </h3>
+    <h3>Favorite Playable Race:
+      <a
+        aria-label="Link For Final Fantasy Wiki For Miqote" 
+        href=${miqote}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Female Miq'ote
+      </a>
+    </h3>
+    <h3>Current Look:
+      <br />
+      <a
+        aria-label="Link For Current Look Image"
+        href=${portrait}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img class="lazyload" data-src="${portrait}" alt="Current Look In Final Fantasy 14"/>
+      </a>
+    </h3>
+  `;
+```
+
+I used several heading tags to present the information on the far left (again, using CSS Grid) so it was more 'in your face' or more presentable, I should say.
+
+## Final Fantasy - The Middle
+
+If you take a glance at the middle
