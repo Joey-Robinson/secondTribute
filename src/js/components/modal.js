@@ -411,6 +411,7 @@ export const modalFunction = () => {
 
   closeButton.classList.add("modal-close");
   closeButton.innerText = "Close";
+  closeButton.setAttribute("aria-label", "Modal Close Button");
   closeButton.addEventListener("click", () => {
     closeModal();
   });

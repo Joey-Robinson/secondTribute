@@ -13,12 +13,13 @@ export const ristretta = async () => {
   const bestOverall = data.mythic_plus_best_runs;
   const druidInformation = 'https://wow.gamepedia.com/Monk';
 
-  const recentInner = recentPlus.map((dungeon) => {
+  const recentInner = recentPlus.map((dungeon, index) => {
     return `
       <table>
         <tr>
           <td>
             <a
+              aria-label="Link For Recent Mythic Plus Number ${index}"
               href=${dungeon.url}
               target="_blank"
               rel="noopener noreferrer"
@@ -33,12 +34,13 @@ export const ristretta = async () => {
     `
   });
 
-  const wowBestInner = bestOverall.map((best) => {
+  const wowBestInner = bestOverall.map((best, index) => {
     return `
     <table>
       <tr>
         <td>
           <a 
+            aria-label="Link For Best Mythic Plus Number ${index +1}"
             href=${best.url}
             target="_blank"
             rel="noopener noreferrer"
