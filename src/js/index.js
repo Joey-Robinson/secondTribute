@@ -1,11 +1,10 @@
 // API
-
 import {
   ffCall
 } from "./api/finalFantasy";
 import meerkats from "./api/meerkats";
 import ristretta from './api/ristretta';
-import catFacts from './api/catFacts';
+// import catFacts from './api/catFacts';
 // Components
 import {
   resizeHeaderOnScroll,
@@ -13,9 +12,7 @@ import {
   changeIcon
 } from "./components/header";
 import modalFunction from './components/modal';
-
 // User
-
 // Pages
 import landing from './pages/landing';
 
