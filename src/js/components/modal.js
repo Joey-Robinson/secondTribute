@@ -28,6 +28,7 @@ export const modalFunction = () => {
         <ul>
           <li>
             <a
+              aria-label="The Undermine Journal Link"
               href="https://theunderminejournal.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -37,7 +38,8 @@ export const modalFunction = () => {
           </li>
           <li>
             <a
-              href="../../src/images/ui.jpg"
+              aria-label="Image Of Ingame UI"
+              href="../images/ui.jpg"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -46,6 +48,7 @@ export const modalFunction = () => {
           </li>
           <li>
             <a
+              aria-label="Warcraft Logs Link"
               href="https://www.warcraftlogs.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -55,6 +58,7 @@ export const modalFunction = () => {
           </li>
           <li>
             <a
+              aria-label="Wowhead Link"
               href="https://www.wowhead.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -64,6 +68,7 @@ export const modalFunction = () => {
           </li>
           <li>
             <a
+              aria-label="Petopia Link"
               href="http://www.wow-petopia.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -73,6 +78,7 @@ export const modalFunction = () => {
           </li>
           <li>
             <a 
+              aria-label="Curseforge Link"
               href="https://wow.curseforge.com/addons"
               target="_blank"
               rel="noopener noreferrer"
@@ -82,6 +88,7 @@ export const modalFunction = () => {
           </li>
           <li>
             <a
+              aria-label="RaiderIo Link"
               href="https://raider.io/"
               target="_blank"
               rel="noopener noreferrer"
@@ -96,6 +103,7 @@ export const modalFunction = () => {
         <ul>
           <li>
             <a
+              aria-label="Armory Link For Ristretta"
               href="https://worldofwarcraft.com/en-us/character/zuljin/Ristretta"
               target="_blank"
               rel="noopener noreferrer"
@@ -105,6 +113,7 @@ export const modalFunction = () => {
           </li>
           <li>
             <a
+              aria-label="Armory Link For Meerkatz"
               href="https://worldofwarcraft.com/en-us/character/zuljin/Meerkatz"
               target="_blank"
               rel="noopener noreferrer"
@@ -114,6 +123,7 @@ export const modalFunction = () => {
           </li>
           <li>
             <a
+              aria-label="Armory Link For Meowkats"
               href="https://worldofwarcraft.com/en-us/character/zuljin/Meowkats"
               target="_blank"
               rel="noreferrer"
@@ -123,6 +133,7 @@ export const modalFunction = () => {
           </li>
           <li>
             <a
+              aria-label="Armory Link For Meerlocks"
               href="https://worldofwarcraft.com/en-us/character/stormrage/Meerlocks"
               target="_blank"
               rel="noopener noreferrer"
@@ -131,6 +142,7 @@ export const modalFunction = () => {
           </li>
           <li>
             <a
+              aria-label="Armory Link For Merekats"
               href="https://worldofwarcraft.com/en-us/character/zuljin/Merekats"
               target="_blank"
               rel="noopener noreferrer"
@@ -140,6 +152,7 @@ export const modalFunction = () => {
           </li>
           <li>
             <a
+              aria-label="Armory Link For Orphea"
               href="https://worldofwarcraft.com/en-us/character/illidan/Orphea"
               target="_blank"
               rel="noopener noreferrer"
@@ -149,6 +162,7 @@ export const modalFunction = () => {
           </li>
           <li>
             <a
+              aria-label="Second Armory Link For Meerkatz"
               href="https://worldofwarcraft.com/en-us/character/zuljin/Meerkatz"
               target="_blank"
               rel="noopener noreferrer"
@@ -163,6 +177,7 @@ export const modalFunction = () => {
           <ul>
             <li>
               <a
+                aria-label="Wowhead Link For Court Of Stars Dungeon"
                 href="https://www.wowhead.com/court-of-stars"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -172,6 +187,7 @@ export const modalFunction = () => {
             </li>
             <li>
               <a
+                aria-label="Wowhead Link For The Arcway Dungeon"
                 href="https://www.wowhead.com/the-arcway"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -181,6 +197,7 @@ export const modalFunction = () => {
             </li>
             <li>
               <a
+                aria-label="Wowhead Link For The Underrot Dungeon"
                 href="https://www.wowhead.com/the-underrot"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -190,6 +207,7 @@ export const modalFunction = () => {
             </li>
             <li>
               <a
+                aria-label="Wowhead Link For Eye Of Azshara"
                 href="https://www.wowhead.com/eye-of-azshara-dungeon"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -199,6 +217,7 @@ export const modalFunction = () => {
             </li>
             <li>
               <a
+                aria-label="Wowhead Link For Halls Of Valor"
                 href="https://www.wowhead.com/halls-of-valor"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -208,6 +227,7 @@ export const modalFunction = () => {
             </li>
             <li>
               <a
+                aria-label="Wowhead Link For Temple Of Sethraliss"
                 href="https://www.wowhead.com/temple-of-sethraliss"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -217,6 +237,7 @@ export const modalFunction = () => {
             </li>
             <li>
               <a
+                aria-label="Wowhead Link For Waycrest Manor"
                 href="https://www.wowhead.com/waycrest-manor"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -231,6 +252,7 @@ export const modalFunction = () => {
         <ul>
           <li>
             <a
+              aria-label="Wowhead Link For Grand Expedition Yak"
               href="https://www.wowhead.com/item=84101/reins-of-the-grand-expedition-yak"
               target="_blank"
               rel="noopener noreferrer"
@@ -240,6 +262,7 @@ export const modalFunction = () => {
           </li>
           <li>
             <a
+              aria-label="Wowhead Link For Blonde Riding Yak"
               href="https://www.wowhead.com/item=87789/reins-of-the-blonde-riding-yak"
               target=_"blank"
               rel="noopener noreferrer"
@@ -249,6 +272,7 @@ export const modalFunction = () => {
           </li>
           <li>
             <a
+              aria-label="Wowhead Link For Spirit Of Echero"
               href="https://www.wowhead.com/item=131734/spirit-of-echero"
               target="_blank"
               rel="noopener noreferrer"
@@ -258,6 +282,7 @@ export const modalFunction = () => {
           </li>
           <li>
             <a
+              aria-label="Wowhead Link For Swift Albino Raptor"
               href="https://www.wowhead.com/item=163644/swift-albino-raptor"
               target="_blank"
               rel="noopener noreferrer"
@@ -267,6 +292,7 @@ export const modalFunction = () => {
           </li>
           <li>
             <a
+              aria-label="Wowhead Link For Fossilized Raptor"
               href="https://www.wowhead.com/spell=90619/fossilized-raptor"
               target="_blank"
               rel="noopener noreferrer"
@@ -276,6 +302,7 @@ export const modalFunction = () => {
           </li>
           <li>
             <a
+              aria-label="Wowhead Link For Vial Of The Sands"
               href="https://www.wowhead.com/item=65891/vial-of-the-sands"
               target="_blank"
               rel="noopener noreferrer"
@@ -285,6 +312,7 @@ export const modalFunction = () => {
           </li>
           <li>
             <a
+              aria-label="Wowhead Link FOr Reins Of The Mighty Caravan Brutosaur"
               href="https://www.wowhead.com/item=163042/reins-of-the-mighty-caravan-brutosaur"
               target="_blank"
               rel="noopener noreferrer"
@@ -299,6 +327,7 @@ export const modalFunction = () => {
           <ul>
             <li>
               <a
+                aria-label="Wowhead Link For Vestements Of The Haunted Forest Heroic Recolor"
                 href="https://www.wowhead.com/transmog-set=1605/vestments-of-the-haunted-forest-heroic-recolor"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -308,6 +337,7 @@ export const modalFunction = () => {
             </li>
             <li>
               <a
+                aria-label="Armory Link For Ristretta"
                 href="https://worldofwarcraft.com/en-us/character/zuljin/Ristretta"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -317,6 +347,7 @@ export const modalFunction = () => {
             </li>
             <li>
               <a
+                aria-label="Wowhead Link For Garb Of The Astral Warden Mythic Recolor"
                 href="https://www.wowhead.com/transmog-set=2208/garb-of-the-astral-warden-mythic-recolor"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -326,6 +357,7 @@ export const modalFunction = () => {
             </li>
             <li>
               <a
+                aria-label="Wowhead Link For Vindictive Gladiators Dragonhide Armor Horde Recolor"
                 href="https://www.wowhead.com/transmog-set=2151/vindictive-gladiators-dragonhide-armor-horde-recolor"
                 target="_blank"
                 rel="noopener norferrer"
@@ -335,6 +367,7 @@ export const modalFunction = () => {
             </li>
             <li>
               <a
+                aria-label="Wowhead Link For Oathclaw Wargarb Mythic Recolor"
                 href="https://www.wowhead.com/transmog-set=2016/oathclaw-wargarb-mythic-recolor"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -344,6 +377,7 @@ export const modalFunction = () => {
             </li>
             <li>
               <a
+                aria-label="Wowhead Link For Brutal Gladiators Chain Armor"
                 href="https://www.wowhead.com/transmog-set=717/brutal-gladiators-chain-armor"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -353,6 +387,7 @@ export const modalFunction = () => {
             </li>
             <li>
               <a
+                aria-label="Wowhead Link For Vestements Of The Red Crane Heroic Recolor"
                 href="https://www.wowhead.com/transmog-set=1438/vestments-of-the-red-crane-heroic-recolor"
                 target="_blank"
                 rel="noopener noreferrer"

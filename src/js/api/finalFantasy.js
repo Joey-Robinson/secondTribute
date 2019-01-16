@@ -56,6 +56,7 @@ export const ffCall = async () => {
   <h1>A Bit About Me:</h1>
     <h3>Name: 
       <a
+        aria-label="Lodestone Link For Meerkats Comparthe"
         href=${armory}
         target="_blank"
         rel="noopener noreferrer"
@@ -67,6 +68,7 @@ export const ffCall = async () => {
     <h3>Server: ${server}</h3>
     <h3>Free Company: 
       <a
+        aria-label="Lodestone Link For The Last Homely House"
         href=${freeCompany}
         target="_blank"
         rel="noopener noreferrer"
@@ -76,6 +78,7 @@ export const ffCall = async () => {
     </h3>
     <h3>Favorite NPC Race: 
       <a
+        aria-label="Link For Final Fantasy Wiki For Moogles"
         href=${moogles}
         target="_blank"
         rel="noopener noreferrer"
@@ -85,6 +88,7 @@ export const ffCall = async () => {
     </h3>
     <h3>Favorite Playable Race:
       <a
+        aria-label="Link For Final Fantasy Wiki For Miqote" 
         href=${miqote}
         target="_blank"
         rel="noopener noreferrer"
@@ -95,11 +99,12 @@ export const ffCall = async () => {
     <h3>Current Look:
       <br />
       <a
+        aria-label="Link For Current Look Image"
         href=${portrait}
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img class="lazyload" data-src="${portrait}" />
+        <img class="lazyload" data-src="${portrait}" alt="Current Look In Final Fantasy 14"/>
       </a>
     </h3>
   `
