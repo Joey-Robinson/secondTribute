@@ -1,3 +1,61 @@
+# Usage
+
+First, you need to clone or download the repository. Once you've done that, while you're in your terminal, you need to change directories into the repository and type the following command:
+
+```
+npm install
+```
+
+or
+
+```
+npm i
+```
+
+After you're done installing everything, while still in the terminal, type the following command:
+
+```
+npm start
+```
+
+OR
+
+```
+npm run cssStart
+```
+
+Once you've done one of those, your server will be started and you can make changes as you want. If you chose to run 
+
+```
+npm run cssStart
+```
+
+Any changes that are made to the CSS will trigger a new build and update on the fly. However, if you used 
+
+```
+npm start
+```
+
+And/or you've made changes to the JavaScript, you'll also need to run the following command in your terminal:
+
+```
+npm run build
+```
+
+To trigger a build on the JavaScript side of things. Once you've made all your changes and you've run the build command and you want to deploy to production, you'll need to type a couple of commands
+
+```
+npm run build:css
+```
+
+and you'll also need to run
+
+```
+npm run compress:JS
+```
+
+The last one is to compress your JavaScript with uglifyJS.
+
 # Tools Used
 
 1. Webpack

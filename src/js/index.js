@@ -1,3 +1,7 @@
+window.onload = () => {
+  alert("This was not designed for smaller devices. It is best viewed on larger monitors & devices");
+}
+
 // API
 import {
   ffCall
