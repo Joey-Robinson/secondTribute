@@ -6,14 +6,7 @@
 @import './base/base';
 @import './base/typography';
 // Components
-@import './components/close';
-@import './components/header';
-@import './components/modal';
+@import './components/landing';
 // Layouts
-// @import './layouts/catfacts';
-@import './layouts/favoritecat';
-@import './layouts/finalfantasy';
-@import './layouts/primary';
-@import './layouts/wow';
+@import './layouts/container';
 // Pages 
-@import './pages/landing';

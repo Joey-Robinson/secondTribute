@@ -1,0 +1,17 @@
+.container {
+  overflow-x: hidden;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 100vh);
+}
+
+// picture {
+//   &:hover {
+//     z-index: 2;
+//     width: 75vw;
+//     // position: absolute;
+//     // left: 0;
+//     transition: all .3s ease-in-out;
+//   }
+// }
