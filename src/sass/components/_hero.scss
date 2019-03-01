@@ -1,0 +1,14 @@
+.hero {
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  font-family: 'India Flower', cursive;
+  font-size: 12rem;
+  font-weight: 400;
+  color: $druidOrange;
+  align-self: center;
+  justify-self: right;
+  padding: 0 0.5em 2em 0;
+}
