@@ -16,7 +16,7 @@
   background: rgba($black, .3);
   &__button-close {
     grid-row: 5;
-    grid-column: 3;
+    grid-column: 3 / 5;
     width: 50%;
     height: 25%;
     text-align: center;
@@ -39,6 +39,14 @@
       opacity: 0;
       transform: translate(-50%, -50%) scale(.25s);
       transition: all .5s .2s;
+      &-image {
+        grid-column: 1;
+        grid-row: 1 / -1;
+        img {
+          width: auto;
+          height: 100%;
+        }
+      }
       @include respond(tabLand) {
         width: auto;
         padding: 0;
