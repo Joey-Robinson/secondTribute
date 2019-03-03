@@ -7,17 +7,34 @@
   background: rgba($black, .8);
   z-index: 9999;
   opacity: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   visibility: hidden;
   transition: all .3s;
   backdrop-filter: blur(1rem);
   background: rgba($black, .3);
+  &__button-close {
+    grid-row: 5;
+    grid-column: 3;
+    width: 50%;
+    height: 25%;
+    text-align: center;
+    justify-self: center;
+    align-self: end;
+    padding: 0;
+    margin: 0 0 3rem 0;
+  }
     &-content {
       @include absCenter;
-      width: 75%;
+      width: 100vw;
+      height: 85vh;
       background: $white;
       box-shadow: 0 2rem 4rem rgba($black, .2);
       border-radius: .3rem;
-      display: table;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 1fr);
       overflow: hidden;
       opacity: 0;
       transform: translate(-50%, -50%) scale(.25s);
@@ -33,43 +50,6 @@
       @include respond(phone) {
         display: block;
         position: relative;
-      }
-    }
-    &-left {
-      width: 33.333333%;
-      display: table-cell;
-      @include respond(tabLand) {
-        vertical-align: middle;
-      }
-      @include respond(tabPort) {
-         display: block
-      }
-    }
-    &-right {
-      width: 66.6666667%;
-      display: table-cell;
-      vertical-align: middle;
-      padding: 3rem 5rem;
-    }
-    &-img {
-      display: block;
-      width: 100%;
-      @include respond(tabLand) {
-        display: none;
-      }
-    }
-    &-text {
-      font-size: 1.8rem;
-      font-weight: 500;
-      margin-bottom: 4rem;
-      column-count: 2;
-      column-gap: 4rem;
-      column-rule: .1rem solid $lighterGrey;
-      hyphens: auto;
-      @include respond(tabLand) {
-        font-size: 1.6rem;
-        margin-bottom: 2rem;
-        column-gap: 2rem;
       }
     }
     &:target {
@@ -99,25 +79,18 @@
     }
 }
 
-
-
-
-
-.btn {
-  &,
-  &:link,
-  &:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    transition: all .2s;
-    position: relative;
-    font-size: $smallFont;
-    border: none;
-    cursor: pointer;
-  } 
+.card__open-button {
+  width: 5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 10rem;
+  transition: all .2s;
+  border: none;
+  cursor: pointer;
+  color: $druidOrange;
+  background: $monkGreen;
+  font-size: 1.8rem;
+  padding: 1.5rem;
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba($black, 0.2);
@@ -131,55 +104,5 @@
     outline: none; 
     transform: translateY(-1px);
     box-shadow: 0 .5rem 1rem rgba($black, .2);
-  }
-  &-white {
-    background: $white;
-    color: $grey;
-    &::after {
-      background: $white;
-    }
-  }
-  &-green {
-    background-color: $darkGreen;
-    color: $white;
-  } 
-  &::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-  }
-  &-animated {
-    animation: moveInBottom .5s ease-out .75s;
-    animation-fill-mode: backwards;
-  }
-}
-
-.btn-text {
-  &:link,
-  &:visited {
-    font-size: $smallFont;
-    color: $mediumGreen;
-    display: inline-block;
-    text-decoration: none;
-    border-bottom: .1rem solid $mediumGreen;
-    padding: .3rem;
-    transition: all .2s;
-  }
-  &:hover {
-    background: $mediumGreen;
-    color: $white;
-    box-shadow: 0 1rem 2rem rgba($black, .15);
-    transform: translateY(-.2rem);
-  }
-  &:active {
-    box-shadow: 0 .5rem 1rem rgba($black, .15);
-    transform: translateY(0);
   }
 }

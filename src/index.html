@@ -56,34 +56,19 @@
 
     <div class="modal" id="modal">
       <div class="modal-content">
-        <div class="modal-left">
-          <img src="./images/monk.png" alt="Tour Photo" class="modal-img">
+        <a href="#wow" class="modal-close">&times;</a>
+        <h2 class="modal__heading-meerkats heading-secondary u-margin-bottom-small">Meerkatz</h2>
+        <div class="modal-text">
+
         </div>
-        <div class="modal-right">
-          <a href="#section-tours" class="modal-close">&times;</a>
-          <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
-          <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking
-          </h3>
-          <p class="modal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi natus fugiat
-            consequuntur, aperiam ipsam ut rerum. Quia earum, consequatur asperiores perferendis hic perspiciatis
-            distinctio error iure nam eligendi commodi architecto? Natus fugit optio eius ipsa maiores dolore recusandae
-            vel suscipit autem quos culpa, iste, aliquid veniam earum voluptatem quasi voluptatibus vitae. Impedit
-            quibusdam laudantium corrupti ab voluptate nobis facere ex eum omnis animi, doloribus ipsa eos, quia eveniet
-            eaque? Natus praesentium molestias sapiente consectetur saepe impedit provident laudantium illo, ullam quas?
-            Asperiores dicta quae quasi molestias nihil ab iusto, itaque consequuntur natus cumque facilis
-            necessitatibus maxime earum, voluptates culpa facere. Cumque commodi nisi facilis quibusdam alias hic vel,
-            voluptatibus voluptatum laboriosam accusantium architecto ipsum ratione quas similique, consectetur sed
-            animi possimus praesentium esse quod nulla rem dignissimos. Obcaecati, quos ea explicabo perferendis, iste
-            vel cum voluptatem doloribus libero necessitatibus ab veritatis odio officia quaerat id aspernatur tempora
-            consequatur delectus nobis?</p>
-          <a href="#" class="btn btn-green">Book Now</a>
-        </div>
+        <a href="#wow" class="btn btn-green modal__button-close">Close</a>
       </div>
     </div>
 
 
 
-    <section class="wow">
+    <section id="wow" class="wow">
+
       <div class="card wow__card-one">
         <div class="card-side card-side-front">
           <div class="card-picture card-picture-1">
@@ -94,23 +79,17 @@
               Meerkatz
             </span>
           </h4>
-          <div class="card-details">
-            <ul>
-              <li>Restoration Druid</li>
-              <li>Up to 30 people</li>
-              <li>2 tour guides</li>
-              <li>Sleep in cozy hotels</li>
-              <li>Difficulty: Easy</li>
-            </ul>
+          <div class="card-details card__meerkats-details">
+            <!-- Information is coming from meerkats.api.js -->
           </div>
         </div>
         <div class="card-side card-side-back card-side-back-1">
           <div class="card-cta">
             <div class="card-price-box">
-              <p class="card-price-only">Only</p>
-              <p class="card-price-value">$297</p>
+              <p class="card-price-only">Some kewl</p>
+              <p class="card-price-value">text here</p>
             </div>
-            <a href="#modal" class="btn btn-white">Read More</a>
+            <a href="#modal" class="btn btn-white card__open-button">Read More</a>
           </div>
         </div>
       </div>
@@ -125,14 +104,8 @@
               Ristretta
             </span>
           </h4>
-          <div class="card-details">
-            <ul>
-              <li>7 Day Tour</li>
-              <li>Up to 40 People</li>
-              <li>6 tour guides</li>
-              <li>Sleep in provided tents</li>
-              <li>Difficulty: Hard</li>
-            </ul>
+          <div class="card-details card__ristretta-details">
+            <!-- Information is coming from riestretta.api.js -->
           </div>
         </div>
         <div class="card-side card-side-back card-side-back-2">

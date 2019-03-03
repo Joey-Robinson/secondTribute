@@ -3262,6 +3262,18 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 
 /***/ }),
 
+/***/ "./src/js/api/meerkats.api.js":
+/*!************************************!*\
+  !*** ./src/js/api/meerkats.api.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nfunction _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step(\"next\", value); }, function (err) { step(\"throw\", err); }); } } return step(\"next\"); }); }; }\n\nvar MeerkatsApiCall = exports.MeerkatsApiCall = function () {\n  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {\n    var response, data, meerkatsCard, meerkatsSpec, meerkatsClass, meerkatsRace, meerkatsRealm, meerkatsItemLevel, meerkatsRegion;\n    return regeneratorRuntime.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            _context.next = 2;\n            return fetch(\"https://raider.io/api/v1/characters/profile?region=us&realm=Burning%20Blade&name=Meerkatz&fields=gear%2Cmythic_plus_recent_runs%2Cmythic_plus_ranks%2Cmythic_plus_best_runs%2Cmythic_plus_highest_level_runs%2Cmythic_plus_weekly_highest_level_runs\");\n\n          case 2:\n            response = _context.sent;\n            _context.next = 5;\n            return response.json();\n\n          case 5:\n            data = _context.sent;\n\n            console.log(data);\n            meerkatsCard = document.querySelector('.card__meerkats-details');\n            meerkatsSpec = data.active_spec_name;\n            meerkatsClass = data.class;\n            meerkatsRace = data.race;\n            meerkatsRealm = data.realm;\n            meerkatsItemLevel = data.gear.item_level_equipped;\n            meerkatsRegion = data.region;\n\n            meerkatsCard.innerHTML = \"\\n    <ul>\\n      <li><em>Spec:</em> \" + meerkatsSpec + \" \" + meerkatsClass + \"</li>\\n      <li><em>Race:</em> \" + meerkatsRace + \"</li>\\n      <li><em>Realm:</em> \" + meerkatsRealm + \"</li>\\n      <li><em>Region:</em> \" + meerkatsRegion + \"</li>\\n      <li><em>Item Level:</em> \" + meerkatsItemLevel + \"</li>\\n    </ul>\\n  \";\n\n          case 15:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee, undefined);\n  }));\n\n  return function MeerkatsApiCall() {\n    return _ref.apply(this, arguments);\n  };\n}();\n\nMeerkatsApiCall();\n\n//# sourceURL=webpack:///./src/js/api/meerkats.api.js?");
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
@@ -3270,7 +3282,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("\n\nvar _meerkats = __webpack_require__(/*! ./api/meerkats.api */ \"./src/js/api/meerkats.api.js\");\n\nvar _meerkats2 = _interopRequireDefault(_meerkats);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 

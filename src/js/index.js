@@ -1,0 +1,1 @@
+import MeerkatsApiCall from './api/meerkats.api'
