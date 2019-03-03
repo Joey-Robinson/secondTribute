@@ -1,0 +1,16 @@
+.locations {
+  grid-column: 1;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 35rem));
+  grid-template-rows: auto;
+  justify-content: center;
+  align-content: center;
+  margin-top: 2rem;
+  grid-gap: 5px;
+  width: 100vw;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}

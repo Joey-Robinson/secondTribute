@@ -2,13 +2,25 @@
   grid-column: 1;
   grid-row: 1;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   font-family: 'India Flower', cursive;
-  font-size: 12rem;
+  font-size: 8rem;
   font-weight: 400;
-  color: $druidOrange;
-  align-self: center;
-  justify-self: right;
-  padding: 0 0.5em 2em 0;
+  &__right {
+    color: $druidOrange;
+    grid-column: 2;
+    padding: 5rem 0.5em 0 0;
+    align-self: center;
+    justify-self: right;
+    animation: slideinRight 1s linear;
+  }
+  &__left {
+    color: $monkGreen;
+    grid-column: 1;
+    padding: 1rem 0.5em 2.5em 1rem;
+    align-self: center;
+    justify-self: left;
+    animation: slideinLeft 1s linear;
+  }
 }

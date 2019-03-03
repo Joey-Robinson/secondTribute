@@ -1,6 +1,7 @@
 .footer {
   grid-row: -1;
   grid-column: 1;
-  background: #222;
+  background: $mkOlive;
+  color: $headerWhite;
   height: 20vh;
 }

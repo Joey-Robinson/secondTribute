@@ -123,3 +123,23 @@
     right: 10rem;
   }
 }
+
+@keyframes slideinRight {
+  from {
+    margin-right: -100%;
+  }
+
+  to {
+    margin-right: 0%;
+  }
+}
+
+@keyframes slideinLeft {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}

@@ -6,10 +6,13 @@
 @import './base/base';
 @import './base/typography';
 // Components
+@import './components/card';
 @import './components/footer';
 @import './components/hero';
-@import './components/landing';
+@import './components/locations';
+@import './components/modal';
 @import './components/nav';
 // Layouts
 @import './layouts/container';
 // Pages 
+@import './pages/wow';

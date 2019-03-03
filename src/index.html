@@ -8,106 +8,226 @@
   <link rel="stylesheet" href="../dist/css/main.css">
   <title>Meerkats</title>
 </head>
-<div class="container">
-
-  <div class="navigation">
-    <input type="checkbox" id="navi-toggle" class="navigation-checkbox">
-    <label for="navi-toggle" class="navigation-button">
-      <span class="navigation-icon">&nbsp;</span>
-    </label>
-    <div class="navigation-background">&nbsp;</div>
-    <nav class="navigation-nav">
-      <ul class="navigation-list">
-        <li class="navigation-item"><a href="#" class="navigation-link"><span>World Of Warcraft</span></a></li>
-        <li class="navigation-item"><a href="#" class="navigation-link">Final Fantasy 14</a></li>
-        <li class="navigation-item"><a href="#" class="navigation-link">Locations</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <section class="hero">
-    <h1>meerkats</h1>
-  </section>
-  <!-- <section class="landing__page">
-    <picture>
-      <source type="image/webp" srcset="./compressed/zangarmarsh.webp">
-      <source type="image/jpeg" srcset="./images/zangarmarsh.jpg">
-      <img src="./compressed/zangarmarsh.webp">
-    </picture>
-    <picture>
-      <source type="image/webp" srcset="./compressed/churningmists.webp">
-      <source type="image/jpeg" srcset="./images/churningmists.jpg">
-      <img src="./compressed/churningmists.webp">
-    </picture>
-    <picture>
-      <source type="image/webp" srcset="./compressed/dravanianforelands.webp">
-      <source type="image/jpeg" srcset="./images/dravanianforelands.jpg">
-      <img src="./compressed/dravanianforelands.webp">
-    </picture>
-    <picture>
-      <source type="image/webp" srcset="./compressed/finalfantasybackground.webp">
-      <source type="image/jpeg" srcset="./images/finalfantasybackground.jpg">
-      <img src="./compressed/finalfantasybackground.webp">
-    </picture>
-    <picture>
-      <source type="image/webp" srcset="./compressed/karasang.webp">
-      <source type="image/jpeg" srcset="./images/karasang.jpg">
-      <img src="./compressed/karasang.webp">
-    </picture>
-    <picture>
-      <source type="image/webp" srcset="./compressed/kunlai.webp">
-      <source type="image/jpeg" srcset="./images/kunlai.jpg">
-      <img src="./compressed/kunlai.webp">
-    </picture>
-    <picture>
-      <source type="image/webp" srcset="./compressed/legiondalaran.webp">
-      <source type="image/jpeg" srcset="./images/legiondalaran.jpg">
-      <img src="./compressed/leatherworking.webp">
-    </picture>
-    <picture>
-      <source type="image/webp" srcset="./compressed/nagrand.webp">
-      <source type="image/jpeg" srcset="./images/nagrand.jpg">
-      <img src="./compressed/nagrand.webp">
-    </picture>
-    <picture>
-      <source type="image/webp" srcset="./compressed/rubysea.webp">
-      <source type="image/jpeg" srcset="./images/rubysea.jpg">
-      <img src="./compressed/rubysea.webp">
-    </picture>
-    <picture>
-      <source type="image/webp" srcset="./compressed/seaofclouds.webp">
-      <source type="image/jpeg" srcset="./images/seaofclouds.jpg">
-      <img src="./compressed/seaofclouds.webp">
-    </picture>
-    <picture>
-      <source type="image/webp" srcset="./compressed/thelochs.webp">
-      <source type="image/jpeg" srcset="./images/thelochs.jpg">
-      <img src="./compressed/thelochs.webp">
-    </picture>
-    <picture>
-      <source type="image/webp" srcset="./compressed/vale.webp">
-      <source type="image/jpeg" srcset="./images/vale.jpg">
-      <img src="./compressed/vale.webp">
-    </picture>
-    <picture>
-      <source type="image/webp" srcset="./compressed/wodnagrand.webp">
-      <source type="image/jpeg" srcset="./images/wodnagrand.jpg">
-      <img src="./compressed/wodnagrand.webp">
-    </picture>
-    <picture>
-      <source type="image/webp" srcset="./compressed/wodspires.webp">
-      <source type="image/jpeg" srcset="./images/wodspires.jpg">
-      <img src="./compressed/wodspires.webp">
-    </picture>
-  </section> -->
-  <footer class="footer">
-    <h1>from footer</h1>
-  </footer>
-
-</div>
 
 <body>
+  <!-- Container Start -->
+  <div class="container">
 
+    <!-- navbar start -->
+
+    <div class="navigation nav">
+      <input type="checkbox" id="navi-toggle" class="navigation-checkbox">
+      <label for="navi-toggle" class="navigation-button">
+        <span class="navigation-icon">&nbsp;</span>
+      </label>
+      <div class="navigation-background">&nbsp;</div>
+      <nav class="navigation-nav">
+        <ul class="navigation-list">
+          <li class="navigation-item navigation__link">
+            <a id="wow" href="#" class="navigation-link">
+              <span>World Of Warcraft</span>
+            </a>
+          </li>
+          <li class="navigation-item navigation__link">
+            <a href="#" class="navigation-link">
+              <span>Final Fantasy 14</span>
+            </a>
+          </li>
+          <li class="navigation-item navigation__link">
+            <a href="#" class="navigation-link">
+              <span>Locations</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- hero start -->
+    <section class="hero">
+      <div class="hero__right">
+        <h1>meerkats</h1>
+      </div>
+      <div class="hero__left">
+        <h1>ristretta</h1>
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <div class="modal-left">
+          <img src="./images/monk.png" alt="Tour Photo" class="modal-img">
+        </div>
+        <div class="modal-right">
+          <a href="#section-tours" class="modal-close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="modal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi natus fugiat
+            consequuntur, aperiam ipsam ut rerum. Quia earum, consequatur asperiores perferendis hic perspiciatis
+            distinctio error iure nam eligendi commodi architecto? Natus fugit optio eius ipsa maiores dolore recusandae
+            vel suscipit autem quos culpa, iste, aliquid veniam earum voluptatem quasi voluptatibus vitae. Impedit
+            quibusdam laudantium corrupti ab voluptate nobis facere ex eum omnis animi, doloribus ipsa eos, quia eveniet
+            eaque? Natus praesentium molestias sapiente consectetur saepe impedit provident laudantium illo, ullam quas?
+            Asperiores dicta quae quasi molestias nihil ab iusto, itaque consequuntur natus cumque facilis
+            necessitatibus maxime earum, voluptates culpa facere. Cumque commodi nisi facilis quibusdam alias hic vel,
+            voluptatibus voluptatum laboriosam accusantium architecto ipsum ratione quas similique, consectetur sed
+            animi possimus praesentium esse quod nulla rem dignissimos. Obcaecati, quos ea explicabo perferendis, iste
+            vel cum voluptatem doloribus libero necessitatibus ab veritatis odio officia quaerat id aspernatur tempora
+            consequatur delectus nobis?</p>
+          <a href="#" class="btn btn-green">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <section class="wow">
+      <div class="card wow__card-one">
+        <div class="card-side card-side-front">
+          <div class="card-picture card-picture-1">
+            &nbsp;
+          </div>
+          <h4 class="card-heading">
+            <span class="card-heading-span card-heading-span-1">
+              Meerkatz
+            </span>
+          </h4>
+          <div class="card-details">
+            <ul>
+              <li>Restoration Druid</li>
+              <li>Up to 30 people</li>
+              <li>2 tour guides</li>
+              <li>Sleep in cozy hotels</li>
+              <li>Difficulty: Easy</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-side card-side-back card-side-back-1">
+          <div class="card-cta">
+            <div class="card-price-box">
+              <p class="card-price-only">Only</p>
+              <p class="card-price-value">$297</p>
+            </div>
+            <a href="#modal" class="btn btn-white">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wow__card-two">
+        <div class="card-side card-side-front">
+          <div class="card-picture card-picture-2">
+            &nbsp;
+          </div>
+          <h4 class="card-heading">
+            <span class="card-heading-span card-heading-span-2">
+              Ristretta
+            </span>
+          </h4>
+          <div class="card-details">
+            <ul>
+              <li>7 Day Tour</li>
+              <li>Up to 40 People</li>
+              <li>6 tour guides</li>
+              <li>Sleep in provided tents</li>
+              <li>Difficulty: Hard</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-side card-side-back card-side-back-2">
+          <div class="card-cta">
+            <div class="card-price-box">
+              <p class="card-price-only">Only</p>
+              <p class="card-price-value">$597</p>
+            </div>
+            <a href="#modal" class="btn btn-white">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="locations">
+      <picture>
+        <source type="image/webp" srcset="./compressed/zangarmarsh.webp">
+        <source type="image/jpeg" srcset="./images/zangarmarsh.jpg">
+        <img src="./compressed/zangarmarsh.webp">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./compressed/churningmists.webp">
+        <source type="image/jpeg" srcset="./images/churningmists.jpg">
+        <img src="./compressed/churningmists.webp">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./compressed/dravanianforelands.webp">
+        <source type="image/jpeg" srcset="./images/dravanianforelands.jpg">
+        <img src="./compressed/dravanianforelands.webp">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./compressed/finalfantasybackground.webp">
+        <source type="image/jpeg" srcset="./images/finalfantasybackground.jpg">
+        <img src="./compressed/finalfantasybackground.webp">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./compressed/karasang.webp">
+        <source type="image/jpeg" srcset="./images/karasang.jpg">
+        <img src="./compressed/karasang.webp">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./compressed/kunlai.webp">
+        <source type="image/jpeg" srcset="./images/kunlai.jpg">
+        <img src="./compressed/kunlai.webp">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./compressed/legiondalaran.webp">
+        <source type="image/jpeg" srcset="./images/legiondalaran.jpg">
+        <img src="./compressed/leatherworking.webp">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./compressed/nagrand.webp">
+        <source type="image/jpeg" srcset="./images/nagrand.jpg">
+        <img src="./compressed/nagrand.webp">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./compressed/rubysea.webp">
+        <source type="image/jpeg" srcset="./images/rubysea.jpg">
+        <img src="./compressed/rubysea.webp">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./compressed/seaofclouds.webp">
+        <source type="image/jpeg" srcset="./images/seaofclouds.jpg">
+        <img src="./compressed/seaofclouds.webp">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./compressed/thelochs.webp">
+        <source type="image/jpeg" srcset="./images/thelochs.jpg">
+        <img src="./compressed/thelochs.webp">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./compressed/vale.webp">
+        <source type="image/jpeg" srcset="./images/vale.jpg">
+        <img src="./compressed/vale.webp">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./compressed/wodnagrand.webp">
+        <source type="image/jpeg" srcset="./images/wodnagrand.jpg">
+        <img src="./compressed/wodnagrand.webp">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./compressed/wodspires.webp">
+        <source type="image/jpeg" srcset="./images/wodspires.jpg">
+        <a target="_blank" rel="noopener noreferrer" href="./compressed/wodspires.webp">
+          <img src="./compressed/wodspires.webp">
+        </a>
+      </picture>
+    </section>
+
+    <footer class="footer">
+      <h1>from footer</h1>
+    </footer>
+  </div>
+  <script src="../dist/js/bundle.js"></script>
 </body>
 
 </html>
