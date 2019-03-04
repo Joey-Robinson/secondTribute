@@ -4,36 +4,138 @@ export const MeerkatsApiCall = async () => {
   console.log(data)
   const meerkatsCard = document.querySelector('.card__meerkats-details')
   const meerkatsCta = document.querySelector('.card-cta')
+  const meerkatsModalTextLeft = document.querySelector('.modal__text-left')
+  const meerkatsModalTextRight = document.querySelector('.modal__text-right')
+
   const meerkatsSpec = data.active_spec_name
   const meerkatsClass = data.class
-  const meerkatsRace = data.race
   const meerkatsRealm = data.realm
   const meerkatsItemLevel = data.gear.item_level_equipped
 
   const meerkatsRecentRunDungeon = data.mythic_plus_recent_runs[0].dungeon
   const meerkatsRecentRunAffixes = data.mythic_plus_recent_runs[0].affixes
-  const meerkatsRecentRunAffixesMap = meerkatsRecentRunAffixes.map((affix) => { return affix.name })
+  const meerkatsRecentRunAffixesMap = meerkatsRecentRunAffixes.map((affix) => {
+    return `${affix.name}`
+  })
+
+  const meerkatsBestOverallRuns = data.mythic_plus_highest_level_runs.map((info) => {
+    return `
+      <a
+        href=${info.url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <li>
+          ${info.mythic_level}
+          ${info.dungeon} -
+          ${info.affixes.map((affix) => {
+      return `${affix.name}`
+    })}
+        </li>
+      </a>
+    `
+  })
+
+  const meerkatsRecentWeeklyRuns = data.mythic_plus_weekly_highest_level_runs.map((info) => {
+    return `
+    <a 
+      href=${info.url} 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <li>
+        ${info.mythic_level}
+        ${info.dungeon} - 
+        ${info.affixes.map((affix) => {
+      return `${affix.name}`
+    })}
+      </li>
+    </a> 
+    `
+  })
+
   const meerkatsRecentRunLevel = data.mythic_plus_recent_runs[0].mythic_level
   const meerkatsRecentRunChests = data.mythic_plus_recent_runs[0].num_keystone_upgrades
   const meerkatsRecentRunLink = data.mythic_plus_recent_runs[0].url
 
-  const meerkatsRegion = data.region
+  const meerkatsRealmRank = data.mythic_plus_ranks.class.realm
+  const meerkatsRealmRankHealer = data.mythic_plus_ranks.class_healer.realm
+
+
+  const meerkatsBestRuns = data.mythic_plus_best_runs.map((info) => {
+    return `
+      <a 
+        href=${info.url} 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+      <li>
+        ${info.mythic_level}
+        ${info.dungeon} - 
+        ${info.affixes.map((affix) => {
+      return `${affix.name}`
+    })}
+      </li>
+      </a>
+    `
+  })
+
+  const meerkatsRecentRuns = data.mythic_plus_recent_runs.map((recent) => {
+    return `
+        <a 
+          href=${recent.url} 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+        <li>
+        ${recent.mythic_level}
+        ${recent.dungeon} - ${recent.affixes.map((affix) => {
+      return `${affix.name}`
+    })}
+        </li>
+        </a>
+    `
+  })
+
+
+
   meerkatsCard.innerHTML = `
     <ul>
-      <li><em>Spec:</em> ${meerkatsSpec} ${meerkatsClass}</li>
-      <li><em>Race:</em> ${meerkatsRace}</li>
-      <li><em>Realm:</em> ${meerkatsRealm}</li>
-      <li><em>Region:</em> ${meerkatsRegion}</li>
-      <li><em>Item Level:</em> ${meerkatsItemLevel}</li>
+      <li><span>Spec:</span> ${meerkatsSpec} ${meerkatsClass}</li>
+      <li><span>Healer Realm Rank:</span> ${meerkatsRealmRankHealer}</li>
+      <li><span>Realm Rank:</span> ${meerkatsRealmRank}</li>
+      <li><span>Realm:</span> ${meerkatsRealm}</li>
+      <li><span>Item Level:</span> ${meerkatsItemLevel}</li>
     </ul>
   `
-  meerkatsCta.innerHTML = `
+
+  meerkatsCta.innerHTML += `
     <ul>
-      <li><em>Dungeon:</em> ${meerkatsRecentRunDungeon}</li>
-      <li><em>Affixes:</em> ${meerkatsRecentRunAffixesMap.join("  ")}</li>
-      <li><em>Level:</em> ${meerkatsRecentRunLevel}</li>
-      <li><em>Chests:</em> ${meerkatsRecentRunChests}</li>
-      <li><em>rio:</em> <a target="_blank" rel="noopener noreferrer" href=${meerkatsRecentRunLink}>Link</a></li>
+      <li><span>Dungeon:</span> ${meerkatsRecentRunDungeon}</li>
+      <li><span>Affixes:</span> ${meerkatsRecentRunAffixesMap.join("  ")}</li>
+      <li><span>Level:</span> ${meerkatsRecentRunLevel}</li>
+      <li><span>Chests:</span> ${meerkatsRecentRunChests}</li>
+      <li><span>R.io:</span> <a target="_blank" rel="noopener noreferrer" href=${meerkatsRecentRunLink}>Link</a></li>
+    </ul>
+  `
+
+  meerkatsModalTextLeft.innerHTML += `
+    <ul>
+      <li>${meerkatsRecentRuns.join(" ")}</li>
+    </ul>
+    <h1>Weekly Best Runs</h1>
+    <ul>
+      <li>${meerkatsRecentWeeklyRuns.join(" ")}</li>
+    </ul>
+  `
+
+  meerkatsModalTextRight.innerHTML += `
+    <ul>
+      <li>${meerkatsBestRuns.join(" ")}</li>
+    </ul>
+    <h1>Overall Highest Runs</h1>
+    <ul>
+      <li>${meerkatsBestOverallRuns.join(" ")}</li>
     </ul>
   `
 }

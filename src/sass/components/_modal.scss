@@ -6,46 +6,52 @@
   left: 0;
   background: rgba($black, .8);
   z-index: 9999;
+  font-size: 2rem;
   opacity: 0;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
   visibility: hidden;
   transition: all .3s;
   backdrop-filter: blur(1rem);
   background: rgba($black, .3);
-  &__button-close {
-    grid-row: 5;
-    grid-column: 3 / 5;
-    width: 50%;
-    height: 25%;
-    text-align: center;
-    justify-self: center;
-    align-self: end;
+  h1 {
+    margin: 5rem 6rem 0 0;
     padding: 0;
-    margin: 0 0 3rem 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  ul {
+    padding: 2rem 0 0 5rem;
+    line-height: 1.5;
+    a {
+      display: block;
+      width: 85%;
+    }
   }
     &-content {
       @include absCenter;
       width: 100vw;
       height: 85vh;
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
       background: $white;
       box-shadow: 0 2rem 4rem rgba($black, .2);
       border-radius: .3rem;
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(6, 1fr);
       grid-template-rows: repeat(5, 1fr);
       overflow: hidden;
       opacity: 0;
       transform: translate(-50%, -50%) scale(.25s);
       transition: all .5s .2s;
-      &-image {
-        grid-column: 1;
+      &-left {
+        grid-column: 1 / 4;
         grid-row: 1 / -1;
-        img {
-          width: auto;
-          height: 100%;
-        }
+      }
+      &-right {
+        grid-column: 4 / -1;
+        grid-row: 1 / -1;
       }
       @include respond(tabLand) {
         width: auto;
@@ -113,4 +119,8 @@
     transform: translateY(-1px);
     box-shadow: 0 .5rem 1rem rgba($black, .2);
   }
+}
+
+span {
+  font-weight: 900;
 }

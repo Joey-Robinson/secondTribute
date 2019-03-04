@@ -1,4 +1,11 @@
 .modal__button-close {
+  grid-column: 3 / 5;
+  grid-row: 5;
+  justify-self: center;
+  align-self: end;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 10rem;
