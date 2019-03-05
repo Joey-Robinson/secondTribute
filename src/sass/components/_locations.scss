@@ -2,11 +2,13 @@
   grid-column: 1;
   grid-row: 3;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(35rem, 35rem));
-  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   justify-content: center;
   align-content: center;
   width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
   & img {
     padding: 0 5px 0 5px;
     width: 100%;

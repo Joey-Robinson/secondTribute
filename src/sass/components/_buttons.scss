@@ -31,83 +31,35 @@
   }
 }
 
-// .btn {
-//   &,
-//   &:link,
-//   &:visited {
-//     text-transform: uppercase;
-//     text-decoration: none;
-//     // padding: 1.5rem 4rem;
-//     // position: relative;
-//     display: inline-block;
-//     border-radius: 10rem;
-//     transition: all .2s;
-//     font-size: $smallFont;
-//     border: none;
-//     cursor: pointer;
-//   } 
-//   &:hover {
-//     transform: translateY(-3px);
-//     box-shadow: 0 1rem 2rem rgba($black, 0.2);
-//     &::after {
-//       transform: scaleX(1.4) scaleY(1.6);
-//       opacity: 0;
-//     }
-//   }
-//   &:active,
-//   &:focus {
-//     outline: none; 
-//     transform: translateY(-1px);
-//     box-shadow: 0 .5rem 1rem rgba($black, .2);
-//   }
-//   &-white {
-//     background: $white;
-//     color: $grey;
-//     &::after {
-//       background: $white;
-//     }
-//   }
-//   &-green {
-//     background-color: $darkGreen;
-//     color: $white;
-//   } 
-//   &::after {
-//     content: "";
-//     display: inline-block;
-//     height: 100%;
-//     width: 100%;
-//     border-radius: 10rem;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     z-index: -1;
-//     transition: all .4s;
-//   }
-//   &-animated {
-//     animation: moveInBottom .5s ease-out .75s;
-//     animation-fill-mode: backwards;
-//   }
-// }
-
-// .btn-text {
-//   &:link,
-//   &:visited {
-//     // font-size: $smallFont;
-//     color: $mediumGreen;
-//     display: inline-block;
-//     text-decoration: none;
-//     border-bottom: .1rem solid $mediumGreen;
-//     // padding: .3rem;
-//     transition: all .2s;
-//   }
-//   &:hover {
-//     background: $mediumGreen;
-//     color: $white;
-//     box-shadow: 0 1rem 2rem rgba($black, .15);
-//     transform: translateY(-.2rem);
-//   }
-//   &:active {
-//     box-shadow: 0 .5rem 1rem rgba($black, .15);
-//     transform: translateY(0);
-//   }
-// }
+.rodal__button-close {
+  grid-column: 3 / 5;
+  grid-row: 5;
+  justify-self: center;
+  align-self: end;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 10rem;
+  transition: all .2s;
+  border: none;
+  cursor: pointer;
+  color: $monkGreen;
+  background: $druidOrange;
+  font-size: 2rem;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($black, 0.2);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  &:active,
+  &:focus {
+    outline: none; 
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($black, .2);
+  }
+}

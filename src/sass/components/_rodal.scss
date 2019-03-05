@@ -1,0 +1,126 @@
+.rodal {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba($black, .8);
+  z-index: 9999;
+  font-size: 2rem;
+  opacity: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  visibility: hidden;
+  transition: all .3s;
+  backdrop-filter: blur(1rem);
+  background: rgba($black, .3);
+  h1 {
+    margin: 5rem 6rem 0 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  ul {
+    padding: 2rem 0 0 5rem;
+    line-height: 1.5;
+    a {
+      display: block;
+      width: 85%;
+    }
+  }
+    &-content {
+      @include absCenter;
+      width: 100vw;
+      height: 85vh;
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      background: $white;
+      box-shadow: 0 2rem 4rem rgba($black, .2);
+      border-radius: .3rem;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      overflow: hidden;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(.25s);
+      transition: all .5s .2s;
+      &-left {
+        grid-column: 1 / 4;
+        grid-row: 1 / -1;
+      }
+      &-right {
+        grid-column: 4 / -1;
+        grid-row: 1 / -1;
+      }
+      @include respond(tabLand) {
+        width: auto;
+        padding: 0;
+        margin: 0;
+      }
+      @include respond(tabPort) {
+        width: auto;
+      }
+      @include respond(phone) {
+        display: block;
+        position: relative;
+      }
+    }
+    &:target {
+      opacity: 1;
+      visibility: visible;
+    }
+    &:target &-content {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    &-close {
+      &:link,
+      &:visited {
+        color: $darkerGrey;
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+        font-size: 3rem;
+        text-decoration: none;
+        display: inline-block;
+        transition: all .2s;
+        line-height: 1;
+      }
+      &:hover {
+        color: $darkGreen;
+      }
+    }
+}
+
+.card__open-ristretta {
+  width: 5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 10rem;
+  transition: all .2s;
+  border: none;
+  cursor: pointer;
+  color: $monkGreen;
+  background: $druidOrange;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($black, 0.2);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  &:active,
+  &:focus {
+    outline: none; 
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($black, .2);
+  }
+}
+
+span {
+  font-weight: 900;
+}

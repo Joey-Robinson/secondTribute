@@ -29,10 +29,10 @@
     height: 100%;
     transform: rotateY(180deg);
     &-1 {
-      background-image: linear-gradient(to right bottom, $darkWhite, $druidOrange);
+      background-image: linear-gradient(to right bottom, $monkGreen, $druidOrange);
     }
     &-2 {
-      background-image: linear-gradient(to right bottom, $monkGreen, $darkWhite);
+      background-image: linear-gradient(to right bottom, $druidOrange, $monkGreen);
     }
     &-3 {
       background-image: linear-gradient(to right bottom, $lightBlue, $mediumPurple);
@@ -56,9 +56,6 @@
     }    
     &-2 {
       background-image: linear-gradient(to right bottom, $monkGreen, $darkWhite), url(../../src/images/monk.png);
-    }    
-    &-3 {
-      background-image: linear-gradient(to right bottom, $lightBlue, $mediumPurple), url(../img/nat-7.jpg);
     }
   }
   &-heading {
@@ -81,9 +78,6 @@
     }
     &-2 {
       background-image: linear-gradient(to right bottom, rgba($darkGreen, .85), rgba($mediumGreen, .85));
-    }
-    &-3 {
-      background-image: linear-gradient(to right bottom, rgba($lightBlue, .85), rgba($mediumPurple, .85));
     }
   }
   &-details {

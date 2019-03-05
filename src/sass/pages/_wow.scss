@@ -3,6 +3,7 @@
   grid-column: 1;
   grid-row: 2;
   width: 100vw;
+  z-index: 3;
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(10, 1fr);

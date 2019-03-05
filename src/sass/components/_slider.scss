@@ -1,0 +1,108 @@
+.wrapper {
+  position: relative;
+  grid-column: 1;
+  grid-row: 1;
+  width: 100vw;
+  height: 100vh;
+}
+ 
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.slide__one {
+  background-image: url(../../src/compressed/kunlai.webp);
+}
+ 
+.slide__two {
+  background-image: url(../../src/compressed/vale.webp);
+}
+
+.slide__three {
+  background-image: url(../../src/compressed/wodnagrand.webp);
+}
+
+.slide__four {
+  background-image: url(../../src/compressed/zangarmarsh.webp);
+}
+
+.slide__five {
+  background-image: url(../../src/compressed/churningmists.webp);
+}
+
+.slide__six {
+  background-image: url(../../src/compressed/dravanianforelands.webp);
+}
+
+.slide__seven {
+  background-image: url(../../src/compressed/finalfantasybackground.webp);
+}
+
+.slide__eight {
+  background-image: url(../../src/compressed/karasang.webp);
+}
+
+.slide__nine {
+  background-image: url(../../src/compressed/legiondalaran.webp);
+}
+
+.slide__ten {
+  background-image: url(../../src/compressed/nagrand.webp);
+}
+
+.slide__eleven {
+  background-image: url(../../src/compressed/rubysea.webp);
+}
+
+.slide__twelve {
+  background-image: url(../../src/compressed/seaofclouds.webp);
+}
+
+.slide__thirteen {
+  background-image: url(../../src/compressed/thelochs.webp);
+}
+
+.slide__fourteen {
+  background-image: url(../../src/compressed/wodspires.webp);
+}
+
+.slide__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $headerWhite;
+  height: 100%;
+  span {
+    font-size: 5rem;
+  }
+}
+
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -3.5rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.arrow__left {
+  border-width: 3rem 4rem 3rem 0;
+  left: 0;
+  margin-left: 3rem;
+  border-color: transparent $druidOrange transparent transparent;
+}
+
+.arrow__right {
+  border-width: 3rem 0 3rem 4rem;
+  right: 0;
+  margin-right: 3rem;
+  border-color: transparent transparent transparent $monkGreen;
+}
