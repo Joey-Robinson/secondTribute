@@ -34,9 +34,6 @@
     &-2 {
       background-image: linear-gradient(to right bottom, $druidOrange, $monkGreen);
     }
-    &-3 {
-      background-image: linear-gradient(to right bottom, $lightBlue, $mediumPurple);
-    }
   }
   &:hover &-side-front {
     transform: rotateY(-180deg);
@@ -52,10 +49,10 @@
     border-top-left-radius: .3rem;
     border-top-right-radius: .3rem;
     &-1 {
-      background-image: linear-gradient(to right bottom, $druidOrange, $darkWhite), url(../../src/images/druid.png);
-    }    
+      background-image: linear-gradient(to right bottom, $druidOrange, $darkWhite);
+    }
     &-2 {
-      background-image: linear-gradient(to right bottom, $monkGreen, $darkWhite), url(../../src/images/monk.png);
+      background-image: linear-gradient(to right bottom, $monkGreen, $darkWhite);
     }
   }
   &-heading {
@@ -167,4 +164,23 @@
       font-size: 4rem;
     }
   }
+}
+
+
+#bg__image-fifteen.lazy {
+  background-color: linear-gradient(to right bottom, $druidOrange, $darkWhite);
+  background-image: none;
+}
+
+#bg__image-fifteen {
+  background-image: linear-gradient(to right bottom, $druidOrange, $darkWhite), url(../../src/compressed/druid.webp);
+}
+
+#bg__image-sixteen.lazy {
+ background-color: linear-gradient(to right bottom, $monkGreen, $darkWhite);
+ background-image: none;
+}
+
+#bg__image-sixteen {
+  background-image: linear-gradient(to right bottom, $monkGreen, $darkWhite), url(../../src/compressed/monk.webp);
 }
