@@ -5,18 +5,26 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  &__jobs {
+  &__information {
+    grid-column: 1 / 5;
+    grid-row: 1 / -1;
+    justify-self: center;
+    align-self: center;
+    span {
+      font-size: 3rem;
+    }
+    h1 {
+      font-size: 3.1rem;
+      animation: slideinLeft 1s linear;
+    }
+    h3 {
+      animation: slideinLeft 1s linear;
+      font-size: 2.9rem;
+    }
+  }
+  &__image {
     grid-column: -1;
     grid-row: 1 / -1;
-    padding: 5rem 1rem;
-    display: flex;
-    flex-direction: column;
-    flex-flow:column;
-    flex-wrap: nowrap;
-    img {
-      width: 5rem;
-      height: 5rem;
-    }
   }
   &__choco {
     grid-column: 1;

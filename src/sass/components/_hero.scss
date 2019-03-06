@@ -15,18 +15,16 @@
     animation: slideinRight 1s linear;
   }
   &__center {
-    background-image: linear-gradient(to right bottom, $druidOrange, $monkGreen);
     grid-column: 1 / -1;
     width: 100%;
     grid-row: 3 / 5;
     padding: 0;
     margin: 0;
-    // text-align: center;
     justify-self: center;
     font-size: 2rem;
     p {
       text-align: center;
-      font-weight: 400;
+      font-weight: 900;
       color: $black;
       background: $darkWhite;
       mix-blend-mode: color-burn;
