@@ -145,10 +145,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: $headerWhite;
   height: 100%;
   span {
     font-size: 5rem;
+    font-weight: 900;
+    color: $black;
+    background: $headerWhite;
+    mix-blend-mode: screen;
+    padding: 2rem 4rem;
   }
 }
 

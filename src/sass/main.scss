@@ -10,7 +10,6 @@
 @import './components/card';
 @import './components/footer';
 @import './components/hero';
-@import './components/locations';
 @import './components/modal';
 @import './components/nav';
 @import './components/rodal';
@@ -18,4 +17,6 @@
 // Layouts
 @import './layouts/container';
 // Pages 
+@import './pages/finalfantasy';
+@import './pages/locations';
 @import './pages/wow';

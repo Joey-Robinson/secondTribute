@@ -1,5 +1,5 @@
 export const lazyLoad = () => {
-  document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", () => {
     let lazyloadImages;
 
     if ("IntersectionObserver" in window) {
@@ -21,12 +21,12 @@ export const lazyLoad = () => {
       let lazyloadThrottleTimeout;
       lazyloadImages = document.querySelectorAll(".lazy");
 
-      function lazyload() {
+      const lazyload = () => {
         if (lazyloadThrottleTimeout) {
           clearTimeout(lazyloadThrottleTimeout);
         }
 
-        lazyloadThrottleTimeout = setTimeout(function () {
+        lazyloadThrottleTimeout = setTimeout(() => {
           const scrollTop = window.pageYOffset;
           lazyloadImages.forEach(function (img) {
             if (img.offsetTop < (window.innerHeight + scrollTop)) {

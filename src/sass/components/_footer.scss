@@ -4,4 +4,18 @@
   background: $mkOlive;
   color: $headerWhite;
   height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  font-size: 2rem;
+  &__left {
+    grid-column: 1;
+    align-self: center;
+    justify-self: center;
+  }
+  &__middle-left {
+    grid-column: 2;
+    align-self: center;
+    justify-self: center;
+  }
 }
