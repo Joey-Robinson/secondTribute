@@ -8,7 +8,7 @@ export const textSlider = () => {
     }
     current = (current != slides.length - 1) ? current + 1 : 0
     slides[current].style.opacity = 1
-  }, 1000);
+  }, 7500);
 }
 
 textSlider()
