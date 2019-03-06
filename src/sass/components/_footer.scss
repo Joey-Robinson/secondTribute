@@ -5,9 +5,16 @@
   color: $headerWhite;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   font-size: 2rem;
+  &__middle {
+    grid-row: 1;
+    grid-column: 3;
+    justify-self: center;
+    align-self: end;
+    padding: 0 0 2rem 0;
+  }
   &__left {
     grid-column: 1;
     align-self: center;

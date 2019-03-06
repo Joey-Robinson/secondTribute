@@ -2,4 +2,19 @@
   grid-column: 1;
   grid-row: 4;
   background: $darkWhite;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  &__choco {
+    grid-column: 1;
+    grid-row: -1;
+    position: relative;
+    justify-self: left;
+    bottom: -5px;
+    left: 0;
+    & img {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
 }

@@ -1,0 +1,6 @@
+p {
+  position: absolute;
+  transition: opacity .5s ease-in;
+}
+
+p + p { opacity: 0; }
