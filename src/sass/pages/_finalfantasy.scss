@@ -6,26 +6,80 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   color: $specialRed;
+  @include respond(phoneLandscape) {
+    height: auto;
+    grid-row: 8 / -1;
+  }
+  @include respond(phone) {
+    grid-row: 5; 
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
   &__information {
     grid-column: 1 / 5;
     grid-row: 1 / -1;
     justify-self: center;
     align-self: center;
+    @include respond(phoneLandscape) {
+      grid-column: 1 / -1;
+      grid-row: 1;
+      padding: 20rem 0 15rem 0;
+      z-index: 5;
+      color: $darkWhite;
+      a {
+        color: $darkWhite;
+      }
+    }
+    @include respond(phone) {
+      grid-column: 1;
+      grid-row: 1;
+      padding: 0 0 15rem 0;
+      z-index: 5;
+      color: $headerWhite;
+      a {
+        color: $darkWhite;
+      }
+    }
     span {
       font-size: 3rem;
+      @include respond(phone) {
+        font-size: 1.8rem;
+      }
     }
     h1 {
       font-size: 3.2rem;
       animation: slideinLeft 1s linear;
+      @include respond(phone) {
+        font-size: 1.8rem;
+      }
     }
     h3 {
       animation: slideinLeft 1s linear;
       font-size: 2.9rem;
+      @include respond(phone) {
+        font-size: 1.8rem;
+      }
     }
   }
   &__image {
     grid-column: -1;
     grid-row: 1 / -1;
+    @include respond(phoneLandscape) {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      img {
+        height: 200vh;
+        width: 100vw;
+      }
+    }
+    @include respond(phone) {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
   }
   &__choco {
     grid-column: 1;
@@ -37,6 +91,20 @@
     & img {
       width: 20rem;
       height: 20rem;
+    }
+    @include respond(phoneLandscape) {
+      img {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+    @include respond(phone) {
+      bottom: 10.5rem;
+      position: relative;
+      img {
+        width: 10rem;
+        height: 10rem;
+      }
     }
   }
 }

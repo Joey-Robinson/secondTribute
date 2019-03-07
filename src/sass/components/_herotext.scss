@@ -1,6 +1,14 @@
 p {
   position: absolute;
   transition: opacity .5s ease-in;
+  @include respond(phoneLandscape) {
+    margin-bottom: 22rem;
+  }
+  @include respond(phone) {
+    margin-bottom: 20rem;
+  }
 }
 
-p + p { opacity: 0; }
+p + p { 
+  opacity: 0; 
+}

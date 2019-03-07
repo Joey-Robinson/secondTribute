@@ -8,6 +8,16 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   font-size: 2rem;
+  @include respond(phoneLandscape) {
+    display: none;
+  }
+  @include respond(phone) {
+    grid-row: 6;
+    height: 10vh;
+    font-size: 1.6rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
   a {
     text-decoration: none;
     color: $headerWhite;
@@ -19,25 +29,53 @@
     align-self: end;
     padding: 0 0 2rem 0;
     text-decoration: underline;
+    @include respond(phone) {
+      grid-column: 1;
+      align-self: end;
+    }
   }
   &__left {
     grid-column: 1;
     align-self: center;
     justify-self: center;
+    @include respond(phoneLandscape) {
+      display: none;
+    }
+    @include respond(phone) {
+      display: none;
+    }
   }
   &__middle-left {
     grid-column: 2;
     align-self: center;
     justify-self: center;
+    @include respond(phoneLandscape) {
+      display: none;
+    }
+    @include respond(phone) {
+      display: none;
+    }
   }
   &__middle-right {
     grid-column: 4;
     align-self: center;
     justify-self: center;
+    @include respond(phoneLandscape) {
+      display: none;
+    }
+    @include respond(phone) {
+      display: none;
+    }
   }
   &__right {
     grid-column: 5;
     align-self: center;
     justify-self: center;
+    @include respond(phoneLandscape) {
+      display: none;
+    }
+    @include respond(phone) {
+      display: none;
+    }
   }
 }
