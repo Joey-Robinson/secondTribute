@@ -8,12 +8,17 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   font-size: 2rem;
+  a {
+    text-decoration: none;
+    color: $headerWhite;
+  }
   &__middle {
     grid-row: 1;
     grid-column: 3;
     justify-self: center;
     align-self: end;
     padding: 0 0 2rem 0;
+    text-decoration: underline;
   }
   &__left {
     grid-column: 1;
@@ -22,6 +27,16 @@
   }
   &__middle-left {
     grid-column: 2;
+    align-self: center;
+    justify-self: center;
+  }
+  &__middle-right {
+    grid-column: 4;
+    align-self: center;
+    justify-self: center;
+  }
+  &__right {
+    grid-column: 5;
     align-self: center;
     justify-self: center;
   }
