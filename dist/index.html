@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <meta name="description" content="Website for Meerkats & Ristretta. A World Of Warcraft and Final Fantasy 14 Healer.">
+  <meta name="keywords"
+    content="World Of Warcraft, WoW, Final Fantasy 14, FF14, Mythic Plus, M+, Mythic+, Resto Druid, Restoration Druid, MW Monk, Mistweaver Monk, Druid, Monk.">
+  <meta name="author" content="Joey Robinson">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Meerkats | Ristretta</title>
+</head>
+
+<body>
+
+  <!-- Container Start -->
+  <div class="container">
+
+    <!-- navbar start -->
+    <div class="navigation nav">
+      <input type="checkbox" id="navi-toggle" class="navigation-checkbox">
+      <label for="navi-toggle" class="navigation-button">
+        <span class="navigation-icon">&nbsp;</span>
+      </label>
+      <div class="navigation-background">&nbsp;</div>
+      <nav class="navigation-nav">
+        <ul class="navigation-list">
+          <li class="navigation-item navigation__link">
+            <a href="#wow" class="navigation-link">
+              <span>World Of Warcraft</span>
+            </a>
+          </li>
+          <li class="navigation-item navigation__link">
+            <a href="#finalfantasy" class="navigation-link">
+              <span>Final Fantasy 14</span>
+            </a>
+          </li>
+          <li class="navigation-item navigation__link">
+            <a href="#locations" class="navigation-link">
+              <span>Locations</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- hero start -->
+    <section class="hero">
+      <div class="hero__right">
+        <h1>meerkats</h1>
+      </div>
+
+      <div class="hero__center">
+        <p><strong>"</strong>The best healer I've ever played with, without a doubt. Always on point with CD's and is
+          incredibly knowledgeable. Does a plethora of research ahead of time and always comes prepared for any and all
+          content.<strong>"</strong></p>
+        <p>
+          <stonrg>"</stonrg>Always willing to do progressively harder and more difficult content, just for the fun of
+          it. Can adapt to a
+          variety of situations and very rarely will panic or collapse under pressure.<strong>"</strong>
+        </p>
+        <p>
+          <strong>"</strong>Keeps up to date on current meta compositions and is willing to play a variety of healers
+          when needed. Can, and often does, make it a point to research individuals while forming a group. Will often
+          ensure that people have the latest versions of addons and weakauras.<strong>"</strong>
+        </p>
+        <p>
+          <strong>"</strong>
+          Has always been prepared. Both in the consumeable aspect as well as the knowledge aspect. If there's something
+          not known, then it will be asked or explained, which goes a long way, especially with new(er) individuals.
+          <strong>"</strong>
+        </p>
+      </div>
+
+      <div class="hero__left">
+        <h1>ristretta</h1>
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- meerkats modal start -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <a href="#wow" class="modal-close">&times;</a>
+
+        <div class="modal__text-left modal-content-left">
+          <h1>recent m+ runs</h1>
+        </div>
+        <div class="modal__text-right modal-content-right">
+          <h1>best m+ runs</h1>
+        </div>
+
+        <a href="#wow" class="btn btn-green modal__button-close">Close</a>
+      </div>
+    </div>
+    <!-- meerkats modal end -->
+
+    <!-- ristretta modal start -->
+    <div class="rodal" id="rodal">
+      <div class="rodal-content">
+        <a href="#wow" class="rodal-close">&times;</a>
+
+        <div class="rodal__text-left rodal-content-left">
+          <h1>recent m+ runs</h1>
+        </div>
+        <div class="rodal__text-right rodal-content-right">
+          <h1>best m+ runs</h1>
+        </div>
+
+        <a href="#wow" class="btn btn-green rodal__button-close">Close</a>
+      </div>
+    </div>
+    <!-- ristretta modal end -->
+
+
+    <!-- wow section start -->
+    <section id="wow" class="wow">
+
+      <div class="card wow__card-one">
+        <div class="card-side card-side-front">
+          <div id="bg__image-fifteen" class="card-picture card-picture-1 lazy">
+            &nbsp;
+          </div>
+          <h4 class="card-heading">
+            <span class="card-heading-span card-heading-span-1">
+              Meerkatz
+            </span>
+          </h4>
+          <div class="card-details card__meerkats-details">
+            <!-- Information is coming from meerkats.api.js -->
+          </div>
+        </div>
+
+        <div class="card-side card-side-back card-side-back-1">
+          <div class="card-cta">
+            <h1>MOST RECENT M+</h1>
+          </div>
+          <div class="card-read">
+            <a href="#modal" class="btn btn-white card__open-button card-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card wow__card-two">
+        <div class="card-side card-side-front">
+          <div id="bg__image-sixteen" class="card-picture card-picture-2 lazy">
+            &nbsp;
+          </div>
+          <h4 class="card-heading">
+            <span class="card-heading-span card-heading-span-2">
+              Ristretta
+            </span>
+          </h4>
+          <div class="card-details card__ristretta-details">
+            <!-- Information is coming from riestretta.api.js -->
+          </div>
+        </div>
+        <div class="card-side card-side-back card-side-back-2">
+          <div class="card-cta card__cta-ristretta">
+            <h1>MOST RECENT M+</h1>
+            <!-- Information is coming from ristretta.api.js -->
+          </div>
+          <div class="card-read">
+            <a href="#rodal" class="card__open-button card__open-ristretta">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- wow section end -->
+
+    <!-- locations / image slider start -->
+    <section id="locations" class="locations slider">
+      <div class="wrapper">
+        <div class="arrow__left arrow"></div>
+        <div class="slider">
+          <div class="slide slide__one">
+            <div id="bg__image-one" class="slide__content lazy phonemq">
+              <span>Kunlai Summit</span>
+            </div>
+          </div>
+          <div class="slide slide__two">
+            <div id="bg__image-two" class="slide__content lazy phonemq">
+              <span>Vale Of Eternal Blossom</span>
+            </div>
+          </div>
+          <div class="slide slide__three">
+            <div id="bg__image-three" class="slide__content lazy phonemq">
+              <span>Warlords Nagrand</span>
+            </div>
+          </div>
+          <div class="slide slide__four">
+            <div id="bg__image-four" class="slide__content lazy phonemq">
+              <span>Zangarmarsh</span>
+            </div>
+          </div>
+          <div class="slide slide__five">
+            <div id="bg__image-five" class="slide__content lazy phonemq">
+              <span>Churning Mists</span>
+            </div>
+          </div>
+          <div class="slide slide__six">
+            <div id="bg__image-six" class="slide__content lazy phonemq">
+              <span>Dravanian Forelands</span>
+            </div>
+          </div>
+          <div class="slide slide__seven">
+            <div id="bg__image-seven" class="slide__content lazy phonemq">
+              <span>The Last Homely House</span>
+            </div>
+          </div>
+          <div class="slide slide__eight">
+            <div id="bg__image-eight" class="slide__content lazy phonemq">
+              <span>Karasang Wilds</span>
+            </div>
+          </div>
+          <div class="slide slide__nine">
+            <div id="bg__image-nine" class="slide__content lazy phonemq">
+              <span>Legion Dalaran</span>
+            </div>
+          </div>
+          <div class="slide slide__ten">
+            <div id="bg__image-ten" class="slide__content lazy phonemq">
+              <span>Nagrand</span>
+            </div>
+          </div>
+          <div class="slide slide__eleven">
+            <div id="bg__image-eleven" class="slide__content lazy phonemq">
+              <span>Ruby Sea</span>
+            </div>
+          </div>
+          <div class="slide slide__twelve">
+            <div id="bg__image-twelve" class="slide__content lazy phonemq">
+              <span>Sea Of Cluds</span>
+            </div>
+          </div>
+          <div class="slide slide__thirteen">
+            <div id="bg__image-thirteen" class="slide__content lazy phonemq">
+              <span>The Lochs</span>
+            </div>
+          </div>
+          <div class="slide slide__fourteen">
+            <div id="bg__image-fourteen" class="slide__content lazy phonemq">
+              <span>Spires Of Arak</span>
+            </div>
+          </div>
+        </div>
+        <div class="arrow__right arrow"></div>
+      </div>
+    </section>
+    <!-- locations / image slider end -->
+
+
+    <section class="finalfantasy" id="finalfantasy">
+      <article class="finalfantasy__information">
+
+      </article>
+      <div class="finalfantasy__image">
+
+      </div>
+      <div class="finalfantasy__choco">
+        <a href="https://en.wikipedia.org/wiki/Chocobo" target="_blank" rel="noopener noreferrer">
+          <img class="lazy" src="./compressed/cutechoco.gif" alt="Final Fantasy Chocobo">
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <section class="footer__left">
+        <ul>
+          <li>
+            <a href="https://raider.io/characters/us/burning-blade/Ristretta" target="_blank" rel="noopener noreferrer">
+              Ristretta Raider.io
+            </a>
+          </li>
+          <li>
+            <a href="https://raider.io/characters/us/burning-blade/Meerkatz" target="_blank" rel="noopener noreferrer">
+              Meerkatz Raider.io
+            </a>
+          </li>
+          <li>
+            <a href="https://worldofwarcraft.com/en-us/character/us/burning-blade/Ristretta" target="_blank"
+              rel="noopener noreferrer">
+              Ristretta Armory
+            </a>
+          </li>
+          <li>
+            <a href="https://worldofwarcraft.com/en-us/character/us/burning-blade/Meerkatz" target="_blank"
+              rel="noopener noreferrer">
+              Meerkatz Armory
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__middle-left">
+        <ul>
+          <li>
+            <a href="https://www.wowhead.com/" target="_blank" rel="noopener noreferrer">
+              wowhead
+            </a>
+          </li>
+          <li>
+            <a href="https://mythicpl.us/" taget="_blank" rel="noopener noreferrer">
+              m+
+            </a>
+          </li>
+          <li>
+            <a href="https://wago.io/" target="_blank" rel="noopener noreferrer">
+              wago
+            </a>
+          </li>
+          <li>
+            <a href="https://wow.curseforge.com/addons" target="_blank" rel="noopener noreferrer">
+              addons
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__middle identifier">
+
+      </section>
+      <section class="footer__middle-right">
+        <ul>
+          <li>
+            <a aria-label="Link For Garland Tools" href="http://garlandtools.org/" target="_blank"
+              rel="noopener noreferrer">
+              Garland
+            </a>
+          </li>
+          <li>
+            <a aria-label="Link For Final Fantasy 14 Housing" href="http://en.ff14housing.com/" target="_blank"
+              rel="noopener noreferrer">
+              Housing
+            </a>
+          </li>
+          <li>
+            <a aria-label="Link For Final Fantasy 14 Gardening Website" href="http://www.ffxivgardening.com/"
+              target="_blank" rel="noopener noreferrer">
+              Gardening
+            </a>
+          </li>
+          <li>
+            <a aria-label="Link For Final Fantasy 14 Teamcraft Website" href="https://ffxivteamcraft.com/"
+              target="_blank" rel="noopener noreferrer">
+              Teamcraft
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer__right">
+        <ul>
+          <li>
+            <a href="http://tolkiengateway.net/wiki/Rivendell" target="_blank" rel="noopener noreferrer">
+              The LastHomely House
+            </a>
+          </li>
+          <li>
+            <a href="http://ff14angler.com/" target="_blank" rel="noopener noreferrer">
+              FF14 Angler
+            </a>
+          </li>
+          <li>
+            <a href="http://ffxiv.ariyala.com/" target="_blank" rel="noopener noreferrer">
+              FF14 Materia Optimizer
+            </a>
+          </li>
+          <li>
+            <a href="https://ffxivcrafting.com/crafting" target="_blank" rel="noopener noreferrer">
+              Crafting As A Service
+            </a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </div>
+  <script src="./js/bundle.js"></script>
+  <script src="./js/lazysizes.min.js" async=""></script>
+</body>
+
+</html>
