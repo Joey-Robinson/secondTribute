@@ -30,17 +30,17 @@
       <nav class="navigation-nav">
         <ul class="navigation-list">
           <li class="navigation-item navigation__link">
-            <a href="#wow" class="navigation-link">
+            <a aria-label="Wow Nav Link" href="#wow" class="navigation-link">
               <span>World Of Warcraft</span>
             </a>
           </li>
           <li class="navigation-item navigation__link">
-            <a href="#finalfantasy" class="navigation-link">
+            <a aria-label="Final Fantasy 14 Nav Link" href="#finalfantasy" class="navigation-link">
               <span>Final Fantasy 14</span>
             </a>
           </li>
           <li class="navigation-item navigation__link">
-            <a href="#locations" class="navigation-link">
+            <a aria-label="Locations Nav Link" href="#locations" class="navigation-link">
               <span>Locations</span>
             </a>
           </li>
@@ -86,7 +86,7 @@
     <!-- meerkats modal start -->
     <div class="modal" id="modal">
       <div class="modal-content">
-        <a href="#wow" class="modal-close">&times;</a>
+        <a aria-label="Modal Close To wow" href="#wow" class="modal-close">&times;</a>
 
         <div class="modal__text-left modal-content-left">
           <h1>recent m+ runs</h1>
@@ -95,7 +95,7 @@
           <h1>best m+ runs</h1>
         </div>
 
-        <a href="#wow" class="btn btn-green modal__button-close">Close</a>
+        <a aria-label="modal close to wow" href="#wow" class="btn btn-green modal__button-close">Close</a>
       </div>
     </div>
     <!-- meerkats modal end -->
@@ -103,7 +103,7 @@
     <!-- ristretta modal start -->
     <div class="rodal" id="rodal">
       <div class="rodal-content">
-        <a href="#wow" class="rodal-close">&times;</a>
+        <a aria-label="modal close to wow" href="#wow" class="rodal-close">&times;</a>
 
         <div class="rodal__text-left rodal-content-left">
           <h1>recent m+ runs</h1>
@@ -112,7 +112,7 @@
           <h1>best m+ runs</h1>
         </div>
 
-        <a href="#wow" class="btn btn-green rodal__button-close">Close</a>
+        <a aria-label="modal close to wow" href="#wow" class="btn btn-green rodal__button-close">Close</a>
       </div>
     </div>
     <!-- ristretta modal end -->
@@ -142,7 +142,8 @@
             <h1>MOST RECENT M+</h1>
           </div>
           <div class="card-read">
-            <a href="#modal" class="btn btn-white card__open-button card-btn">Read More</a>
+            <a aria-label="Meerkats modal open link" href="#modal" class="btn btn-white card__open-button card-btn">Read
+              More</a>
           </div>
         </div>
       </div>
@@ -168,7 +169,8 @@
             <!-- Information is coming from ristretta.api.js -->
           </div>
           <div class="card-read">
-            <a href="#rodal" class="card__open-button card__open-ristretta">Read More</a>
+            <a aria-label="Ristretta modal open link" href="#rodal" class="card__open-button card__open-ristretta">Read
+              More</a>
           </div>
         </div>
       </div>
@@ -266,7 +268,7 @@
     </section>
     <!-- locations / image slider end -->
 
-
+    <!-- final fantasy start -->
     <section class="finalfantasy" id="finalfantasy">
       <article class="finalfantasy__information">
 
@@ -280,7 +282,9 @@
         </a>
       </div>
     </section>
+    <!-- final fantasy end -->
 
+    <!-- Footer Start -->
     <footer class="footer">
       <section class="footer__left">
         <ul>
@@ -396,6 +400,8 @@
         </ul>
       </section>
     </footer>
+    <!-- Footer End -->
+
   </div>
   <script src="./js/bundle.js"></script>
   <script src="./js/lazysizes.min.js" async=""></script>
