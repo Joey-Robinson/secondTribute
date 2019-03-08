@@ -6,6 +6,11 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   color: $specialRed;
+  @include respond(tabPort) {
+    color: $headerWhite;
+    grid-row: 7;
+    height: 100vh;
+  }
   @include respond(phoneLandscape) {
     height: auto;
     grid-row: 8 / -1;
@@ -20,6 +25,11 @@
     grid-row: 1 / -1;
     justify-self: center;
     align-self: center;
+    @include respond(tabPort) {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      z-index: 5;
+    }
     @include respond(phoneLandscape) {
       grid-column: 1 / -1;
       grid-row: 1;
@@ -64,6 +74,14 @@
   &__image {
     grid-column: -1;
     grid-row: 1 / -1;
+    @include respond(tabPort) {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      img {
+        height: 100vh;
+        width: 100vw;
+      }
+    }
     @include respond(phoneLandscape) {
       grid-column: 1 / -1;
       grid-row: 1 / -1;
@@ -91,6 +109,11 @@
     & img {
       width: 20rem;
       height: 20rem;
+    }
+    @include respond(tabPort) {
+      grid-column: 1;
+      grid-row: -1;
+      bottom: -5px;
     }
     @include respond(phoneLandscape) {
       img {

@@ -9,6 +9,10 @@
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  @include respond(tabPort) {
+    grid-row: 5;
+    height: 100vh;
+  }
   @include respond(phoneLandscape) {
     grid-row: 7;
   }

@@ -8,6 +8,15 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   font-size: 2rem;
+  @include respond(tabPort) {
+    height: 30vh;
+    grid-row: 8;
+    font-size: 1.6rem;
+    ul {
+      width: 100%;
+      padding: 5px 5px 3px 5px;
+    }
+  }
   @include respond(phoneLandscape) {
     display: none;
   }
@@ -29,6 +38,9 @@
     align-self: end;
     padding: 0 0 2rem 0;
     text-decoration: underline;
+    @include respond(tabPort) {
+      display: none;
+    }
     @include respond(phone) {
       grid-column: 1;
       align-self: end;
@@ -60,6 +72,10 @@
     grid-column: 4;
     align-self: center;
     justify-self: center;
+    @include respond(tabPort) {
+      grid-column: 3;
+      align-self: center;
+    }
     @include respond(phoneLandscape) {
       display: none;
     }
@@ -71,6 +87,10 @@
     grid-column: 5;
     align-self: center;
     justify-self: center;
+    @include respond(tabPort) {
+      grid-column: 4 / -1;
+      
+    }
     @include respond(phoneLandscape) {
       display: none;
     }
