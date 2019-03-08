@@ -151,7 +151,7 @@
 }
 
 #bg__image-fifteen {
-  background-image: linear-gradient(to right bottom, $druidOrange, $darkWhite), url(../compressed/druid.webp);
+  background-image: linear-gradient(to right bottom, $druidOrange, $darkWhite), url(../compressed/druid.webp), url(../images/druid.png);
 }
 
 #bg__image-sixteen.lazy {
@@ -160,5 +160,5 @@
 }
 
 #bg__image-sixteen {
-  background-image: linear-gradient(to right bottom, $monkGreen, $darkWhite), url(../compressed/monk.webp);
+  background-image: linear-gradient(to right bottom, $monkGreen, $darkWhite), url(../compressed/monk.webp), url(../images/monk.png);
 }
