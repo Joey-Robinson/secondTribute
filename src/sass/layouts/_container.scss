@@ -3,7 +3,7 @@
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 100vh) 30vh;
+  grid-template-rows: repeat(4, 100vh) auto;
   @include respond(tabPort) {
     min-height: 100vh;
     grid-template-rows: 100vh repeat(7, auto);
