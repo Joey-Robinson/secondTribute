@@ -14,7 +14,6 @@ $breakpoint argument choices:
 Order: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
-@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,900");
 @keyframes slideShow {
   20% {
