@@ -22,7 +22,7 @@ export const finalFantasyApiCall = async () => {
       <h3><span>Lodestone:</span> <a href=${meerkatsArmory} target="_blank" rel="noopener noreferrer">Lodestone Link</a></h3>
       <h3><span>Free Company:</span> <a href="${meerkatsFreeCompany}" target="_blank" rel="noopener noreferrer">The Last Homely House</a></h3>
   `
-  meerkatsPortraitImage.innerHTML = `<a href=${meerkatsPortrait} target="_blank" rel="noopener noreferrer"><img data-src=${meerkatsPortrait} class="lazyload lazy" /></a>`
+  meerkatsPortraitImage.innerHTML = `<a href=${meerkatsPortrait} target="_blank" rel="noopener noreferrer"><img data-src=${meerkatsPortrait} class="lazyload lazy" alt="Meerkats" /></a>`
 }
 
 finalFantasyApiCall()
