@@ -3322,6 +3322,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 
 /***/ }),
 
+/***/ "./src/js/components/navclose.js":
+/*!***************************************!*\
+  !*** ./src/js/components/navclose.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar navClose = exports.navClose = function navClose() {\n  var wowLink = document.getElementById('wowLink');\n  var checkbox = document.querySelector('input[type=\"checkbox\"]');\n  var ffLink = document.getElementById('ffLink');\n  var locationLink = document.getElementById('locationLink');\n\n  wowLink.addEventListener(\"click\", function () {\n    if (checkbox.checked) {\n      checkbox.checked = false;\n    }\n  });\n  ffLink.addEventListener(\"click\", function () {\n    if (checkbox.checked) {\n      checkbox.checked = false;\n    }\n  });\n  locationLink.addEventListener(\"click\", function () {\n    if (checkbox.checked) {\n      checkbox.checked = false;\n    }\n  });\n};\n\nnavClose();\n\n//# sourceURL=webpack:///./src/js/components/navclose.js?");
+
+/***/ }),
+
 /***/ "./src/js/components/slider.js":
 /*!*************************************!*\
   !*** ./src/js/components/slider.js ***!
@@ -3354,7 +3366,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _ff = __webpack_require__(/*! ./api/FF14/ff14.api */ \"./src/js/api/FF14/ff14.api.js\");\n\nvar _ff2 = _interopRequireDefault(_ff);\n\nvar _meerkats = __webpack_require__(/*! ./api/wow/meerkats.api */ \"./src/js/api/wow/meerkats.api.js\");\n\nvar _meerkats2 = _interopRequireDefault(_meerkats);\n\nvar _ristretta = __webpack_require__(/*! ./api/wow/ristretta.api */ \"./src/js/api/wow/ristretta.api.js\");\n\nvar _ristretta2 = _interopRequireDefault(_ristretta);\n\nvar _identifier = __webpack_require__(/*! ./components/identifier */ \"./src/js/components/identifier.js\");\n\nvar _identifier2 = _interopRequireDefault(_identifier);\n\nvar _lazyLoad = __webpack_require__(/*! ./components/lazyLoad */ \"./src/js/components/lazyLoad.js\");\n\nvar _lazyLoad2 = _interopRequireDefault(_lazyLoad);\n\nvar _slider = __webpack_require__(/*! ./components/slider */ \"./src/js/components/slider.js\");\n\nvar _slider2 = _interopRequireDefault(_slider);\n\nvar _textslider = __webpack_require__(/*! ./components/textslider */ \"./src/js/components/textslider.js\");\n\nvar _textslider2 = _interopRequireDefault(_textslider);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("\n\nvar _ff = __webpack_require__(/*! ./api/FF14/ff14.api */ \"./src/js/api/FF14/ff14.api.js\");\n\nvar _ff2 = _interopRequireDefault(_ff);\n\nvar _meerkats = __webpack_require__(/*! ./api/wow/meerkats.api */ \"./src/js/api/wow/meerkats.api.js\");\n\nvar _meerkats2 = _interopRequireDefault(_meerkats);\n\nvar _ristretta = __webpack_require__(/*! ./api/wow/ristretta.api */ \"./src/js/api/wow/ristretta.api.js\");\n\nvar _ristretta2 = _interopRequireDefault(_ristretta);\n\nvar _identifier = __webpack_require__(/*! ./components/identifier */ \"./src/js/components/identifier.js\");\n\nvar _identifier2 = _interopRequireDefault(_identifier);\n\nvar _lazyLoad = __webpack_require__(/*! ./components/lazyLoad */ \"./src/js/components/lazyLoad.js\");\n\nvar _lazyLoad2 = _interopRequireDefault(_lazyLoad);\n\nvar _navclose = __webpack_require__(/*! ./components/navclose */ \"./src/js/components/navclose.js\");\n\nvar _navclose2 = _interopRequireDefault(_navclose);\n\nvar _slider = __webpack_require__(/*! ./components/slider */ \"./src/js/components/slider.js\");\n\nvar _slider2 = _interopRequireDefault(_slider);\n\nvar _textslider = __webpack_require__(/*! ./components/textslider */ \"./src/js/components/textslider.js\");\n\nvar _textslider2 = _interopRequireDefault(_textslider);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 

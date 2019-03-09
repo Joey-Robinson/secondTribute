@@ -8,5 +8,6 @@ import RistrettaApiCall from './api/wow/ristretta.api'
 // Components
 import identifier from './components/identifier'
 import lazyLoad from './components/lazyLoad'
+import navclose from './components/navclose'
 import startSlide from './components/slider'
 import textSlider from './components/textslider'
