@@ -44,6 +44,6 @@
     "@babel/polyfill": "^7.0.0",
     "imagemin-webp": "^5.0.0",
     "imagemin-webpack-plugin": "^2.4.0",
-    "lazysizes": "^4.1.6"
+    "lazysizes": "^5.2.1"
   }
 }
